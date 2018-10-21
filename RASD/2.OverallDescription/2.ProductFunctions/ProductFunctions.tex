@@ -1,0 +1,30 @@
+\documentclass[../../rasd.tex]{subfiles}
+\begin{document}
+
+\section{Product functions}
+			\subsection{Data4Help}
+			
+			\subsubsection{User Registration}
+			Data4Help will allow users to register. These will register by entering all the required information (see [R\subs{x}] \todo{add reference to Requirements where we specify User info for registration}). When registering to Data4Help, a user will first declare to have read the privacy statement and second they will have to accept the terms and conditions, which specifically include their consent to the acquisition and processing of their data, including sensitive ones, by TrackMe.\\
+			The user registration process will be carried out on the user dedicated application (see \todo{add reference to where we are going to specify the user interface - probably section User Interface (mobile app), maybe add also reference to user registration scenario / use case}.\\
+			Unregistered users will not be able to use Data4Help. (\todo{maybe this is a requirement and it is not necessary to put it here})
+			
+			\subsubsection{Third Party Registration}
+			A third party will be automatically registered to Data4Help once the (\todo{add name of contract between third parties and TrackMe, both here and in the definitions}) contract has been agreed upon and signed by both TrackMe and the third party itself.\\
+			Third party registration is required for using the service: an unregistered third party must not be able to access users data.(\todo{maybe this is a requirement and it is not necessary to put it here})
+			
+			\subsubsection{User Data Acquisition}
+			Data4Help will acquire users data through smart wearables. \\
+			Users must give consent to the acquisition of their data when registering to Data4Help.\\
+			Data acquisition frequency can be changed according to users or third parties needs. For instance, if a user wants to save their smart wearable battery, frequency can be reduced. On the other hand, if a third party would like to track more accurately a user's position, a higher location acquisition frequency can be requested.	
+
+			\subsubsection{Third Parties Data Access}
+			Once a third party is registered to Data4Help, it can request access to users data acquired through Data4Help and stored by TrackMe. Third parties may request data that refers either to a specific individual or to a group of users.\\
+			Consent to individual data access is left to the specific user, who can either allow or deny a third party request.\\
+			Data on groups of individuals will be shared with third parties as long as TrackMe will be able to anonymize it properly (see R\subs{x} \todo{include reference to requirement about anonymized data (1000 users satisfy request}).
+
+			\subsubsection{Data Management and Privacy}
+			All data acquired through Data4Help will be stored on a database accessible only by TrackMe. Each piece of users data will have a list of parties to whom access was granted. At any time, a user will be able to revoke the previously given consent to any third party or to TrackMe. Moreover, a user may exercise their right to data portability, which means that TrackMe will have to provide them with all the collected data regarding them. Finally, users may ask the deletion of all their data stored by TrackMe. \todo{might want to list the requirements that relate to this}\\
+			By guaranteeing these functions, Data4Help will respect existing general regulations on privacy (e.g. EU GDPR). 
+
+\end{document}
