@@ -22,9 +22,12 @@
 	\newpage
 	\chapter{Introduction}
 		\section{Purpose}
-			{\bf Data4Help } is a service that TrackMe company is willing to develop. The basic idea is allowing third parties to monitor the location and health status of individuals through many sensors. The service is based on the retrieval of data sent by registered users. Every user has one or more sensor that sends the information to TrackMe. Then, data can be directly sent to a third party client that pays for the service and had obtained the authorization of the user, or can contirbute to a anonymous dataset (composed by at least a thousands people due to company policy).\\
-			On top of Data4Help's infrastructure are built two products that are offered by TrackMe: AutomatedSOS and Track4Run.\\
-			\\{\bf AutomatedSOS:} It's a service that guarantees (within a certain amount of time - 5 seconds according company policy) the call of an ambulance if the health data that is received is under a given threshold. \\\\{\bf Track4Run:} It's a service that it can be used during a running competition: organizers can define a path and runners can enroll to it enabling spectators to track them in a map.
+			TrackMe offers a basic B2B service named "Data4Help" on top of which are built two B2C services named "AutomatedSOS" and "Track4Run".
+			\paragraph{Data4Help:} It's a service that TrackMe company is willing to develop. The basic idea is allowing third parties to monitor the location and health status of individuals through many sensors. The service is based on the retrieval of data sent by registered users. Every user has one or more sensor that sends the information to TrackMe. Then, data can be directly sent to a third party client that pays for the service and had obtained the authorization of the user, or can contribute to a anonymous dataset (composed by at least a thousands people due to company policy). Users sending data are rewarded.\\
+			
+			\paragraph{AutomatedSOS:}It's a service that guarantees (within a certain amount of time - 5 seconds according company policy) the call of an ambulance if the health data that is received is under a given threshold.
+			
+			\paragraph{Track4Run:} It's a service that it can be used during a running competition: organizers can define a path and runners can enroll to it enabling spectators to track them in a map.
 			\subsection{Goals}
 			TO DO LIST OF GOALS
 		\section{Scope}
@@ -56,11 +59,14 @@ A sport practiced and loved by many is running. Organizing a run requires severa
 		
 		\end{enumerate}
 		\section{Definitions, Acronyms, Abbreviations}
-		TO DO DURING THE WRITING OF THIS DOCUMENT
-		\begin{itemize}
-		\item Third Parties: companies that want to buy people's sensors' data
-		\item Wearable: ... TODO ...
-		\end{itemize}
+		\begin{description}
+			\item[Data-senders]: people using Track4Help sending data from device(s)
+			\item[Third parties]: companies or private persons retrieving data from TrackMe
+			\item[Organizers]: companies or private persons organizing running competitions
+			\item[Spectators]: people participating as spectators to running competitions
+			\item[Participants]: people running in running competitions
+		\end{description}
+		
 		\section{Revision history}
 		\begin{enumerate}
 			\item v. 1.0 - ????
@@ -100,7 +106,21 @@ A sport practiced and loved by many is running. Organizing a run requires severa
 		\section{Product functions}
 		WORK IN PROGRESS
 		\section{User characteristics}
-		WORK IN PROGRESS
+			\subsection{Data4Help}
+			\paragraph{Data-senders:}
+			People having at least one device with a sensor connected to internet, willing to share the collected data with TrackMe to take advantage of the company rewards and eventually use the services built on top of Data4Help service.
+			\paragraph{Third parties:}
+			Companies or private persons willing, for any reasons, to collect bulk data. Usually the data is used for building services on top of it; in this case it is very important that data is transfered real time. Sometimes it is used just for statistics analysis. In both cases, Third parties need that the data is correct and precise. 
+			\subsection{AutomatedSOS}
+			\paragraph{Data-senders:}
+			People (mainly elderly) having some disease or high risk of disorder willing to monitor own health parameters and conditions in order to prevent and possibly avoid crisis.
+			\subsection{Track4Run}
+			\paragraph{Participants:}
+			People participating in running competition. Need to have small device and with no interaction during the run to avoid distractions.
+			\paragraph{Organizers:}
+			Companies or private persons organizing running competitions willing to better engage the spectators giving the possibility to track in real-time the position of all participants. Need to provide the service easily to ensure spectators are not prevented in using it.
+			\paragraph{Spectators:}
+			People participating as spectators to running competitions, willing to better engage the event by tracking the runners during all the run. Want it to be easy without needed particular devices or applications. Usually it is a "one-time usage".
 		\section{Assumptions, dependencies and constraints}
 		WORK IN PROGRESS
 	\chapter{Specific requirements}

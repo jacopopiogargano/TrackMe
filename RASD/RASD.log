@@ -1,11 +1,15 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  17 OCT 2018 01:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.21)  21 OCT 2018 12:43
 entering extended mode
 **./RASD.tex
 (RASD.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+
+("C:\Users\Federico Haag\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\repor
+t.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+
+("C:\Users\Federico Haag\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size1
+0.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -43,7 +47,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
  [1
 
-{C:/Users/jacop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (RASD.toc
+{C:/Users/Federico Haag/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] (RA
+SD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -57,73 +62,58 @@ LaTeX Font Info:    External font `cmex10' loaded for size
  [2]
 Chapter 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 31--35
+Underfull \hbox (badness 10000) in paragraph at lines 34--38
 
  []
 
 [3
 
-] [4]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 61.
-
-("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 61.
-
-[5]
+] [4] [5]
 Chapter 2.
 [6
 
-] [7]
+] [7] [8]
 Chapter 3.
-[8
+[9
 
-] [9]
+] [10]
 Chapter 4.
-[10
-
-]
-Chapter 5.
 [11
 
 ]
-Chapter 6.
+Chapter 5.
 [12
+
+]
+Chapter 6.
+[13
 
 ] (RASD.aux) ) 
 Here is how much of TeX's memory you used:
- 278 strings out of 492970
- 3405 string characters out of 3126593
+ 261 strings out of 492970
+ 3149 string characters out of 3123039
  65104 words of memory out of 3000000
- 4219 multiletter control sequences out of 15000+200000
+ 4205 multiletter control sequences out of 15000+200000
  9406 words of font info for 33 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 23i,7n,19p,724b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/jacop/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jaco
-p/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C
-:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmr17.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/
-amsfonts/cm/cmr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on RASD.pdf (13 pages, 125805 bytes).
+ 23i,7n,18p,724b,199s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/Federico Haag/AppData/Local/Programs/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Federico Haag/AppData/Local/Progra
+ms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Federico Haag
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C
+:/Users/Federico Haag/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsf
+onts/cm/cmr10.pfb><C:/Users/Federico Haag/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Federico Haag/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/Federico Ha
+ag/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb>
+Output written on RASD.pdf (14 pages, 121504 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
