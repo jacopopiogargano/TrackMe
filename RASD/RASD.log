@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  21 OCT 2018 23:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  21 OCT 2018 23:41
 entering extended mode
 **./RASD.tex
 (RASD.tex
@@ -61,18 +61,18 @@ Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 )) (RASD.aux)
 \openout1 = `RASD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
+LaTeX Font Info:    ... okay on input line 24.
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
@@ -90,11 +90,11 @@ ii"
 \everyMPtoPDFconversion=\toks17
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 25.
+(Font)              <12> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 25.
+(Font)              <8> on input line 26.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 25.
+(Font)              <6> on input line 26.
  [1
 
 {C:/Users/jacop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
@@ -157,15 +157,15 @@ Chapter 2.
 (2.OverallDescription/1.ProductPerspective/ProductPerspective.tex)
 (2.OverallDescription/2.ProductFunctions/ProductFunctions.tex [8
 
-])
-(2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex [9])
+] [9])
+(2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex [10])
 (2.OverallDescription/4.AssumptionsDependenciesAndConstraints/AssumptionsDepend
 enciesAndConstraints.tex
 Overfull \hbox (2.48302pt too wide) in paragraph at lines 4--4
 []\OT1/cmr/bx/n/14.4 Assumptions, De-pen-den-cies and Con-straints 
  []
 
-)) (3.SpecificRequirements/SpecificRequirements.tex [10]
+)) (3.SpecificRequirements/SpecificRequirements.tex [11]
 Chapter 3.
 
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/ExternalInterfaceRequir
@@ -180,21 +180,21 @@ twareInterface.tex)
 e/CommunicationInterface.tex))
 (3.SpecificRequirements/2.FunctionalRequirements/FunctionalRequirements.tex)
 (3.SpecificRequirements/3.PerformanceRequirements/PerformanceRequirements.tex)
-(3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex [11
+(3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex [12
 
 ])
 (3.SpecificRequirements/5.SoftwareSystemAttributes/SoftwareSystemAttributes.tex
-)) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [12]
+)) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [13]
 Chapter 4.
-) [13
+) [14
 
 ]
 Chapter 5.
-[14
+[15
 
 ]
 Chapter 6.
-[15
+[16
 
 ] (RASD.aux) ) 
 Here is how much of TeX's memory you used:
@@ -214,9 +214,9 @@ al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jacop
 /Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/c
 mr9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmsy10.pfb>
-Output written on RASD.pdf (16 pages, 128390 bytes).
+Output written on RASD.pdf (17 pages, 129632 bytes).
 PDF statistics:
- 82 PDF objects out of 1000 (max. 8388607)
+ 85 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
