@@ -29,7 +29,38 @@
 			
 			\paragraph{Track4Run:} It's a service that it can be used during a running competition: organizers can define a path and runners can enroll to it enabling spectators to track them in a map.
 			\subsection{Goals}
-			TO DO LIST OF GOALS
+				\begin{itemize}
+					\item[G1] Allow a person to register as Individual after his agreement of acquirement of data by TrackMe.
+				
+					\item[G2] Allow a person or a company to register as Third Party of Data4Help.
+
+					\item[G3] Manage individual request of a Third Party.\\
+					$\left[G3.1\right]$ Allow a Third Party to select a person whom want to access data through his fiscal code or his social security number.\\
+					$\left[G3.2\right]$ Allow the Individual to accept or refuse the request.\\
+					$\left[G3.3\right]$ If the Individual accept the request, the Third Party which made it is allowed to access to his data.\\
+					$\left[G3.4\right]$ If the Individual does not accept the request, the Third Party which made the request is not able to see his data.
+				
+					\item[G4] Manage groups of individuals request of a Third Party.\\
+					$\left[G4.1\right]$ Allow a Third Party to select a group of people linked by one or more data.\\
+					$\left[G4.2\right]$ If the request refers to 1000 Individuals or more, the request is accepted and the data are anonymized before being sent to the Third Party which made the request.\\
+					$\left[G4.2\right]$ If the request refers to less than 1000 Individuals, the request is refused and the Third Party is not able to access to the data.
+				
+					\item[G5] Allow to a Third Party to access to data of Individuals of whom it have permission as soon as they are produced.
+
+					\item[G6] Allow to an Individual to revoke the availability of his data to a specific Third Party that has access to them.
+					
+					\item[G7] Allow to elderly Individuals to subscribe to AutomatedSOS.
+					
+					\item[G8] Monitor with smart devices the health parameters of Individuals registered to AutomatedSOS.
+					
+					\item[G9] Send an ambulance to the position of an Individual registered to AutomatedSOS with health parameters beyond certain intervals.\\
+					$\left[G9.1\right]$ If the health parameters registered of an Individual are beyond certain intervals, the system checks the position of the device.\\
+					$\left[G9.2\right]$ The system makes an emergency call to the local emergency number explaining the position of the Individual and the values of his non-regular health parameters.\\
+					$\left[G9.3\right]$ The emergency call is initiated within five seconds of the detection of the non-regular parameters.\\
+				
+					\item WORK IN PROGRESS
+				\end{itemize}
+			
 		\section{Scope}
 			TrackMe offers its services in a world where technology and health are taking huge strides forward every day and innovation is commonplace.\\
 Nowadays, people use smart devices such as smartphones and smart wearables more than any other object that they own. This means that any activity they perform already is or can be integrated with these devices.\\
@@ -79,28 +110,6 @@ A sport practiced and loved by many is running. Organizing a run requires severa
 		\section{Product perspective}
 			WORK IN PROGRESS
 
-			\subsection{Goals}
-			\begin{itemize}
-				\item[G1] Allow a person to register as Individual after his agreement of acquirement of data by TrackMe.
-				
-				\item[G2] Allow a person or a company to register as Third Part of Data4Help.
-
-				\item[G3] Manage individual request of a Third Part.\\
-				$\left[G3.1\right]$ Allow a Third Part to select a person whom want to access data through his fiscal code or his social security number.\\
-				$\left[G3.2\right]$ Allow the Individual to accept or refuse the request.\\
-				$\left[G3.3\right]$ If the Individual accept the request, his data are sent to the Third Part which made the request.\\
-				$\left[G3.4\right]$ If the Individual does not accept the request, the Third Part which made the request is not able to see his data.
-				
-				\item[G4] Manage groups of individuals request of a Third Part.\\
-				$\left[G4.1\right]$ Allow a Third Part to select a group of people linked by one or more data.\\
-				$\left[G4.2\right]$ If the request refers to 1000 Individuals or more, the request is accepted and the data are anonymized before being sent to the Third Part which made the request.\\
-				$\left[G4.2\right]$ If the request refers to less than 1000 Individuals, the request is refused and the Third Part is not able to access to the data.
-				
-				\item[G5] Allow to a Third Part to access to data of Individuals of whom it have permission as soon as they are produced
-				
-			WORK IN PROGRESS
-			\end{itemize}
-
 		\section{Product perspective}
 		WORK IN PROGRESS
 		\section{Product functions}
@@ -122,6 +131,19 @@ A sport practiced and loved by many is running. Organizing a run requires severa
 			\paragraph{Spectators:}
 			People participating as spectators to running competitions, willing to better engage the event by tracking the runners during all the run. Want it to be easy without needed particular devices or applications. Usually it is a "one-time usage".
 		\section{Assumptions, dependencies and constraints}
+			\subsection{Assumptions}
+			 	\begin{itemize}
+				 	\item Personal data inserted by the user during the registration correspond to his real data
+					\item Data collected and sent by the GPS and the sensors at a certain instant correspond to the status of the user at that time
+				
+					\item User is logged in one device at a time
+
+					\item The maps used faithfully represent the streets that can be traveled
+					
+				\end{itemize}
+					
+				
+			
 		WORK IN PROGRESS
 	\chapter{Specific requirements}
 		\section{External Interface Requirements}
