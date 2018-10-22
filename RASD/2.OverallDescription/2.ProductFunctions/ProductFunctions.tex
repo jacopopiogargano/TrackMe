@@ -15,7 +15,7 @@
 				When registering, third parties specify which services built on top of Data4Help they would like to use.
 			
 				\subsubsection{User Data Acquisition}
-				Data4Help will acquire users data through sssmart wearables. \\
+				Data4Help will acquire users data through smart wearables. \\
 				Users must give consent to the acquisition of their data when registering to Data4Help.\\
 				Data acquisition frequency can be changed according to users or third parties needs. For instance, if a user wants to save their smart wearable battery, frequency can be reduced. On the other hand, if a third party would like to track more accurately a user's position, a higher location acquisition frequency can be requested.	
 
@@ -35,10 +35,18 @@
 
 			\subsection{Track4Run}
 				\subsubsection{User Registration}
-				\todo{Might want to create an itemize in order to distinguish the 3 processes: organizers, runners enrollment, spectators registration}\\
-				\todo{specify the registration processes of each of the users of T4R (organizers, runners, spectators)}
+				Track4Run will be a service used by three different kinds of users: organizers, runners and spectators. All of them need to register to the service for different purposes explained below.
+				\begin{itemize}
+					\item[Organizers]
+					Runs can be organized by users defined as organizers. They will simply have to open the Track4Run dedicated application (see \todo{include reference to mobile app T4R}) and
+
+					\todo {Understand whether or not to impolement two different apps? --> in my opinion we should implement only 1 app and have a section dedicated to track4run. By doing this we can exploit the registration process offered by Data4help}
+					\item[Runners]
+					\item[Spectators]
+					\todo{these probably don't need to login, maybe we can have a "I'm a spectator button in the login section, where they can enter the run code (just like kahoot. Or if they want to they can be logged in data4help and do it (in the T4R section))"}
+				\end{itemize}
 				\subsubsection{Run Creation and Path Definition}
-				\todo{might want to limit the number of participants, define the path, put some checkpoints, include rules...}
+				Organizers have the ability of creating a run. They will be able to give the run a name, set a date the run is going to be held on and define a path for the run. Premium functions will be included in Track4Run. One of them will be sending an invitation to specific participants via email. Another premium function will allow organizers to make their run public and let anybody enroll to it or be a spectator of it. Finally premium users will be able to put constraints to specific parameters of the runners, including but not limited to age, sex and weight.
 				\subsubsection{Runners Map Display}
 				\todo{might want to define how the map is implemented, maybe it uses googlemaps, but especially what is its main purpose and what can spectators do on it. \\ for example they could be able to follow a specific runner, see health data of a runner}
 
