@@ -1,0 +1,125 @@
+\documentclass[../../rasd.tex]{subfiles}
+\begin{document}
+
+\section{Goals}
+				\subsection{Data4Help}
+					\begin{itemize}
+						
+						\item[G\subs{1}]Collect \textit{User data} through \textit{smart wearables}.
+						\item[G\subs{2}]Send specific \textit{User data} to \textit{Third parties} only if \textit{User} consent was given.
+						\item[G\subs{3}]Send \textit{Users data} to \textit{Third parties} as soon as they are produced.
+						\item[G\subs{4}]Send \textit{Group data} to \textit{Third parties} if the group it refers to is made up of 1000 or more Users.
+						\item[G\subs{5}]Allow \textit{Users} to manage their data. This includes revoking given consent to specific \textit{Third parties}, retrieving and deleting their data.
+						\item[G\subs{6}]Monitor through \textit{smart wearables} specific health parameters of \textit{Users} registered to AutomatedSOS (see \todo{add reference to all the specific health parameters required by AutomatedSOS}).
+
+						
+													
+						
+						
+
+						
+					\end{itemize}
+
+					\subsubsection{Old goals}
+					\begin{itemize}
+						%registration
+						\item[G\subs{1}]Allow a person to register as User after his agreement of acquirement of data by TrackMe.
+						\item[G\subs{2}]Allow a company to register as Third Party of Data4Help.
+						%identification
+						\item[G\subs{3}]Identify uniquely a User by their username and password.
+
+						\item[G\subs{4}]Manage User data (\todo{add reference}) request from a Third Party.
+							\begin{itemize}
+								\item [G\subs{4.1}]Allow a Third Party to select a person whom want to access data through his fiscal code or his social security number.
+								\item [G\subs{4.2}]Allow the specific User to accept or reject the data access request sent by the Third Party.
+								\item [G\subs{4.3}]If the User accepts the request, their data is sent to the Third Party who made the request.
+								\item [G\subs{4.4}]If the User does not accept the request, the Third Party who made the request is not allowed to see their data.
+							\end{itemize}
+
+						\item [G\subs{5}]Manage group data (\todo{add reference}) request from a Third Party.
+							\begin{itemize}
+								\item [G\subs{5.1}]Allow a Third Party to specify one or more features to define a group of Users for which the request is made.
+								\item [G\subs{5.2}]Accept a Third Party group data request if the group it refers to is made up of 1000 or more Users.
+								\item [G\subs{5.3}]Reject a Third Party group data request if the group it refers to is made up of less than 1000 Users.
+								\item [G\subs{5.4}]Guarantee proper anonymization of group data.
+							\end{itemize}		
+						\item[G\subs{7}]Allow a Third Party to access only Users data whose permission was granted.
+
+						%GDPR
+						\item[G\subs{8}]Allow a User to revoke the previously given data access consent to any Third Party.
+						\item[G\subs{9}]Retrieve all the data of a specific user when requested by them.
+						\item[G\subs{10}]Delete all the data of a specific user when requested by them.
+
+
+					\end{itemize}
+
+
+				\subsection{AutomatedSOS}
+					\begin{itemize}
+						\item[G\subs{7}]Analyze \textit{Users data} to check whether or not a \textit{User} is as a \textit{User in need}.
+						\item[G\subs{8}]Send an ambulance to the last position of a \textit{User in need}.
+					\end{itemize}
+
+					\subsubsection{Old goals}
+					\begin{itemize}
+						%registration
+						\item[G\subs{12}]Allow a Data4Help \textit{User} to subscribe to AutomatedSOS.
+						\begin{itemize}
+								\item[G\subs{14.1}]Retrieve the last position of a \textit{User in need}.
+								\item[G\subs{14.2}]Make an emergency call to local emergency services within 5 seconds from the identification of a \textit{User in need}.
+								\item[G\subs{14.3}]Send the last position of the \textit{User in need} to local emergency services.
+								\item[G\subs{14.4}]Send \textit{User in need anomalous data} to local emergency services.
+							\end{itemize}
+
+					\end{itemize}
+
+
+
+
+
+				\subsection{Track4Run}
+					\begin{itemize}
+						\item[G\subs{9}]Allow \textit{Organizers} to create a run, defining a path.
+						\item[G\subs{10}]Allow Data4Help \textit{Users} to enroll in a run as \textit{Participants}. 
+						\item[G\subs{11}]Allow \textit{Spectators} to watch a run by knowing its \textit{run identifier}.
+					\end{itemize}
+
+					\subsubsection{Old goals}
+					\begin{itemize}
+						%registration
+						\item[G\subs{15}]Allow an individual to register as \textit{Spectator} (see \todo{add reference to Spectator}).
+						\item[G\subs{16}]Allow an individual to register as \textit{Organizer} (see \todo{add reference to Organizer}).
+						\item[G\subs{17}]Allow a Data4Help \textit{User} to enroll in a run as a \textit{Participant} (see \todo{add reference to Participant}).
+						%identification
+						\item[G\subs{18}]Identify uniquely an Organizer by their username and password.
+
+						\begin{itemize}
+							\item[G\subs{19.1}]Allow \textit{Organizers} to give the run a name.
+							\item[G\subs{19.2}]Allow \textit{Organizers} to set a date and time for the run.
+							\item[G\subs{19.3}]Allow \textit{Organizers} to define a path for the run.
+							\item[G\subs{19.4}]Let every run be identified by a unique \textit{run identifier}.
+						\end{itemize}
+
+						\begin{itemize}
+							\item[G\subs{20.1}]\textit{Spectators} can see the position of each \textit{Participant} on the map.
+							\item[G\subs{20.2}]\textit{Spectators} can see health data of a specific \textit{Participant} on the map.
+							\todo{check the verb 'see'}
+							\end{itemize}
+					\end{itemize}
+
+			
+			
+\end{document}
+
+
+
+
+
+
+
+
+
+
+
+
+
