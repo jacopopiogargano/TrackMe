@@ -3,63 +3,73 @@
 \contentsline {paragraph}{Data4Help:}{3}
 \contentsline {paragraph}{AutomatedSOS:}{3}
 \contentsline {paragraph}{Track4Run:}{3}
-\contentsline {subsection}{\numberline {1.1.1}Goals}{3}
-\contentsline {section}{\numberline {1.2}Scope}{5}
-\contentsline {subsection}{\numberline {1.2.1}Analysis of shared phenomena}{6}
-\contentsline {section}{\numberline {1.3}Definitions, Acronyms, Abbreviations}{6}
-\contentsline {subsection}{\numberline {1.3.1}Definitions}{6}
-\contentsline {subsection}{\numberline {1.3.2}Acronyms}{7}
-\contentsline {subsection}{\numberline {1.3.3}Abbreviations}{7}
-\contentsline {section}{\numberline {1.4}Revision history}{7}
-\contentsline {section}{\numberline {1.5}Reference Documents}{7}
-\contentsline {section}{\numberline {1.6}Document Structure}{7}
+\contentsline {section}{\numberline {1.2}Scope}{3}
+\contentsline {subsection}{\numberline {1.2.1}Analysis of shared phenomena}{4}
+\contentsline {section}{\numberline {1.3}Goals}{5}
+\contentsline {subsection}{\numberline {1.3.1}Data4Help}{5}
+\contentsline {subsection}{\numberline {1.3.2}AutomatedSOS}{5}
+\contentsline {subsection}{\numberline {1.3.3}Track4Run}{5}
+\contentsline {section}{\numberline {1.4}Definitions, Acronyms, Abbreviations}{6}
+\contentsline {subsection}{\numberline {1.4.1}Definitions}{6}
+\contentsline {subsection}{\numberline {1.4.2}Acronyms}{6}
+\contentsline {subsection}{\numberline {1.4.3}Abbreviations}{6}
+\contentsline {section}{\numberline {1.5}Revision history}{6}
+\contentsline {section}{\numberline {1.6}Reference Documents}{7}
+\contentsline {section}{\numberline {1.7}Document Structure}{7}
 \contentsline {chapter}{\numberline {2}Overall Description}{8}
 \contentsline {section}{\numberline {2.1}Product perspective}{8}
-\contentsline {section}{\numberline {2.2}Product functions}{8}
-\contentsline {subsection}{\numberline {2.2.1}Data4Help}{8}
-\contentsline {subsubsection}{User Registration}{8}
-\contentsline {subsubsection}{Third Party Registration}{8}
+\contentsline {paragraph}{Data4Help}{8}
+\contentsline {paragraph}{AutomatedSOS}{8}
+\contentsline {paragraph}{Track4Run}{9}
+\contentsline {section}{\numberline {2.2}Product functions}{9}
+\contentsline {subsection}{\numberline {2.2.1}Data4Help}{9}
+\contentsline {subsubsection}{User Registration}{9}
+\contentsline {subsubsection}{Third Party Registration}{9}
 \contentsline {subsubsection}{User Data Acquisition}{9}
-\contentsline {subsubsection}{Third Parties Data Access}{9}
-\contentsline {subsubsection}{Data Management and Privacy}{9}
+\contentsline {subsubsection}{Third Parties Data Access}{10}
+\contentsline {subsubsection}{Data Management and Privacy}{10}
 \contentsline {subsection}{\numberline {2.2.2}AutomatedSOS}{10}
-\contentsline {subsubsection}{User Registration}{10}
+\contentsline {subsubsection}{User Subscription}{10}
 \contentsline {subsubsection}{Health Status Monitoring}{10}
-\contentsline {subsubsection}{Ambulance Dispatching}{10}
-\contentsline {subsection}{\numberline {2.2.3}Track4Run}{10}
-\contentsline {subsubsection}{User Registration}{10}
-\contentsline {subsubsection}{Run Creation and Path Definition}{10}
-\contentsline {subsubsection}{Runners Map Display}{10}
-\contentsline {section}{\numberline {2.3}User characteristics}{10}
-\contentsline {subsection}{\numberline {2.3.1}Data4Help}{10}
-\contentsline {paragraph}{Data-senders:}{10}
-\contentsline {paragraph}{Third parties:}{10}
-\contentsline {subsection}{\numberline {2.3.2}AutomatedSOS}{10}
-\contentsline {paragraph}{Data-senders:}{10}
-\contentsline {subsection}{\numberline {2.3.3}Track4Run}{11}
-\contentsline {paragraph}{Participants:}{11}
-\contentsline {paragraph}{Organizers:}{11}
-\contentsline {paragraph}{Spectators:}{11}
-\contentsline {section}{\numberline {2.4}Assumptions, Dependencies and Constraints}{11}
-\contentsline {subsection}{\numberline {2.4.1}Domain Assumptions}{11}
-\contentsline {chapter}{\numberline {3}Specific Requirements}{12}
-\contentsline {section}{\numberline {3.1}External Interface Requirements}{12}
-\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{12}
-\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{12}
-\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{12}
-\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{12}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{12}
-\contentsline {section}{\numberline {3.3}Performance Requirements}{12}
-\contentsline {section}{\numberline {3.4}Design Constraints}{13}
-\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{13}
-\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{13}
-\contentsline {subsection}{\numberline {3.4.3}Any other constraint}{13}
-\contentsline {section}{\numberline {3.5}Software System Attributes}{13}
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{13}
-\contentsline {subsection}{\numberline {3.5.2}Availability}{13}
-\contentsline {subsection}{\numberline {3.5.3}Security}{13}
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{13}
-\contentsline {subsection}{\numberline {3.5.5}Portability}{13}
-\contentsline {chapter}{\numberline {4}Formal Analysis using Alloy}{14}
-\contentsline {chapter}{\numberline {5}Effort Spent}{15}
-\contentsline {chapter}{\numberline {6}References}{16}
+\contentsline {subsubsection}{Calling an Ambulance}{11}
+\contentsline {subsection}{\numberline {2.2.3}Track4Run}{11}
+\contentsline {subsubsection}{User Registration}{11}
+\contentsline {subsubsection}{Run Creation and Path Definition}{11}
+\contentsline {subsubsection}{Runners Map Display}{11}
+\contentsline {section}{\numberline {2.3}User characteristics}{11}
+\contentsline {subsection}{\numberline {2.3.1}Data4Help}{11}
+\contentsline {paragraph}{Users:}{11}
+\contentsline {paragraph}{Third parties:}{11}
+\contentsline {subsection}{\numberline {2.3.2}AutomatedSOS}{12}
+\contentsline {paragraph}{Users:}{12}
+\contentsline {subsection}{\numberline {2.3.3}Track4Run}{12}
+\contentsline {paragraph}{Participants:}{12}
+\contentsline {paragraph}{Organizers:}{12}
+\contentsline {paragraph}{Spectators:}{12}
+\contentsline {section}{\numberline {2.4}Assumptions, Dependencies and Constraints}{12}
+\contentsline {subsection}{\numberline {2.4.1}Domain Assumptions}{12}
+\contentsline {chapter}{\numberline {3}Specific Requirements}{13}
+\contentsline {section}{\numberline {3.1}External Interface Requirements}{13}
+\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{13}
+\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{13}
+\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{13}
+\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{13}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{13}
+\contentsline {subsection}{\numberline {3.2.1}Scenarios}{13}
+\contentsline {subsection}{\numberline {3.2.2}Use Cases}{13}
+\contentsline {paragraph}{Data4Help}{13}
+\contentsline {paragraph}{AutomatedSOS}{17}
+\contentsline {section}{\numberline {3.3}Performance Requirements}{17}
+\contentsline {section}{\numberline {3.4}Design Constraints}{17}
+\contentsline {subsection}{\numberline {3.4.1}Standards compliance}{17}
+\contentsline {subsection}{\numberline {3.4.2}Hardware limitations}{17}
+\contentsline {subsection}{\numberline {3.4.3}Any other constraint}{17}
+\contentsline {section}{\numberline {3.5}Software System Attributes}{18}
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{18}
+\contentsline {subsection}{\numberline {3.5.2}Availability}{18}
+\contentsline {subsection}{\numberline {3.5.3}Security}{18}
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{18}
+\contentsline {subsection}{\numberline {3.5.5}Portability}{18}
+\contentsline {chapter}{\numberline {4}Formal Analysis using Alloy}{19}
+\contentsline {chapter}{\numberline {5}Effort Spent}{20}
+\contentsline {chapter}{\numberline {6}References}{21}

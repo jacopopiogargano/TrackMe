@@ -1,29 +1,65 @@
 \documentclass{report}
-\usepackage{xcolor,comment, subfiles}
+\usepackage{xcolor,comment, subfiles, graphicx, caption, longtable}
 
 % SECTION COMMANDS: here we include the commands for formatting and other purposes
 \newcommand\todo[1]{\textcolor{red}{#1}}
+
 \newcommand{\sups}[1]{\ensuremath{^{\textrm{#1}}}}
+
 \newcommand{\subs}[1]{\ensuremath{_{\textrm{#1}}}}
+
+\newcommand{\ic}[1]{\textit{#1}}
+
+\newcommand{\image}[4]{
+\begin{figure}[h]
+\centering
+\includegraphics[width=\linewidth, height = {#1}, keepaspectratio]{#2}
+\caption*{#3}
+\label{#4}
+\end{figure}
+}
 
 \providecommand{\rasd}{.} % relative path to rasd.tex
 
+\graphicspath{{Images/}}
 
 
-\title{
-\small Politecnico di Milano\\
-\small AA 2018-2019\\
-\large Computer Science and Engineering\\
-\Large Software Engineering 2 Project\\
-\huge Requirement Analysis and Specification Document
-}
-\date{2018-11-11}
-\author{
-\large Gargano Jacopo Pio, Giannetti Cristian, Haag Federico}
+
+%\title{
+%\small Politecnico di Milano\\
+%\small AA 2018-2019\\
+%\large Computer Science and Engineering\\
+%\Large Software Engineering 2 Project\\
+%\huge Requirement Analysis and Specification Document
+%}
+
+
+
+
+%\date{2018-11-11}
+%\author{
+%\large Gargano Jacopo Pio, Giannetti Cristian, Haag Federico}
 
 \begin{document}
 	\pagenumbering{gobble}
-	\maketitle
+	\begin{titlepage}
+		\centering	
+		\vfill
+		{
+			\includegraphics[width =\linewidth, height = 4cm, keepaspectratio]{PolitecnicoLogo.png}
+			\label{fig:PolitecnicoLogo}
+			\large \\[2ex]Computer Science and Engineering\\
+			\large Software Engineering 2 Project\\[10ex]			
+			\image{5cm}{TrackMeLogo.png}{}{TrackMeLogo}
+			\huge Requirement Analysis and Specification Document\\[2ex]
+			\normalsize Gargano Jacopo Pio, Giannetti Cristian, Haag Federico\\[1ex]
+			%\normalsize 11-11-2018 \\[1ex]
+			\normalsize Anno Accademico 2018-2019	 
+		}
+		
+	\end{titlepage}
+	%\maketitle
+
 	
 	\newpage
 	\pagenumbering{arabic}

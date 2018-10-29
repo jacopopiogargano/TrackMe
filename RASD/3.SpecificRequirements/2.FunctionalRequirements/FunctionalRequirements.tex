@@ -2,6 +2,171 @@
 \begin{document}
 
 \section{Functional Requirements}
-		WORK IN PROGRESS
+		%requirements and doamin assumptions entail goals
+		\subsection{Scenarios}
+		\subsection{Use Cases}
+
+			\paragraph{Data4Help}
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & User Sign Up\\ \hline
+    			Actors & \ic{User}, Data4Help\\ \hline
+    			Entry Conditions & \ic{User} successfully installed Data4Help application on their smartphone.\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{User} taps on "Sign Up" button.
+    					\item \ic{User} fills in all required fields for \ic{User} registration.
+    					\item \ic{User} taps on "Create an Account" button.
+    					\item Data4Help saves \ic{User} information.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & \ic{User} successfully registered by Data4Help.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item Inserted email already registered for another \ic{User}.
+    					\item Inserted password is not valid.
+    					\item Not all required fields are filled in.
+    					\item \ic{User} already signed up.
+    				\end{enumerate}
+    				\ic{User} is invited to try again.
+    				 \\ \hline
+    				
+    				
+       			\end{longtable}
+			\end{center}
+
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & Third Party Sign Up\\ \hline
+    			Actors & \ic{Third party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third party} is connected to the \ic{Third party} dedicated website (see \todo{add reference}).\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{Third party} clicks on "Sign Up" button.
+    					\item \ic{Third party} fills in all required fields for \ic{Third party} registration.
+    					\item \ic{Third party} clicks on "Create an Account" button.
+    					\item Data4Help saves \ic{Third party} information.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & \ic{Third party} successfully registered by Data4Help.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item Inserted email already registered for another \ic{Third party}.
+    					\item Inserted password is not valid.
+    					\item Not all required fields are filled in.
+    					\item \ic{Third party} already signed up.
+    				\end{enumerate}
+    				\ic{Third party} is invited to try again.
+    				 \\ \hline
+    			\end{longtable}
+			\end{center}
+
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & User Log In\\ \hline
+    			Actors & \ic{User}, Data4Help \\ \hline
+    			Entry Conditions & \ic{User} successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{User} enters username.
+    					\item \ic{User} enters password.
+    					\item \ic{User} taps on "Log In" button.
+    					\item Data4Help checks \ic{User} credentials.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & \ic{User} is successfully logged in.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item Inserted username is not valid.
+    					\item Inserted password is not correct.
+    			\end{enumerate}
+    			\ic{User} is invited to try again.
+    				 \\ \hline
+    			\end{longtable}
+			\end{center}
+
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & Third Party Log In\\ \hline
+    			Actors & \ic{Third party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third party} successfully registered to Data4Help and is connected to the \ic{Third party} dedicated website (see \todo{add reference}).\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{Third party} enters username.
+    					\item \ic{Third party} enters password.
+    					\item \ic{Third party} clicks on "Log In" button.
+    					\item Data4Help checks \ic{Third party} credentials.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & \ic{Third party} is successfully logged in.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item Inserted username is not valid.
+    					\item Inserted password is not correct.
+    			\end{enumerate}
+    			\ic{Third party} is invited to try again.
+    				 \\ \hline
+    			\end{longtable}
+			\end{center}
+
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & Third Party requests User Data\\ \hline
+    			Actors & \ic{Third party}, Data4Help, \ic{User} \\ \hline
+    			Entry Conditions & \ic{Third party} and \ic{User} successfully registered to Data4Help.\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{Third party} requests access to specific \ic{User data}.
+    					\item Data4Help forwards the request to the specific \ic{User}.
+    					\item \ic{User} gives consent to the requesting \ic{Third party} to access their data, unless already given.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & Data4Help sends \ic{User data} to the \ic{Third party}.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item \ic{User} denies consent to their data access by the requesting \ic{Third party}.
+    			\end{enumerate}
+    				 \\ \hline
+    			\end{longtable}
+			\end{center}
+
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & Third Party requests Group Data\\ \hline
+    			Actors & \ic{Third party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third party} successfully registered to Data4Help.\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{Third party} requests access to \ic{Group data}.
+    					\item Data4Help checks if the requested data refers to minimum 1000 \ic{Users}.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & Data4Help sends \ic{Group data} to the \ic{Third party}.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item \ic{Group data} refers to less than 1000 \ic{Users}.
+    			\end{enumerate}
+    				 Data4Help denies \ic{Group data} access to the \ic{Third Party}.
+    				 \\ \hline
+    			\end{longtable}
+			\end{center}
+
+
+			? ? ? Collect data --> probably it is not a use case, but regular product function
+			Third party subscribes to data
+			User revokes consent
+			? ? ? User manages data (gdpr)
+
+
+			\paragraph{AutomatedSOS}
+
+			\paragraph{Track4Run}
+
 
 \end{document}
