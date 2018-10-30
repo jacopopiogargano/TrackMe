@@ -29,7 +29,7 @@
     					\item Not all required fields are filled in.
     					\item \ic{User} already signed up.
     				\end{enumerate}
-    				\ic{User} is invited to try again.
+    				\ic{User} is invited to try again signing up.
     				 \\ \hline
     				
     				
@@ -58,7 +58,7 @@
     					\item Not all required fields are filled in.
     					\item \ic{Third party} already signed up.
     				\end{enumerate}
-    				\ic{Third party} is invited to try again.
+    				\ic{Third party} is invited to try again signing up.
     				 \\ \hline
     			\end{longtable}
 			\end{center}
@@ -83,7 +83,7 @@
     					\item Inserted username is not valid.
     					\item Inserted password is not correct.
     			\end{enumerate}
-    			\ic{User} is invited to try again.
+    			\ic{User} is invited to try again logging in.
     				 \\ \hline
     			\end{longtable}
 			\end{center}
@@ -108,7 +108,7 @@
     					\item Inserted username is not valid.
     					\item Inserted password is not correct.
     			\end{enumerate}
-    			\ic{Third party} is invited to try again.
+    			\ic{Third party} is invited to try again logging in .
     				 \\ \hline
     			\end{longtable}
 			\end{center}
@@ -157,16 +157,137 @@
     			\end{longtable}
 			\end{center}
 
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & Third Party subscribes to New Data\\ \hline
+                Actors & \ic{Third party}, Data4Help \\ \hline
+                Entry Conditions & \ic{Third party} successfully registered to Data4Help and obtained access to \ic{User data} and/or to \ic{Group data}.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{Third party} requests subscription to \ic{User data} or \ic{Group data}.
+                        \item Data4Help registers the \ic{Third party} subscription to new data.
+                        \item Each time new data is produced, it is sent to the \ic{Third party}.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & \todo{???}\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item \todo{???}
+                \end{enumerate}
+                     \todo{???}
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & User subscribes to a Service\\ \hline
+                Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
+                Entry Conditions & \ic{User} is successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{User} navigates to "Discover" page.
+                        \item \ic{User} chooses which \ic{Service} they would like to subscribe to.
+                        \item \ic{User} taps on "Add" button.
+                        \item \ic{User} gives consent to sharing their data with the specific \ic{Third Party}.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & Data4Help registers the new \ic{Service} for the \ic{User}\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item \ic{User} does not give consent to sharing their data.
+                \end{enumerate}
+                     \ic{User} is invited to try again adding the \ic{Service}.
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & User revokes consent to \ic{Third Party}\\ \hline
+                Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
+                Entry Conditions & \ic{User} gave consent to sharing their data with a \ic{Third Party}.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{User} navigates to "My Services" page.
+                        \item \ic{User} chooses which service they would like to revoke consent.
+                        \item \ic{User} taps on "Revoke consent" button.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & \item Data4Help stops sharing the data of the \ic{User} with the specific \ic{Third Party}.\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item \todo{???}
+                \end{enumerate}
+                     \todo{???}
+                     \\ \hline
+                \end{longtable}
+            \end{center}
 
 			? ? ? Collect data --> probably it is not a use case, but regular product function
-			Third party subscribes to data
-			User revokes consent
 			? ? ? User manages data (gdpr)
 
 
 			\paragraph{AutomatedSOS}
 
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & User in need assisted by AutomatedSOS\\ \hline
+                Actors & \ic{User}, AutomatedSOS, Local emergency services \\ \hline
+                Entry Conditions & \ic{User} is subscribed to AutomatedSOS and installed Data4Help application on their smartphone.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item AutomatedSOS identifies {User data} as \ic{anomalous data}.
+                        \item \ic{User} is identified as \ic{User in need}.
+                        \item AutomatedSOS calls local emergency services requesting an ambulance.
+                        \item AutomatedSOS sends \ic{User data} including GPS location and health data to local emergency services.
+                        \item Local emergency services send an ambulance to the location of the \ic{User in need}.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & \ic{User in need} is assisted by local emergency services.\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item \todo{???}
+                \end{enumerate}
+                     \todo{???}
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+
+        
 			\paragraph{Track4Run}
+
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & \todo{...} \ic{Third Party}\\ \hline
+                Actors & \ic{Third party}, \ic{User} \\ \hline
+                Entry Conditions & A \ic{User} has given consent to sharing their data with a \ic{Third Party}.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{User} navigates to "My Services" page
+                        \item \ic{User} chooses which service they would like to revoke consent.
+                        \item \ic{User} taps on "Revoke consent" button.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & \item Data4Help stops sharing the data of the \ic{User} with the specific \ic{Third Party}.\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item \todo{???}
+                \end{enumerate}
+                     \todo{???}
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+
+            - organizer creates a run
+            - participant enrolls in run
+            - spectator connects to run to watch it
+            
 
 
 \end{document}
