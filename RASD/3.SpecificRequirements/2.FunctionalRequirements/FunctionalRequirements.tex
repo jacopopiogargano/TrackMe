@@ -207,7 +207,7 @@
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
-                Name & User revokes consent to \ic{Third Party}\\ \hline
+                Name & User revokes consent to Third Party\\ \hline
                 Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
                 Entry Conditions & \ic{User} gave consent to sharing their data with a \ic{Third Party}.\\ \hline
                 Events Flow & 
@@ -217,7 +217,7 @@
                         \item \ic{User} taps on "Revoke consent" button.
                     \end{enumerate}
                  \\ \hline
-                Exit Condition & \item Data4Help stops sharing the data of the \ic{User} with the specific \ic{Third Party}.\\ \hline
+                Exit Condition & Data4Help stops sharing the data of the \ic{User} with the specific \ic{Third Party}.\\ \hline
                 Exceptions & 
                 \begin{enumerate}
                         \item \todo{???}
@@ -227,8 +227,9 @@
                 \end{longtable}
             \end{center}
 
-			? ? ? Collect data --> probably it is not a use case, but regular product function
-			? ? ? User manages data (gdpr)
+			
+            \todo{? ? ? Collect data --> probably it is not a use case, but regular product function
+			? ? ? User manages data (gdpr)}
 
 
 			\paragraph{AutomatedSOS}
@@ -264,30 +265,73 @@
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
-                Name & \todo{...} \ic{Third Party}\\ \hline
-                Actors & \ic{Third party}, \ic{User} \\ \hline
-                Entry Conditions & A \ic{User} has given consent to sharing their data with a \ic{Third Party}.\\ \hline
+                Name & Organizer creates a Run\\ \hline
+                Actors & \ic{Organizer}, Track4Run \\ \hline
+                Entry Conditions & \ic{Organizer} is connected to the \ic{Run} creation dedicated website (see \todo{add reference}).\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{User} navigates to "My Services" page
-                        \item \ic{User} chooses which service they would like to revoke consent.
-                        \item \ic{User} taps on "Revoke consent" button.
+                        \item \ic{Organizer} fills in all required fields for \ic{Run} creation.
+                        \item \ic{Organizer} clicks on "Create Run" button.
                     \end{enumerate}
                  \\ \hline
-                Exit Condition & \item Data4Help stops sharing the data of the \ic{User} with the specific \ic{Third Party}.\\ \hline
+                Exit Condition & Track4Run creates the \ic{Run} defined by the \ic{Organizer}.\\ \hline
                 Exceptions & 
                 \begin{enumerate}
-                        \item \todo{???}
+                        \item \item Not all required fields are filled in.
                 \end{enumerate}
-                     \todo{???}
+                     \ic{Organizer} is invited to try again creating the \ic{Run}.
                      \\ \hline
                 \end{longtable}
             \end{center}
 
-            - organizer creates a run
-            - participant enrolls in run
-            - spectator connects to run to watch it
-            
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & Participant enrolls in a Run\\ \hline
+                Actors & \ic{Participant}, Track4Run \\ \hline
+                Entry Conditions & \ic{Participant} is a Data4Help \ic{User}, is subscribed to Track4Run and installed Data4Help application on their smartphone.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{Participant} navigates to "My Services" page.
+                        \item \ic{Participant} taps on Track4Run.
+                        \item \ic{Participant} taps on the \ic{Run} they wish to enroll in.
+                        \item \ic{Participant} taps on "Enroll" button.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & Track4Run registers the \ic{Participant} as enrolled in the \ic{Run}.\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item No \ic{Runs} are listed.
+                        \item All listed \ic{Runs} reached the maximum number of participants.
+                \end{enumerate}
+                     \ic{Participant} is invited to try again later enrolling in a \ic{Run}.
+                     \\ \hline
+                \end{longtable}
+            \end{center}
 
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & Spectator watches a Run\\ \hline
+                Actors & \ic{Spectator} \\ \hline
+                Entry Conditions & \ic{Spectator} is connected to the \ic{Spectators} dedicated website (see \todo{add reference}).\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{Spectator} clicks on the \ic{Run} they would like to watch.
+                        \item \ic{Spectator} watches the position of the \ic{Participants} of the \ic{Run}. 
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & The \ic{Run} is over.\\ \hline
+                Exceptions & 
+                \begin{enumerate}
+                        \item No \ic{Runs} are listed.
+                        \item The \ic{Spectator} disconnects from the \ic{Spectators} dedicated website.
+                \end{enumerate}
+                     Concerning Exception 1 (\todo{add reference}), \ic{Spectator} is invited to try again later watching a \ic{Run}. For Exception 2 (\todo{add reference}), no action is taken.
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+
+            \todo{??? participant runs in a run ???}
 
 \end{document}
