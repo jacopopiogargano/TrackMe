@@ -3,7 +3,52 @@
 
 \section{Functional Requirements}
 		%requirements and doamin assumptions entail goals
+
+
 		\subsection{Scenarios}
+            \paragraph{Data4Help}
+                \begin{itemize}
+                    
+                    %user registration and log in                
+                    \item[S\subs{1}] Dante is an individual who would like to keep track of his GPS position and health data. For this purpose he decides to use Data4Help. He downloads the Data4Help application on his smartphone and proceeds to sign up. He inserts all required information, which include his name, his social security number and date of birth. He is asked to insert an email that will later be his username and a password. Dante inserts his name as his password and the system tells him that the inserted password is shorter than 8 characters, so he tries again with a new one. Eventually he inserts a valid password, accepts the terms and conditions and taps on "Create an Account". He is successfully signed up, after receiving a confirmation email by TrackMe. He tries to log into the application by inserting the newly created username and password. The system accepts the credentials and Dante is in.
+                    
+                    %Third Party registration and log in                
+                    \item[S\subs{2}] YourHealth is a company that analyzes individuals' health data to provide users with insights on their well-being. It decides to offer its \ic{Service} also on Data4Help so as to have a greater pool of users. The person in charge navigates to the \ic{Third Party} dedicated website and clicks on "Sign Up". They fill in all required information about their company, insert an email that will be used as username and a valid password. They then accept the terms and conditions by clicking the specific checkbox, and finally click on "Create an Account". YourHealth receives an email confirming the account creation: now YourHealth \ic{Services} are available to all Data4Help \ic{Users}.
+                    
+                    %User adds a service and consequently Third Party requests user data
+                    \item[S\subs{3}] Dante, a Data4Help \ic{User}, needs to monitor his heart rate through the day. He navigates to the "Discover" page inside of his Data4Help application and scrolls through the available \ic{Services}. He finds My<3, a \ic{Service} developed by YourHealth, a \ic{Third Party} registered to Data4Help. The description of the service seems to suit his need, so he adds My<3 to his \ic{Services}. In order to finalize the subscription, Dante will have to accept that his data will be sent to YourHealth for analysis. He does so. After a while, in the specific My<3 \ic{Service} page, the "Analyze" button appears. Dante taps on it and promptly he sees a personalized graph showing his heart rate levels throughout the day, starting from the first day he registered to Data4Help.
+
+                    %Third Party requests group data
+                    \item[S\subs{4}] LocalStats is a company that performs intensive statistics on individuals' positions in some cities of Switzerland. It decides to acquire individuals GPS locations data from Data4Help to enlarge its database. LocalStats registers as a Data4Help \ic{Third Party}. Once registration is complete, the first request it makes to Data4Help refers to all female \ic{Users} between 30 and 35 years old living in Lausanne. Unfortunately, the number of \ic{Users} with the requested characteristics is less than 1000, which does not guarantee proper data anonymization. Therefore, Data4Help rejects the \ic{Group Data} request. LocalStats tries again changing the interval of interest to 25-35 years old. This time the request refers to more than 1000 \ic{Users} and finally Data4Help can send the requested \ic{Group Data} to LocalStats.
+
+                    %Third Party subscribes to new data (forse da includere in uno dei due precedenti)
+                    \item[S\subs{5}] Dante, from scenario S\subs{3}, would like to keep My<3 active day by day. To do so, he taps on "Analyze Daily", which is a function offered by My<3. YourHealth, which developed and manages My<3, requests subscription to Dante's new data. Data4Help registers that anytime Dante's \ic{User data} is collected, it needs to send it to YourHealth for analysis. Starting from the following day, Dante does not need anymore to tap on "Analyze" every day: new analysis is provided to him as soon as it is available from My<3.
+
+                    %user revokes consent to a Third Party service
+                    \item[S\subs{6}] Dante, who subscribed to Data4Help and used its \ic{Third Party Services} for a while, decides that he does not want to use one of them, TrackKer, anymore. Therefore, he navigates to the "My Services" page and taps on TrackKer. The \ic{Service} page shows up and he taps on the "Revoke Consent" button at the bottom of the page. From now on, Data4Help will stop sending Dante's data to the \ic{Third Party} managing TrackKer.
+                \end{itemize}
+
+            \paragraph{AutomatedSOS}
+                \begin{itemize}
+                    %register anomalous data for a user, collect location and call ambulance                
+                    \item[S\subs{7}]
+                \end{itemize}
+
+            \paragraph{Track4Run}
+                \begin{itemize}
+                    %organize run                
+                    \item[S\subs{8}]
+
+                    %participant enrolls in run
+                    \item[S\subs{9}] 
+
+                    %spectator wants to watch run
+                    \item[S\subs{10}] 
+                \end{itemize}
+
+
+
+
 		\subsection{Use Cases}
 
 			\paragraph{Data4Help}
@@ -16,7 +61,8 @@
     			Events Flow & 
     				\begin{enumerate}
     					\item \ic{User} taps on "Sign Up" button.
-    					\item \ic{User} fills in all required fields for \ic{User} registration.
+    					\item \ic{User} fills in all required fields for \ic{User} registration, including username and password.
+                        \item \ic{User} checks the "Accept terms and conditions" checkbox.
     					\item \ic{User} taps on "Create an Account" button.
     					\item Data4Help saves \ic{User} information.
     				\end{enumerate}
@@ -27,9 +73,10 @@
     					\item Inserted email already registered for another \ic{User}.
     					\item Inserted password is not valid.
     					\item Not all required fields are filled in.
+                        \item "Accept terms and conditions" checkbox not checked.
     					\item \ic{User} already signed up.
     				\end{enumerate}
-    				\ic{User} is invited to try again signing up.
+    				\ic{User} is invited to try again signing up, reporting which error(s) they have committed.
     				 \\ \hline
     				
     				
@@ -40,25 +87,27 @@
     			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
     			\hline
    				Name & Third Party Sign Up\\ \hline
-    			Actors & \ic{Third party}, Data4Help \\ \hline
-    			Entry Conditions & \ic{Third party} is connected to the \ic{Third party} dedicated website (see \todo{add reference}).\\ \hline
+    			Actors & \ic{Third Party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third Party} is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
     			Events Flow & 
     				\begin{enumerate}
-    					\item \ic{Third party} clicks on "Sign Up" button.
-    					\item \ic{Third party} fills in all required fields for \ic{Third party} registration.
-    					\item \ic{Third party} clicks on "Create an Account" button.
-    					\item Data4Help saves \ic{Third party} information.
+    					\item \ic{Third Party} clicks on "Sign Up" button.
+    					\item \ic{Third Party} fills in all required fields for \ic{Third Party} registration, including username and password.
+                        \item \ic{Third Party} checks the "Accept terms and conditions" checkbox.
+    					\item \ic{Third Party} clicks on "Create an Account" button.
+    					\item Data4Help saves \ic{Third Party} information.
     				\end{enumerate}
     			 \\ \hline
-    			Exit Condition & \ic{Third party} successfully registered by Data4Help.\\ \hline
+    			Exit Condition & \ic{Third Party} successfully registered by Data4Help.\\ \hline
     			Exceptions & 
     			\begin{enumerate}
-    					\item Inserted email already registered for another \ic{Third party}.
+    					\item Inserted email already registered for another \ic{Third Party}.
     					\item Inserted password is not valid.
     					\item Not all required fields are filled in.
-    					\item \ic{Third party} already signed up.
+                        \item "Accept terms and conditions" checkbox not checked.
+    					\item \ic{Third Party} already signed up.
     				\end{enumerate}
-    				\ic{Third party} is invited to try again signing up.
+    				\ic{Third Party} is invited to try again signing up, reporting which error(s) it has committed.
     				 \\ \hline
     			\end{longtable}
 			\end{center}
@@ -92,23 +141,23 @@
     			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
     			\hline
    				Name & Third Party Log In\\ \hline
-    			Actors & \ic{Third party}, Data4Help \\ \hline
-    			Entry Conditions & \ic{Third party} successfully registered to Data4Help and is connected to the \ic{Third party} dedicated website (see \todo{add reference}).\\ \hline
+    			Actors & \ic{Third Party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third Party} successfully registered to Data4Help and is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
     			Events Flow & 
     				\begin{enumerate}
-    					\item \ic{Third party} enters username.
-    					\item \ic{Third party} enters password.
-    					\item \ic{Third party} clicks on "Log In" button.
-    					\item Data4Help checks \ic{Third party} credentials.
+    					\item \ic{Third Party} enters username.
+    					\item \ic{Third Party} enters password.
+    					\item \ic{Third Party} clicks on "Log In" button.
+    					\item Data4Help checks \ic{Third Party} credentials.
     				\end{enumerate}
     			 \\ \hline
-    			Exit Condition & \ic{Third party} is successfully logged in.\\ \hline
+    			Exit Condition & \ic{Third Party} is successfully logged in.\\ \hline
     			Exceptions & 
     			\begin{enumerate}
     					\item Inserted username is not valid.
     					\item Inserted password is not correct.
     			\end{enumerate}
-    			\ic{Third party} is invited to try again logging in .
+    			\ic{Third Party} is invited to try again logging in .
     				 \\ \hline
     			\end{longtable}
 			\end{center}
@@ -117,19 +166,19 @@
     			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
     			\hline
    				Name & Third Party requests User Data\\ \hline
-    			Actors & \ic{Third party}, Data4Help, \ic{User} \\ \hline
-    			Entry Conditions & \ic{Third party} and \ic{User} successfully registered to Data4Help.\\ \hline
+    			Actors & \ic{Third Party}, Data4Help, \ic{User} \\ \hline
+    			Entry Conditions & \ic{Third Party} and \ic{User} successfully registered to Data4Help.\\ \hline
     			Events Flow & 
     				\begin{enumerate}
-    					\item \ic{Third party} requests access to specific \ic{User data}.
+    					\item \ic{Third Party} requests access to specific \ic{User data}.
     					\item Data4Help forwards the request to the specific \ic{User}.
-    					\item \ic{User} gives consent to the requesting \ic{Third party} to access their data, unless already given.
+    					\item \ic{User} gives consent to the requesting \ic{Third Party} to access their data, unless already given.
     				\end{enumerate}
     			 \\ \hline
-    			Exit Condition & Data4Help sends \ic{User data} to the \ic{Third party}.\\ \hline
+    			Exit Condition & Data4Help sends \ic{User data} to the \ic{Third Party}.\\ \hline
     			Exceptions & 
     			\begin{enumerate}
-    					\item \ic{User} denies consent to their data access by the requesting \ic{Third party}.
+    					\item \ic{User} denies consent to their data access by the requesting \ic{Third Party}.
     			\end{enumerate}
     				 \\ \hline
     			\end{longtable}
@@ -139,15 +188,15 @@
     			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
     			\hline
    				Name & Third Party requests Group Data\\ \hline
-    			Actors & \ic{Third party}, Data4Help \\ \hline
-    			Entry Conditions & \ic{Third party} successfully registered to Data4Help.\\ \hline
+    			Actors & \ic{Third Party}, Data4Help \\ \hline
+    			Entry Conditions & \ic{Third Party} successfully registered to Data4Help.\\ \hline
     			Events Flow & 
     				\begin{enumerate}
-    					\item \ic{Third party} requests access to \ic{Group data}.
+    					\item \ic{Third Party} requests access to \ic{Group data}.
     					\item Data4Help checks if the requested data refers to minimum 1000 \ic{Users}.
     				\end{enumerate}
     			 \\ \hline
-    			Exit Condition & Data4Help sends \ic{Group data} to the \ic{Third party}.\\ \hline
+    			Exit Condition & Data4Help sends \ic{Group data} to the \ic{Third Party}.\\ \hline
     			Exceptions & 
     			\begin{enumerate}
     					\item \ic{Group data} refers to less than 1000 \ic{Users}.
@@ -161,13 +210,13 @@
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
                 Name & Third Party subscribes to New Data\\ \hline
-                Actors & \ic{Third party}, Data4Help \\ \hline
-                Entry Conditions & \ic{Third party} successfully registered to Data4Help and obtained access to \ic{User data} and/or to \ic{Group data}.\\ \hline
+                Actors & \ic{Third Party}, Data4Help \\ \hline
+                Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{User data} and/or to \ic{Group data}.\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{Third party} requests subscription to \ic{User data} or \ic{Group data}.
-                        \item Data4Help registers the \ic{Third party} subscription to new data.
-                        \item Each time new data is produced, it is sent to the \ic{Third party}.
+                        \item \ic{Third Party} requests subscription to \ic{User data} or \ic{Group data}.
+                        \item Data4Help registers the \ic{Third Party} subscription to new data.
+                        \item Each time new data is produced, it is sent to the \ic{Third Party}.
                     \end{enumerate}
                  \\ \hline
                 Exit Condition & \todo{???}\\ \hline
@@ -184,7 +233,7 @@
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
                 Name & User subscribes to a Service\\ \hline
-                Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
+                Actors & \ic{Third Party}, \ic{User}, Data4Help \\ \hline
                 Entry Conditions & \ic{User} is successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
                 Events Flow & 
                     \begin{enumerate}
@@ -207,13 +256,14 @@
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
-                Name & User revokes consent to Third Party\\ \hline
-                Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
+                Name & User revokes consent to Third Party Service\\ \hline
+                Actors & \ic{Third Party}, \ic{User}, Data4Help \\ \hline
                 Entry Conditions & \ic{User} gave consent to sharing their data with a \ic{Third Party}.\\ \hline
                 Events Flow & 
                     \begin{enumerate}
                         \item \ic{User} navigates to "My Services" page.
                         \item \ic{User} chooses which service they would like to revoke consent.
+                        \item \ic{User} navigates to the \ic{Service} dedicated page by tapping on its name.
                         \item \ic{User} taps on "Revoke consent" button.
                     \end{enumerate}
                  \\ \hline
