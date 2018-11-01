@@ -171,8 +171,8 @@
     			Events Flow & 
     				\begin{enumerate}
     					\item \ic{Third Party} requests access to specific \ic{User data}.
-    					\item Data4Help forwards the request to the specific \ic{User}.
-    					\item \ic{User} gives consent to the requesting \ic{Third Party} to access their data, unless already given.
+    					\item Data4Help forwards the request to the specific \ic{User} unless the consent was already given.
+    					\item \ic{User} gives consent to the requesting \ic{Third Party} to access their data.
     				\end{enumerate}
     			 \\ \hline
     			Exit Condition & Data4Help sends \ic{User data} to the \ic{Third Party}.\\ \hline
@@ -302,16 +302,48 @@
                 Exit Condition & \ic{User in need} is assisted by local emergency services.\\ \hline
                 Exceptions & 
                 \begin{enumerate}
-                        \item \todo{???}
+                        \item Local emergency services don't answer the call
+                        \item The call to local emergency services is answered but the communication fails before giving all the details
                 \end{enumerate}
-                     \todo{???}
+                     The call is repeated.
                      \\ \hline
                 \end{longtable}
             \end{center}
 
         
 			\paragraph{Track4Run}
-
+			
+			\begin{center}
+    			\begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+    			\hline
+   				Name & Organizer Sign Up\\ \hline
+    			Actors & \ic{Organizer}, Track4Run\\ \hline
+    			Entry Conditions & \ic{Organizer} is connected to the Track4Run website dedicated to organizers.\\ \hline
+    			Events Flow & 
+    				\begin{enumerate}
+    					\item \ic{Organizer} taps on "Sign Up" button.
+    					\item \ic{Organizer} fills in all required fields for \ic{Organizer} registration, including username and password.
+                        \item \ic{Organizer} checks the "Accept terms and conditions" checkbox.
+    					\item \ic{Organizer} taps on "Create an Account" button.
+    					\item Track4Run saves \ic{Organizer} information.
+    				\end{enumerate}
+    			 \\ \hline
+    			Exit Condition & \ic{Organizer} successfully registered by Track4Run.\\ \hline
+    			Exceptions & 
+    			\begin{enumerate}
+    					\item Inserted email already registered for another \ic{Organizer}.
+    					\item Inserted password is not valid.
+    					\item Not all required fields are filled in.
+                        \item "Accept terms and conditions" checkbox not checked.
+    					\item \ic{Organizer} already signed up.
+    				\end{enumerate}
+    				\ic{Organizer} is invited to try again signing up, reporting which error(s) they have committed.
+    				 \\ \hline
+    				
+    				
+       			\end{longtable}
+			\end{center}
+			
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
@@ -320,8 +352,9 @@
                 Entry Conditions & \ic{Organizer} is connected to the \ic{Run} dedicated website (see \todo{add reference}).\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{Organizer} fills in all required fields for \ic{Run} creation.
                         \item \ic{Organizer} clicks on "Create Run" button.
+                        \item \ic{Organizer} fills in all required fields for \ic{Run} creation.
+                        \item \ic{Organizer} clicks on ''Confirm'' button.
                     \end{enumerate}
                  \\ \hline
                 Exit Condition & Track4Run creates the \ic{Run} defined by the \ic{Organizer}.\\ \hline
