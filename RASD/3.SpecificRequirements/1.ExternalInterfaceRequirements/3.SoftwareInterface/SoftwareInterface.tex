@@ -3,6 +3,7 @@
 
 \subsection{Software Interfaces}
 			All the following requests contain a parameter named \ic{serviceID} that is the ID of the service that is performing the action. In case of requests of data, the data retrieved is relative to the service corresponding to the given serviceID.
+			Moreover, each request contains the authentication digest (\todo{add reference to HMAC standard in 3.5.3 security}).
 			\begin{itemize}
 				\item GET - \ic{/user?username=...\&serviceID=...} \\
 				Retrieves all records available for the given \ic{username}
