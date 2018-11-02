@@ -1,5 +1,6 @@
 \documentclass{report}
 \usepackage{xcolor,comment, subfiles, graphicx, caption, longtable}
+\usepackage{float} %Used to force image to appear in the section in which it's declared
 
 % SECTION COMMANDS: here we include the commands for formatting and other purposes
 \newcommand\todo[1]{\textcolor{red}{#1}}
@@ -11,12 +12,14 @@
 \newcommand{\ic}[1]{\textit{#1}}
 
 \newcommand{\image}[4]{
-\begin{figure}[h]
-\centering
-\includegraphics[width=\linewidth, height = {#1}, keepaspectratio]{#2}
-\caption*{#3}
-\label{#4}
-\end{figure}
+	\begin{figure}[H]
+	\centering
+	\includegraphics[width=\linewidth, height = {#1}, keepaspectratio]{#2}
+	\caption*{#3}
+	\label{#4}
+
+	\label{fig:nonfloat} %Used to force image to appear in the section in which it's declared
+	\end{figure}
 }
 
 \providecommand{\rasd}{.} % relative path to rasd.tex
