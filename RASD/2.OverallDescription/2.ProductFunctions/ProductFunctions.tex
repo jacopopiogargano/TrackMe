@@ -6,50 +6,48 @@
 			
 				\subsubsection{User Registration}
 				Data4Help will allow individuals to register. These will register by entering all the required information (see [R\subs{x}] \todo{add reference to Requirements where we specify User info for registration}). When registering to Data4Help, an individual will first declare to have read the privacy statement and secondly they will have to accept the terms and conditions, which specifically include their consent to the acquisition and processing of their data, including sensitive ones, by TrackMe.\\
-				The user registration process will be carried out on the user dedicated application (see \todo{add reference to where we are going to specify the user interface - probably section User Interface (mobile app), maybe add also reference to user registration scenario / use case}.\\
-				Unregistered \textit{Users} will not be able to use Data4Help. (\todo{maybe this is a requirement and it is not necessary to put it here})
+				The \ic{User} registration process will be carried out on the Data4Help application (see \todo{add reference to where we are going to specify the user interface} and \todo{add reference to User Sign Up}}.\\
 			
 				\subsubsection{Third Party Registration}
-				A \textit{Third Party} may register to Data4Help through the \textit{Third Party} dedicated form (see\todo{reference}), including all required information (see [R\subs{x}] \todo{add reference to Requirements where we specify \textit{Third Party} info for registration}).
-				Once a terms and conditions have been agreed accepted by the \textit{Third Party}, it will be successfully registered to the service.\\
-				\textit{Third Party} registration is required for using the service: an unregistered \textit{Third Party} must not be able to access \textit{Users data}.(\todo{maybe this is a requirement and it is not necessary to put it here}).
-			
+				A \ic{Third Party} may register to Data4Help through the \ic{Third Party} dedicated website (see\todo{reference}), including all required information (see [R\subs{x}] \todo{add reference to Requirements where we specify \ic{Third Party} info for registration}).
+				Once terms and conditions have been accepted by the \ic{Third Party}, it will be successfully registered to the service.\\
+							
 				\subsubsection{User Data Acquisition}
-				Data4Help will acquire \textit{Users data} through \textit{Smart wearables}. \\
-				\textit{Users} must give consent to the acquisition of their data when registering to Data4Help.\\
-				Data acquisition frequency can be changed according to \textit{Users} or \textit{Third Parties} needs. For instance, if a \textit{User} wants to save their \textit{Smart wearable} battery, frequency can be reduced. On the other hand, if a \textit{Third Party} would like to track more accurately the position of a \textit{User}, a higher location acquisition frequency can be requested.	
+				Data4Help will acquire \ic{User data} through \ic{Smart Wearables}. \\
+				\ic{Users} must give consent to the acquisition of their data when registering to Data4Help.\\
+				Data acquisition frequency can be changed according to \ic{Users} or \ic{Third Parties} needs. For instance, if a \ic{User} wants to save their \ic{Smart wearable} battery, frequency can be reduced. On the other hand, if a \ic{Third Party} would like to track more accurately the position of a \ic{User}, a higher location acquisition frequency can be requested.
 
 				\subsubsection{Third Parties Data Access}
-				Once a \textit{Third Party} is registered to Data4Help, it can request access to \textit{Users data} acquired through Data4Help and stored by TrackMe. \textit{Third Parties} may request data that refers either to a specific individual - \textit{User data} - or to a group of \textit{Users} - \textit{Group data}.\\
-				Consent to individual data access is left to the specific \textit{User}, who can either allow or deny a \textit{Third Party} request.\\
-				\textit{Group data} will be shared with \textit{Third Parties} as long as TrackMe will be able to anonymize it properly (see R\subs{x} \todo{include reference to requirement about anonymized data (1000 users satisfy request}).
+				Once a \ic{Third Party} is registered to Data4Help, it can request access to \ic{Users data} acquired through Data4Help and stored by TrackMe. \ic{Third Parties} may request data that refers either to a specific individual - \ic{User data} - or to a group of \ic{Users} identified by common characteristics - \ic{Group data}.\\
+				Consent to individual data access is left to the specific \ic{User}, who can either give or deny it to a \ic{Third Party} request.\\
+				\ic{Group data} will be shared with \ic{Third Parties} as long as TrackMe will be able to anonymize it properly (see R\subs{x} \todo{include reference to requirement about anonymized data}).
 
 				\subsubsection{Data Management and Privacy}
-				All data acquired through Data4Help will be stored on a database accessible only by TrackMe. Each piece of \textit{Users data} will have a list of \textit{Third Parties} to whom access was granted. At any time, a \textit{User} will be able to revoke the previously given consent to any \textit{Third Party} or to TrackMe. Moreover, a \textit{User} may exercise their right to data portability, which means that TrackMe will have to provide them with all the collected data regarding them. Finally, \textit{Users} may ask the deletion of all their data stored by TrackMe. \todo{might want to list the requirements that relate to this}\\
+				All data acquired through Data4Help will be stored on a database accessible only by TrackMe. Each piece of \ic{Users data} will have a list of \ic{Third Parties} to whom access was granted. At any time, a \ic{User} will be able to revoke the previously given consent to any \ic{Third Party} or to TrackMe. Moreover, a \ic{User} may exercise their right to data portability, which means that TrackMe will have to provide them with all the collected data regarding them. Finally, \ic{Users} may ask the deletion of all their data stored by TrackMe. \todo{might want to list the requirements that relate to this}\\
 				By guaranteeing these functions, Data4Help will respect existing general regulations on privacy (e.g. EU GDPR).
 			
 			\subsection{AutomatedSOS}
 				
 				\subsubsection{User Subscription}
-				All Data4Help \textit{Users} may subscribe to AutomatedSOS through Data4Help application(see \todo{add reference}).
+				All Data4Help \ic{Users} may subscribe to AutomatedSOS through Data4Help application(see \todo{add reference}).
 				
 				\subsubsection{Health Status Monitoring}
-				The service will constantly monitor \textit{User}'s health data to verify if it is \textit{Anomalous}. While data acquisition frequency can be tweaked only by Data4Help, AutomatedSOS may request a different value according to user needs. \todo{check this:} When the service is not receiving data, it may try to contact the \textit{User}. Otherwise, it may send an alert to a close friend of the \textit{User} for them to check in.
+				The service will constantly monitor \ic{User}'s health data to verify if it is \ic{Anomalous}. While data acquisition frequency can be tweaked only by Data4Help, AutomatedSOS may request a different value according to user needs. \todo{check this:} When the service is not receiving data, it may try to contact the \ic{User}. Otherwise, it may send an alert to a close friend of the \ic{User} for them to check in.
 				
 				\subsubsection{Calling an Ambulance} \todo{check this title}
-				In case the health status of a subscribed \textit{User} is considered not to be good, AutomatedSOS will make a call to local emergency services within 5 seconds and send an ambulance to the last registered location of the \textit{User}.
+				In case the health status of a subscribed \ic{User} is considered not to be good, AutomatedSOS will make a call to local emergency services within 5 seconds and send an ambulance to the last registered location of the \ic{User}.
 
 			\subsection{Track4Run}
 				
 				\subsubsection{User Registration}
-				Track4Run will be a service used by three different kinds of \textit{Users}: \textit{Organizers}, runners and \textit{Spectators}.\textit{Organizers} will register to Track4Run by filling in all required information in the organizers registration form (see \todo{include ref to requirements for organizers registration}). \textit{Participants} will enroll in the run using their Data4Help credentials through the Data4Help application. \textit{Spectators} will just need to know the \textit{Run identifier} and entering when requested \todo{where??}.
+				Track4Run will be a service used by three different kinds of \ic{Users}: \ic{Organizers}, runners and \ic{Spectators}.\ic{Organizers} will register to Track4Run by filling in all required information in the organizers registration form (see \todo{include ref to requirements for organizers registration}). \ic{Participants} will enroll in the run using their Data4Help credentials through the Data4Help application. \ic{Spectators} will just need to know the \ic{Run identifier} and entering when requested \todo{where??}.
 				
 				\subsubsection{Run Creation and Path Definition}
-				\textit{Organizers} have the ability of creating a run. They will be able to give the run a name, set a date and time the run is going to be held on and define a path for it.
+				\ic{Organizers} have the ability of creating a run. They will be able to give the run a name, set a date and time the run is going to be held on and define a path for it.
 				
 				\subsubsection{Display Runners on Map}
 
-				Track4Run will display a map with the real time position of all the \textit{Participants} during a \ic{Run}. \ic{Spectators} may watch a \ic{Run} by inserting its identifier.
+				Track4Run will display a map with the real time position of all the \ic{Participants} during a \ic{Run}. \ic{Spectators} may watch a \ic{Run} by inserting its identifier.
 
 
 
