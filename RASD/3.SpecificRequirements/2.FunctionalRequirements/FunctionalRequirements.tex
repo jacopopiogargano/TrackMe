@@ -209,22 +209,35 @@
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
-                Name & Third Party subscribes to New Data\\ \hline
+                Name & Third Party subscribes to New User Data\\ \hline
                 Actors & \ic{Third Party}, Data4Help \\ \hline
-                Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{User data} and/or to \ic{Group data}.\\ \hline
+                Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{User data}.\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{Third Party} requests subscription to \ic{User data} or \ic{Group data}.
-                        \item Data4Help registers the \ic{Third Party} subscription to new data.
-                        \item Each time new data is produced, it is sent to the \ic{Third Party}.
+                        \item \ic{Third Party} requests subscription to \ic{User data}.
+                        \item \ic{User} gives consent.
                     \end{enumerate}
                  \\ \hline
-                Exit Condition & \todo{???}\\ \hline
+                Exit Condition & Data4Help registers the \ic{Third Party} subscription to new data. Each time new data is produced, it is sent to the \ic{Third Party}.\\ \hline
+                Exceptions & No Exceptions
+                     \\ \hline
+                \end{longtable}
+            \end{center}
+            
+            \begin{center}
+                \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+                \hline
+                Name & Third Party subscribes to New Group Data\\ \hline
+                Actors & \ic{Third Party}, Data4Help \\ \hline
+                Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{Group data}.\\ \hline
+                Events Flow & 
+                    \begin{enumerate}
+                        \item \ic{Third Party} requests subscription to \ic{Group data}.
+                    \end{enumerate}
+                 \\ \hline
+                Exit Condition & Data4Help registers the \ic{Third Party} subscription to new data. Each time new data is produced, it is sent to the \ic{Third Party}.\\ \hline
                 Exceptions & 
-                \begin{enumerate}
-                        \item \todo{???}
-                \end{enumerate}
-                     \todo{???}
+                No exceptions
                      \\ \hline
                 \end{longtable}
             \end{center}
@@ -248,7 +261,7 @@
                 \begin{enumerate}
                         \item \ic{User} does not give consent to sharing their data.
                 \end{enumerate}
-                     \ic{User} is invited to try again adding the \ic{Service}.
+                     The \ic{Service} is not added and the \ic{User} is invited to try again adding it.
                      \\ \hline
                 \end{longtable}
             \end{center}
@@ -370,22 +383,24 @@
             \begin{center}
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
-                Name & Participant enrolls in a Run\\ \hline
-                Actors & \ic{Participant}, Track4Run \\ \hline
-                Entry Conditions & \ic{Participant} is a Data4Help \ic{User}, is subscribed to Track4Run and installed Data4Help application on their smartphone.\\ \hline
+                Name & User enrolls in a Run\\ \hline
+                Actors & \ic{User}, Track4Run \\ \hline
+                Entry Conditions & \ic{User} is subscribed to Track4Run and installed Data4Help application on their smartphone.\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{Participant} navigates to "My Services" page.
-                        \item \ic{Participant} taps on Track4Run.
-                        \item \ic{Participant} taps on the \ic{Run} they wish to enroll in.
-                        \item \ic{Participant} taps on "Enroll" button.
+                        \item \ic{User} navigates to "My Services" page.
+                        \item \ic{User} taps on Track4Run.
+                        \item \ic{User} taps on the \ic{Run} they wish to enroll in or inserts the run identifier.
+                        \item \ic{User} taps on "Enroll" button.
                     \end{enumerate}
                  \\ \hline
-                Exit Condition & Track4Run registers the \ic{Participant} as enrolled in the \ic{Run}.\\ \hline
+                Exit Condition & Track4Run registers the \ic{User} as a \ic{Participant} of the \ic{Run}.\\ \hline
                 Exceptions & 
                 \begin{enumerate}
                         \item No \ic{Runs} are listed.
-                        \item All listed \ic{Runs} reached the maximum number of participants.
+                        \item The selected \ic{Run} reached the maximum number of participants.
+                        \item The selected \ic{Run} is closed to enrollment.
+                        \item There are no \ic{Runs} associated to the inserted run identifier
                 \end{enumerate}
                      \ic{Participant} is invited to try again later enrolling in a \ic{Run}.
                      \\ \hline
@@ -396,18 +411,19 @@
                 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
                 \hline
                 Name & Spectator watches a Run\\ \hline
-                Actors & \ic{Spectator} \\ \hline
-                Entry Conditions & \ic{Spectator} is connected to the \ic{Spectators} dedicated website (see \todo{add reference}).\\ \hline
+                Actors & Individual \\ \hline
+                Entry Conditions & Individual is connected to the \ic{Spectators} dedicated website (see \todo{add reference}).\\ \hline
                 Events Flow & 
                     \begin{enumerate}
-                        \item \ic{Spectator} clicks on the \ic{Run} they would like to watch.
-                        \item \ic{Spectator} watches the position of the \ic{Participants} of the \ic{Run}. 
+                        \item \ic{Individual} clicks on the \ic{Run} they would like to watch or inserts the run identifier.
+                        \item \ic{Individual} watches the \ic{Run} as a \ic{Spectator}. 
                     \end{enumerate}
                  \\ \hline
                 Exit Condition & The \ic{Run} is over.\\ \hline
                 Exceptions & 
                 \begin{enumerate}
                         \item No \ic{Runs} are listed.
+                        \item There is no \ic{Run} associated to the inserted run identifier
                         \item The \ic{Spectator} disconnects from the \ic{Spectators} dedicated website.
                 \end{enumerate}
                      Concerning Exception 1 (\todo{add reference}), \ic{Spectator} is invited to try again later watching a \ic{Run}. For Exception 2 (\todo{add reference}), no action is taken.
