@@ -2,7 +2,61 @@
 \begin{document}
 
 \section{Functional Requirements}
-		%requirements and doamin assumptions entail goals
+		%requirements and domain assumptions entail goals
+
+        \paragraph{Data4Help}
+        \begin{itemize}
+            \item[R\subs{}]Unregistered individuals and companies must not be able to use Data4Help.
+            \item[R\subs{}]At sign up, \ic{User} must provide: first name, last name, SSN, email and password.
+            \item[R\subs{}]At sign up, \ic{Third Party} must provide company name.
+            \item[R\subs{}]At sign up, \ic{User} must accept terms and conditions, including the privacy statement.
+            \item[R\subs{}]At sign up, \ic{Third Party} must accept terms and conditions.
+            \item[R\subs{}]Identify a \ic{User} by their identifier.
+            \item[R\subs{}]Query the database for a \ic{User} by their identifier.
+            \item[R\subs{}]Receive \ic{User Data}.
+            \item[R\subs{}]Validate \ic{User Data}.
+            \item[R\subs{}]Authenticate \ic{User Data}.
+            \item[R\subs{}]Store collected \ic{User Data} in a database.
+            \item[R\subs{}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
+            \item[R\subs{}]Receive \ic{Third Party} data access request.
+            \item[R\subs{}]Validate \ic{Third Party} data access request.
+            \item[R\subs{}]Authenticate \ic{Third Party} data access request.
+            \item[R\subs{}]Forward \ic{User Data} access request to the specific \ic{User}.
+            \item[R\subs{}]Receive \ic{User} consent approval or denial.
+            \item[R\subs{}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
+            \item[R\subs{}]Send specific\ic{User Data} to the requesting \ic{Third Party}.
+            \item[R\subs{}]Not send specific\ic{User Data} to the requesting \ic{Third Party} if the specific \ic{User} denied consent.
+            \item[R\subs{}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}.
+            \item[R\subs{}]Check how many \ic{Users} \ic{Group Data} refers to.
+            \item[R\subs{}]Properly anonimyze \ic{Group Data}.
+            \item[R\subs{}]Send \ic{Group Data} to the requesting \ic{Third Party}.
+            \item[R\subs{}]Data4Help must not send \ic{Group Data} if the group it refers to is made up of less than 1000 \ic{Users}.
+            \item[R\subs{}]Automatically send new data to subscribed authorized \ic{Third Parties} as soon as they are produced.
+            \item[R\subs{}]\ic{Users} may subscribe to \ic{Services}.
+            \item[R\subs{}]\ic{Users} may unsubscribe from \ic{Services}.
+            \item[R\subs{}]\ic{Users} may request all their data stored by TrackMe at any time.
+            \item[R\subs{}]\ic{Users} may ask TrackMe to delete all their data stored at any time.
+        \end{itemize}
+
+        \paragraph{AutomatedSOS}
+        \begin{itemize}
+            \item[R\subs{}]Compare \ic{User Data} against certain thresholds.
+            \item[R\subs{}]Call local emergency services providing necessary \ic{User Data} of \ic{User in need}.
+            \item[R\subs{}]\ic{User} must be able to reactivate AutomatedSOS monitoring.
+        \end{itemize}
+
+        \paragraph{Track4Run}
+        \begin{itemize}
+            \item[R\subs{}]Let \ic{Organizers} create a \ic{Run}, defining: name, path, date and the maximum number of \ic{Participants}. 
+            \item[R\subs{}]Let \ic{Users} enroll in an existing \ic{Run}.
+            \item[R\subs{}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
+            \item[R\subs{}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
+            \item[R\subs{}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollent is closed.
+            \item[R\subs{}]Let a \ic{Spectator} watch an existing \ic{Run}.
+            \item[R\subs{}]Identify a \ic{Run} by its identifier.
+            \item[R\subs{}]Query the database for a \ic{Run} given its identifier.
+        \end{itemize}
+
 
 		\subsection{Scenarios}
             \paragraph{Data4Help}
