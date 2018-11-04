@@ -1,5 +1,5 @@
 \documentclass{report}
-\usepackage{xcolor,comment, subfiles, graphicx, caption, longtable, hyperref}
+\usepackage{xcolor,comment, subfiles, graphicx, caption, longtable, hyperref, subfig}
 \usepackage{float} %Used to force image to appear in the section in which it's declared
 
 % SECTION COMMANDS: here we include the commands for formatting and other purposes
@@ -19,6 +19,22 @@
 	\label{#4}
 
 	\label{fig:nonfloat} %Used to force image to appear in the section in which it's declared
+	\end{figure}
+}
+
+%Alligns two images in a row 
+\newcommand{\twoimages}[5]{
+	\captionsetup[subfigure]{labelformat = empty}
+	\begin{figure}[H]
+		\begin{center}
+	        	\subfloat[#3]{
+			\includegraphics[height=#1, keepaspectratio]{#2}
+	        	}
+        		\hspace{25mm}
+	        	\subfloat[#5]{
+			\includegraphics[height=#1, keepaspectratio]{#4}
+		}
+		\end{center}
 	\end{figure}
 }
 
