@@ -231,7 +231,7 @@
             \begin{itemize}
                 \item[R\subs{39}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date and the maximum number of \ic{Participants}. 
                 \\
-                \item[U\subs{12}]Organizer Sign Up
+                \item[U\subs{12}]Organizer Sign Up  
                 \item[U\subs{13}]Organizer creates a Run
             \end{itemize}
 
@@ -592,10 +592,11 @@
             \label{U11}\\
             \hline
             Name & User in need assisted by AutomatedSOS\\ \hline
-            Actors & \ic{User}, AutomatedSOS, Local emergency services \\ \hline
+            Actors & \ic{User}, Data4Help, AutomatedSOS, Local emergency services \\ \hline
             Entry Conditions & \ic{User} is subscribed to AutomatedSOS and installed Data4Help application on their smartphone.\\ \hline
             Events Flow & 
             \begin{enumerate}
+                \item Data4Help sends \ic{User Data} to AutomatedSOS as soon as it is produced.
                 \item AutomatedSOS identifies {User data} as \ic{anomalous data}.
                 \item \ic{User} is identified as \ic{User in need}.
                 \item AutomatedSOS calls local emergency services requesting an ambulance.
@@ -687,8 +688,9 @@
         \begin{enumerate}
             \item \ic{User} navigates to "My Services" page.
             \item \ic{User} taps on Track4Run.
-            \item \ic{User} taps on the \ic{Run} they wish to enroll in or inserts the run identifier.
-            \item \ic{User} taps on "Enroll" button.
+            \item \ic{User} taps on "Discover Runs".
+            \item \ic{User} chooses the \ic{Run} they wish to enroll in from the list or inserts the \ic{Run} identifier or name in the search box.
+            \item \ic{User} taps on "+" button to enroll in the \ic{Run}.
         \end{enumerate}
         \\ \hline
         Exit Condition & Track4Run registers the \ic{User} as a \ic{Participant} of the \ic{Run}.\\ \hline
@@ -697,7 +699,7 @@
             \item No \ic{Runs} are listed.
             \item The selected \ic{Run} reached the maximum number of participants.
             \item The selected \ic{Run} is closed to enrollment.
-            \item There are no \ic{Runs} associated to the inserted run identifier
+            \item There are no \ic{Runs} associated to the inserted run identifier or name.
         \end{enumerate}
         \ic{Participant} is invited to try again later enrolling in a \ic{Run}.
         \\ \hline
@@ -714,7 +716,7 @@
         Entry Conditions & Individual is connected to the \ic{Spectators} dedicated website (see \todo{add reference}).\\ \hline
         Events Flow & 
         \begin{enumerate}
-            \item \ic{Individual} clicks on the \ic{Run} they would like to watch or inserts the run identifier.
+            \item \ic{Individual} clicks on the \ic{Run} they would like to watch or inserts the run identifier or name.
             \item \ic{Individual} watches the \ic{Run} as a \ic{Spectator}. 
         \end{enumerate}
         \\ \hline
@@ -722,7 +724,7 @@
         Exceptions & 
         \begin{enumerate}
             \item No \ic{Runs} are listed.
-            \item There is no \ic{Run} associated to the inserted run identifier
+            \item There is no \ic{Run} associated to the inserted run identifier or name.
             \item The \ic{Spectator} disconnects from the \ic{Spectators} dedicated website.
         \end{enumerate}
         Concerning Exception 1 (\todo{add reference}), \ic{Spectator} is invited to try again later watching a \ic{Run}. For Exception 2 (\todo{add reference}), no action is taken.
@@ -731,5 +733,15 @@
         \end{center}
 
         \todo{??? participant runs in a run ???}
+
+
+        \subsection{Sequence Diagrams}
+        - User adds service\\
+        - Organizer organizes run\\
+        - User enrolls into run\\
+        - User in need emergency\\
+        - Third party requests user data\\
+        - Third party requests group data\\
+
 
         \end{document}
