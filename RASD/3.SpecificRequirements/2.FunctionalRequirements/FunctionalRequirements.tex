@@ -52,14 +52,16 @@
 
         \paragraph{Track4Run}
         \begin{itemize}
-            \item[R\subs{39}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date and the maximum number of \ic{Participants}. 
-            \item[R\subs{40}]Provide \ic{Users} enrollment for an existing \ic{Run}.
-            \item[R\subs{41}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
-            \item[R\subs{42}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
-            \item[R\subs{43}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
-            \item[R\subs{44}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
-            \item[R\subs{45}]Identify a \ic{Run} by its identifier.
-            \item[R\subs{46}]Query the database for a \ic{Run} given its identifier.
+            \item[R\subs{39}]At sign up, \ic{Organizers} must provide: first name, last name, email and password.
+            \item[R\subs{40}]At sign up, \ic{Organizers} must accept terms and conditions.
+            \item[R\subs{41}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date, maximum number of \ic{Participants} and enrollment closure date. 
+            \item[R\subs{42}]Provide \ic{Users} enrollment for an existing \ic{Run}.
+            \item[R\subs{43}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
+            \item[R\subs{44}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
+            \item[R\subs{45}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
+            \item[R\subs{46}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
+            \item[R\subs{47}]Identify a \ic{Run} by its identifier.
+            \item[R\subs{48}]Query the database for a \ic{Run} given its identifier.
         \end{itemize}
 
 
@@ -229,29 +231,31 @@
         \begin{itemize}
             \item[G\subs{8}]Allow \textit{Organizers} to create a \textit{Run}, defining a path.
             \begin{itemize}
-                \item[R\subs{39}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date and the maximum number of \ic{Participants}. 
+                \item[R\subs{39}]At sign up, \ic{Organizers} must provide: first name, last name, email and password.
+                \item[R\subs{40}]At sign up, \ic{Organizers} must accept terms and conditions.
+                \item[R\subs{41}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date, maximum number of \ic{Participants} and enrollment closure date. 
                 \\
-                \item[U\subs{12}]Organizer Sign Up
+                \item[U\subs{12}]Organizer Sign Up  
                 \item[U\subs{13}]Organizer creates a Run
             \end{itemize}
 
             \item[G\subs{9}]Allow \textit{Users} to enroll in a \textit{Run} as \textit{Participants}. 
             \begin{itemize}
-                \item[R\subs{40}]Provide \ic{Users} enrollment for an existing \ic{Run}.
-                \item[R\subs{41}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
-                \item[R\subs{42}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
-                \item[R\subs{43}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
-                \item[R\subs{45}]Identify a \ic{Run} by its identifier.
-                \item[R\subs{46}]Query the database for a \ic{Run} given its identifier.
+                \item[R\subs{42}]Provide \ic{Users} enrollment for an existing \ic{Run}.
+                \item[R\subs{43}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
+                \item[R\subs{44}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
+                \item[R\subs{45}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
+                \item[R\subs{47}]Identify a \ic{Run} by its identifier.
+                \item[R\subs{48}]Query the database for a \ic{Run} given its identifier.
                 \\
                 \item[U\subs{14}]User enrolls in a Run
             \end{itemize}
 
             \item[G\subs{10}]Allow \textit{Spectators} to watch a \textit{Run}.
             \begin{itemize}
-                \item[R\subs{44}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
-                \item[R\subs{45}]Identify a \ic{Run} by its identifier.
-                \item[R\subs{46}]Query the database for a \ic{Run} given its identifier.
+                \item[R\subs{46}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
+                \item[R\subs{47}]Identify a \ic{Run} by its identifier.
+                \item[R\subs{48}]Query the database for a \ic{Run} given its identifier.
                 \\
                 \item[D\subs{3}]The maps in use accurately represent the world.
                 \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
@@ -333,170 +337,170 @@
                 Entry Conditions & \ic{User} successfully installed Data4Help application on their smartphone.\\ \hline
                 Events Flow & 
                 \begin{enumerate}
-                 \item \ic{User} taps on "Sign Up" button.
-                 \item \ic{User} fills in all required fields for \ic{User} registration, including username and password.
-                 \item \ic{User} checks the "Accept terms and conditions" checkbox.
-                 \item \ic{User} taps on "Create an Account" button.
-                 \item Data4Help saves \ic{User} information.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & \ic{User} successfully registered by Data4Help.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item Inserted email already registered for another \ic{User}.
-                 \item Inserted password is not valid.
-                 \item Not all required fields are filled in.
-                 \item "Accept terms and conditions" checkbox not checked.
-                 \item \ic{User} already signed up.
-             \end{enumerate}
-             \ic{User} is invited to try again signing up, reporting which error(s) they have committed. \\ 
-             \hline
-             \end{longtable}
-             \end{center}
+                   \item \ic{User} taps on "Sign Up" button.
+                   \item \ic{User} fills in all required fields for \ic{User} registration, including username and password.
+                   \item \ic{User} checks the "Accept terms and conditions" checkbox.
+                   \item \ic{User} taps on "Create an Account" button.
+                   \item Data4Help saves \ic{User} information.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & \ic{User} successfully registered by Data4Help.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item Inserted email already registered for another \ic{User}.
+                   \item Inserted password is not valid.
+                   \item Not all required fields are filled in.
+                   \item "Accept terms and conditions" checkbox not checked.
+                   \item \ic{User} already signed up.
+               \end{enumerate}
+               \ic{User} is invited to try again signing up, reporting which error(s) they have committed. \\ 
+               \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{2}}
-             \label{U2}\\
-             \hline
-             Name & Third Party Sign Up\\ \hline
-             Actors & \ic{Third Party}, Data4Help \\ \hline
-             Entry Conditions & \ic{Third Party} is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
-             Events Flow & 
-             \begin{enumerate}
-                 \item \ic{Third Party} clicks on "Sign Up" button.
-                 \item \ic{Third Party} fills in all required fields for \ic{Third Party} registration, including username and password.
-                 \item \ic{Third Party} checks the "Accept terms and conditions" checkbox.
-                 \item \ic{Third Party} clicks on "Create an Account" button.
-                 \item Data4Help saves \ic{Third Party} information.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & \ic{Third Party} successfully registered by Data4Help.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item Inserted email already registered for another \ic{Third Party}.
-                 \item Inserted password is not valid.
-                 \item Not all required fields are filled in.
-                 \item "Accept terms and conditions" checkbox not checked.
-                 \item \ic{Third Party} already signed up.
-             \end{enumerate}
-             \ic{Third Party} is invited to try again signing up, reporting which error(s) it has committed.
-             \\ \hline
-             \end{longtable}
-             \end{center}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{2}}
+               \label{U2}\\
+               \hline
+               Name & Third Party Sign Up\\ \hline
+               Actors & \ic{Third Party}, Data4Help \\ \hline
+               Entry Conditions & \ic{Third Party} is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
+               Events Flow & 
+               \begin{enumerate}
+                   \item \ic{Third Party} clicks on "Sign Up" button.
+                   \item \ic{Third Party} fills in all required fields for \ic{Third Party} registration, including username and password.
+                   \item \ic{Third Party} checks the "Accept terms and conditions" checkbox.
+                   \item \ic{Third Party} clicks on "Create an Account" button.
+                   \item Data4Help saves \ic{Third Party} information.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & \ic{Third Party} successfully registered by Data4Help.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item Inserted email already registered for another \ic{Third Party}.
+                   \item Inserted password is not valid.
+                   \item Not all required fields are filled in.
+                   \item "Accept terms and conditions" checkbox not checked.
+                   \item \ic{Third Party} already signed up.
+               \end{enumerate}
+               \ic{Third Party} is invited to try again signing up, reporting which error(s) it has committed.
+               \\ \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{3}}
-             \label{U3}\\
-             \hline
-             Name & User Log In\\ \hline
-             Actors & \ic{User}, Data4Help \\ \hline
-             Entry Conditions & \ic{User} successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
-             Events Flow & 
-             \begin{enumerate}
-                 \item \ic{User} enters username.
-                 \item \ic{User} enters password.
-                 \item \ic{User} taps on "Log In" button.
-                 \item Data4Help checks \ic{User} credentials.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & \ic{User} is successfully logged in.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item Inserted username is not valid.
-                 \item Inserted password is not correct.
-             \end{enumerate}
-             \ic{User} is invited to try again logging in.
-             \\ \hline
-             \end{longtable}
-             \end{center}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{3}}
+               \label{U3}\\
+               \hline
+               Name & User Log In\\ \hline
+               Actors & \ic{User}, Data4Help \\ \hline
+               Entry Conditions & \ic{User} successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
+               Events Flow & 
+               \begin{enumerate}
+                   \item \ic{User} enters username.
+                   \item \ic{User} enters password.
+                   \item \ic{User} taps on "Log In" button.
+                   \item Data4Help checks \ic{User} credentials.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & \ic{User} is successfully logged in.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item Inserted username is not valid.
+                   \item Inserted password is not correct.
+               \end{enumerate}
+               \ic{User} is invited to try again logging in.
+               \\ \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{4}}
-             \label{U4}\\
-             \hline
-             Name & Third Party Log In\\ \hline
-             Actors & \ic{Third Party}, Data4Help \\ \hline
-             Entry Conditions & \ic{Third Party} successfully registered to Data4Help and is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
-             Events Flow & 
-             \begin{enumerate}
-                 \item \ic{Third Party} enters username.
-                 \item \ic{Third Party} enters password.
-                 \item \ic{Third Party} clicks on "Log In" button.
-                 \item Data4Help checks \ic{Third Party} credentials.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & \ic{Third Party} is successfully logged in.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item Inserted username is not valid.
-                 \item Inserted password is not correct.
-             \end{enumerate}
-             \ic{Third Party} is invited to try again logging in .
-             \\ \hline
-             \end{longtable}
-             \end{center}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{4}}
+               \label{U4}\\
+               \hline
+               Name & Third Party Log In\\ \hline
+               Actors & \ic{Third Party}, Data4Help \\ \hline
+               Entry Conditions & \ic{Third Party} successfully registered to Data4Help and is connected to the \ic{Third Party} dedicated website (see \todo{add reference}).\\ \hline
+               Events Flow & 
+               \begin{enumerate}
+                   \item \ic{Third Party} enters username.
+                   \item \ic{Third Party} enters password.
+                   \item \ic{Third Party} clicks on "Log In" button.
+                   \item Data4Help checks \ic{Third Party} credentials.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & \ic{Third Party} is successfully logged in.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item Inserted username is not valid.
+                   \item Inserted password is not correct.
+               \end{enumerate}
+               \ic{Third Party} is invited to try again logging in .
+               \\ \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{5}}
-             \label{U5}\\
-             \hline
-             Name & Third Party requests User Data\\ \hline
-             Actors & \ic{Third Party}, Data4Help, \ic{User} \\ \hline
-             Entry Conditions & \ic{Third Party} and \ic{User} successfully registered to Data4Help.\\ \hline
-             Events Flow & 
-             \begin{enumerate}
-                 \item \ic{Third Party} requests access to specific \ic{User data}.
-                 \item Data4Help forwards the request to the specific \ic{User} unless the consent was already given.
-                 \item \ic{User} gives consent to the requesting \ic{Third Party} to access their data.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & Data4Help sends \ic{User data} to the \ic{Third Party}.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item \ic{User} denies consent to their data access by the requesting \ic{Third Party}.
-             \end{enumerate}
-             \\ \hline
-             \end{longtable}
-             \end{center}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{5}}
+               \label{U5}\\
+               \hline
+               Name & Third Party requests User Data\\ \hline
+               Actors & \ic{Third Party}, Data4Help, \ic{User} \\ \hline
+               Entry Conditions & \ic{Third Party} and \ic{User} successfully registered to Data4Help.\\ \hline
+               Events Flow & 
+               \begin{enumerate}
+                   \item \ic{Third Party} requests access to specific \ic{User data}.
+                   \item Data4Help forwards the request to the specific \ic{User} unless the consent was already given.
+                   \item \ic{User} gives consent to the requesting \ic{Third Party} to access their data.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & Data4Help sends \ic{User data} to the \ic{Third Party}.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item \ic{User} denies consent to their data access by the requesting \ic{Third Party}.
+               \end{enumerate}
+               \\ \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{6}}
-             \label{U6}\\
-             \hline
-             Name & Third Party requests Group Data\\ \hline
-             Actors & \ic{Third Party}, Data4Help \\ \hline
-             Entry Conditions & \ic{Third Party} successfully registered to Data4Help.\\ \hline
-             Events Flow & 
-             \begin{enumerate}
-                 \item \ic{Third Party} requests access to \ic{Group data}.
-                 \item Data4Help checks if the requested data refers to minimum 1000 \ic{Users}.
-             \end{enumerate}
-             \\ \hline
-             Exit Condition & Data4Help sends \ic{Group data} to the \ic{Third Party}.\\ \hline
-             Exceptions & 
-             \begin{enumerate}
-                 \item \ic{Group data} refers to less than 1000 \ic{Users}.
-             \end{enumerate}
-             Data4Help denies \ic{Group data} access to the \ic{Third Party}.
-             \\ \hline
-             \end{longtable}
-             \end{center}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{6}}
+               \label{U6}\\
+               \hline
+               Name & Third Party requests Group Data\\ \hline
+               Actors & \ic{Third Party}, Data4Help \\ \hline
+               Entry Conditions & \ic{Third Party} successfully registered to Data4Help.\\ \hline
+               Events Flow & 
+               \begin{enumerate}
+                   \item \ic{Third Party} requests access to \ic{Group data}.
+                   \item Data4Help checks if the requested data refers to minimum 1000 \ic{Users}.
+               \end{enumerate}
+               \\ \hline
+               Exit Condition & Data4Help sends \ic{Group data} to the \ic{Third Party}.\\ \hline
+               Exceptions & 
+               \begin{enumerate}
+                   \item \ic{Group data} refers to less than 1000 \ic{Users}.
+               \end{enumerate}
+               Data4Help denies \ic{Group data} access to the \ic{Third Party}.
+               \\ \hline
+               \end{longtable}
+               \end{center}
 
-             \begin{center}
-             \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-             \caption*{U\subs{7}}
-             \label{U7}\\
-             \hline
-             Name & Third Party subscribes to New User Data\\ \hline
-             Actors & \ic{Third Party}, Data4Help \\ \hline
-             Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{User data}.\\ \hline
-             Events Flow & 
-             \begin{enumerate}
+               \begin{center}
+               \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+               \caption*{U\subs{7}}
+               \label{U7}\\
+               \hline
+               Name & Third Party subscribes to New User Data\\ \hline
+               Actors & \ic{Third Party}, Data4Help \\ \hline
+               Entry Conditions & \ic{Third Party} successfully registered to Data4Help and obtained access to \ic{User data}.\\ \hline
+               Events Flow & 
+               \begin{enumerate}
                 \item \ic{Third Party} requests subscription to \ic{User data}.
                 \item \ic{User} gives consent.
             \end{enumerate}
@@ -592,10 +596,11 @@
             \label{U11}\\
             \hline
             Name & User in need assisted by AutomatedSOS\\ \hline
-            Actors & \ic{User}, AutomatedSOS, Local emergency services \\ \hline
+            Actors & \ic{User}, Data4Help, AutomatedSOS, Local emergency services \\ \hline
             Entry Conditions & \ic{User} is subscribed to AutomatedSOS and installed Data4Help application on their smartphone.\\ \hline
             Events Flow & 
             \begin{enumerate}
+                \item Data4Help sends \ic{User Data} to AutomatedSOS as soon as it is produced.
                 \item AutomatedSOS identifies {User data} as \ic{anomalous data}.
                 \item \ic{User} is identified as \ic{User in need}.
                 \item AutomatedSOS calls local emergency services requesting an ambulance.
@@ -627,39 +632,39 @@
             Entry Conditions & \ic{Organizer} is connected to the Track4Run website dedicated to organizers.\\ \hline
             Events Flow & 
             \begin{enumerate}
-             \item \ic{Organizer} taps on "Sign Up" button.
-             \item \ic{Organizer} fills in all required fields for \ic{Organizer} registration, including username and password.
-             \item \ic{Organizer} checks the "Accept terms and conditions" checkbox.
-             \item \ic{Organizer} taps on "Create an Account" button.
-             \item Track4Run saves \ic{Organizer} information.
-         \end{enumerate}
-         \\ \hline
-         Exit Condition & \ic{Organizer} successfully registered by Track4Run.\\ \hline
-         Exceptions & 
-         \begin{enumerate}
-             \item Inserted email already registered for another \ic{Organizer}.
-             \item Inserted password is not valid.
-             \item Not all required fields are filled in.
-             \item "Accept terms and conditions" checkbox not checked.
-             \item \ic{Organizer} already signed up.
-         \end{enumerate}
-         \ic{Organizer} is invited to try again signing up, reporting which error(s) they have committed.
-         \\ \hline
+               \item \ic{Organizer} taps on "Sign Up" button.
+               \item \ic{Organizer} fills in all required fields for \ic{Organizer} registration, including username and password.
+               \item \ic{Organizer} checks the "Accept terms and conditions" checkbox.
+               \item \ic{Organizer} taps on "Create an Account" button.
+               \item Track4Run saves \ic{Organizer} information.
+           \end{enumerate}
+           \\ \hline
+           Exit Condition & \ic{Organizer} successfully registered by Track4Run.\\ \hline
+           Exceptions & 
+           \begin{enumerate}
+               \item Inserted email already registered for another \ic{Organizer}.
+               \item Inserted password is not valid.
+               \item Not all required fields are filled in.
+               \item "Accept terms and conditions" checkbox not checked.
+               \item \ic{Organizer} already signed up.
+           \end{enumerate}
+           \ic{Organizer} is invited to try again signing up, reporting which error(s) they have committed.
+           \\ \hline
 
 
-         \end{longtable}
-         \end{center}
+           \end{longtable}
+           \end{center}
 
-         \begin{center}
-         \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
-         \caption*{U\subs{13}}
-         \label{U13}\\
-         \hline
-         Name & Organizer creates a Run\\ \hline
-         Actors & \ic{Organizer}, Track4Run \\ \hline
-         Entry Conditions & \ic{Organizer} is connected to the \ic{Run} dedicated website (see \todo{add reference}).\\ \hline
-         Events Flow & 
-         \begin{enumerate}
+           \begin{center}
+           \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
+           \caption*{U\subs{13}}
+           \label{U13}\\
+           \hline
+           Name & Organizer creates a Run\\ \hline
+           Actors & \ic{Organizer}, Track4Run \\ \hline
+           Entry Conditions & \ic{Organizer} is connected to the \ic{Run} dedicated website (see \todo{add reference}).\\ \hline
+           Events Flow & 
+           \begin{enumerate}
             \item \ic{Organizer} clicks on "Create Run" button.
             \item \ic{Organizer} fills in all required fields for \ic{Run} creation.
             \item \ic{Organizer} clicks on ''Confirm'' button.
@@ -687,8 +692,9 @@
         \begin{enumerate}
             \item \ic{User} navigates to "My Services" page.
             \item \ic{User} taps on Track4Run.
-            \item \ic{User} taps on the \ic{Run} they wish to enroll in or inserts the run identifier.
-            \item \ic{User} taps on "Enroll" button.
+            \item \ic{User} taps on "Discover Runs".
+            \item \ic{User} chooses the \ic{Run} they wish to enroll in from the list or inserts the \ic{Run} identifier or name in the search box.
+            \item \ic{User} taps on "+" button to enroll in the \ic{Run}.
         \end{enumerate}
         \\ \hline
         Exit Condition & Track4Run registers the \ic{User} as a \ic{Participant} of the \ic{Run}.\\ \hline
@@ -697,7 +703,7 @@
             \item No \ic{Runs} are listed.
             \item The selected \ic{Run} reached the maximum number of participants.
             \item The selected \ic{Run} is closed to enrollment.
-            \item There are no \ic{Runs} associated to the inserted run identifier
+            \item There are no \ic{Runs} associated to the inserted run identifier or name.
         \end{enumerate}
         \ic{Participant} is invited to try again later enrolling in a \ic{Run}.
         \\ \hline
@@ -714,7 +720,7 @@
         Entry Conditions & Individual is connected to the \ic{Spectators} dedicated website (see \todo{add reference}).\\ \hline
         Events Flow & 
         \begin{enumerate}
-            \item \ic{Individual} clicks on the \ic{Run} they would like to watch or inserts the run identifier.
+            \item \ic{Individual} clicks on the \ic{Run} they would like to watch or inserts the run identifier or name.
             \item \ic{Individual} watches the \ic{Run} as a \ic{Spectator}. 
         \end{enumerate}
         \\ \hline
@@ -722,7 +728,7 @@
         Exceptions & 
         \begin{enumerate}
             \item No \ic{Runs} are listed.
-            \item There is no \ic{Run} associated to the inserted run identifier
+            \item There is no \ic{Run} associated to the inserted run identifier or name.
             \item The \ic{Spectator} disconnects from the \ic{Spectators} dedicated website.
         \end{enumerate}
         Concerning Exception 1 (\todo{add reference}), \ic{Spectator} is invited to try again later watching a \ic{Run}. For Exception 2 (\todo{add reference}), no action is taken.
@@ -731,5 +737,15 @@
         \end{center}
 
         \todo{??? participant runs in a run ???}
+
+
+        \subsection{Sequence Diagrams}
+        - User adds service\\
+        - Organizer organizes run\\
+        - User enrolls into run\\
+        - User in need emergency\\
+        - Third party requests user data\\
+        - Third party requests group data\\
+
 
         \end{document}
