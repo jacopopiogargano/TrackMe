@@ -2,39 +2,39 @@
 \begin{document}
 
 \section{Assumptions, Dependencies and Constraints}
-		\subsection{Domain Assumptions}
-			 	\begin{itemize}
-				 	\item[D\subs{1}]Personal data inserted by the \ic{User} at sign up corresponds to their real data.
-					\item[D\subs{2}]\ic{User data} collected at a certain instant corresponds to the actual status (GPS position and health data) of the \ic{User} at that precise moment.				
-					\item[D\subs{3}]The maps in use accurately represent the world.
-					\item[D\subs{4}]A \ic{Third Party} can receive consent to \ic{User data} access only through a service it offers and can use the data only for that specific service.
-					\item[D\subs{5}]AutomatedSOS and Track4Run are \ic{Services} developed by TrackMe.
-					\item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
-					\item[D\subs{7}]When AutomatedSOS needs to send an ambulance to a \ic{User in need} it forwards the request to local emergency services, which eventually dispatch an ambulance.
-					\item[D\subs{8}]\ic{Smart Wearables} are correctly worn by \ic{Users}.
-					\item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
-					\item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
-					\item[D\subs{11}]\ic{Users} own a working \ic{Smart wearable} which is always connected to the \ic{User}'s smartphone.
-					\item[D\subs{12}]Either smartphones or \ic{Smart wearable} have a working and active GPS.
-				\end{itemize}	
-		\subsection{Dependencies}
-			\todo{DA FARE}
-		\subsection{Constraints}
-			\paragraph{Data4Help}
-			 	\begin{itemize}	
-			 		\item Smartphones must always be online.
-			 		\item Smartphones or \ic{Smart wearables} must have GPS activated.
-			 		\item Smartphones must be able to communicate with \ic{Smart wearables} (e.g. via Bluetooth).
-			 		\item Smartphones must have enough free space for downloading and installing the Data4Help application.
-			 	\end{itemize}
-			 \paragraph{AutomatedSOS}
-			 	\begin{itemize}
-			 		\item \ic{User} must be wearing \ic{Smart wearable} at all times to allow for \ic{Anomalous data} detection.
-			 		\item AutomatedSOS must always be able to call local emergency services.
-			 	\end{itemize}
-			 \paragraph{Track4Run}
-			 	\begin{itemize}
-			 		\item \ic{Organizers} and \ic{Spectators} must have a modern browser installed on a device connected to the Internet in order to access respectively the \ic{Organizers} administrator panel and the \ic{Spectators} dedicated website.
-			 		\item Only \ic{Users} may enroll in a \ic{Run}: individuals not registered to Data4Help cannot enroll in a \ic{Run}.
-			 	\end{itemize}
+	\subsection{Domain Assumptions}
+	 	\begin{itemize}
+		 	\item[D\subs{1}]Personal data inserted by the \ic{User} at sign up corresponds to their real data.
+			\item[D\subs{2}]\ic{User data} collected at a certain instant corresponds to the actual status (GPS position and health data) of the \ic{User} at that precise moment.				
+			\item[D\subs{3}]The maps in use accurately represent the world.
+			\item[D\subs{4}]A \ic{Third Party} can receive consent to \ic{User data} access only through a \ic{Service} it offers and can use the data only for that specific \ic{Service}.
+			\item[D\subs{5}]AutomatedSOS and Track4Run are \ic{Services} developed by TrackMe.
+			\item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
+			\item[D\subs{7}]When AutomatedSOS needs to send an ambulance to a \ic{User in need} it forwards the request to local emergency services, which eventually dispatch an ambulance.
+			\item[D\subs{8}]\ic{Smart Wearables} are correctly worn by \ic{Users}.
+			\item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
+			\item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
+			\item[D\subs{11}]\ic{Users} own a working \ic{Smart wearable} which is always connected to the \ic{User}'s smartphone.
+			\item[D\subs{12}]Either smartphones or \ic{Smart wearable} have a working and active GPS.
+		\end{itemize}	
+	\subsection{Dependencies}
+		\todo{DA FARE}
+	\subsection{Constraints}
+		\paragraph{Data4Help}
+		 	\begin{itemize}	
+		 		\item Smartphones must always be online.
+		 		\item Smartphones or \ic{Smart wearables} must have GPS activated.
+		 		\item Smartphones must be able to communicate with \ic{Smart wearables} (e.g. via Bluetooth).
+		 		\item Smartphones must have enough free space for downloading and installing the Data4Help application.
+		 	\end{itemize}
+		 \paragraph{AutomatedSOS}
+		 	\begin{itemize}
+		 		\item \ic{User} must be wearing \ic{Smart wearable} at all times to allow for \ic{Anomalous data} detection.
+		 		\item AutomatedSOS must always be able to call local emergency services.
+		 	\end{itemize}
+		 \paragraph{Track4Run}
+		 	\begin{itemize}
+		 		\item \ic{Organizers} and \ic{Spectators} must have a modern browser installed on a device connected to the Internet in order to access respectively the \ic{Organizers} administrator panel and the \ic{Spectators} dedicated website.
+		 		\item Only \ic{Users} may enroll in a \ic{Run}: individuals not registered to Data4Help cannot enroll in a \ic{Run}.
+		 	\end{itemize}
 \end{document}
