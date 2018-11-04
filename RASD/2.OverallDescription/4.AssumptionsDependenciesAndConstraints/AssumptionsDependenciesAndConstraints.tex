@@ -14,22 +14,27 @@
 					\item[D\subs{8}]\ic{Smart Wearables} are correctly worn by \ic{Users}.
 					\item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
 					\item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
-					\item[D\subs{11}]\ic{Users} own a working \ic{Smart Wearable} which is always connected to the \ic{User}'s smartphone.
+					\item[D\subs{11}]\ic{Users} own a working \ic{Smart wearable} which is always connected to the \ic{User}'s smartphone.
+					\item[D\subs{12}]Either smartphones or \ic{Smart wearable} have a working and active GPS.
 				\end{itemize}	
 		\subsection{Dependencies}
 			\todo{DA FARE}
 		\subsection{Constraints}
-			\paragraph{Track4Help}
+			\paragraph{Data4Help}
 			 	\begin{itemize}	
-			 		\item Smartphone must have a working internet connection.
-			 		\item Smartphone or \ic{smart wearable} must have GPS activated.
-			 		\item Smartphone must be able to communicate somehow (e.g. bluetooth) with the \ic{smart wearables}.
-			 		\item Smartphone must have enough space for downloading and installing the Data4Help application.
+			 		\item Smartphones must always be online.
+			 		\item Smartphones or \ic{Smart wearables} must have GPS activated.
+			 		\item Smartphones must be able to communicate with \ic{Smart wearables} (e.g. via Bluetooth).
+			 		\item Smartphones must have enough free space for downloading and installing the Data4Help application.
 			 	\end{itemize}
 			 \paragraph{AutomatedSOS}
-			 	\todo {Definire se lasciare vuoto o meno questa parte}
+			 	\begin{itemize}
+			 		\item \ic{User} must be wearing \ic{Smart wearable} at all times to allow for \ic{Anomalous data} detection.
+			 		\item AutomatedSOS must always be able to call local emergency services.
+			 	\end{itemize}
 			 \paragraph{Track4Run}
 			 	\begin{itemize}
-			 		\item \ic{Organizers} and \ic{Spectators} must have a modern browser on a device connected to internet in order to access respectively the organizers admin panel and the spectators map.
+			 		\item \ic{Organizers} and \ic{Spectators} must have a modern browser installed on a device connected to the Internet in order to access respectively the \ic{Organizers} administrator panel and the \ic{Spectators} dedicated website.
+			 		\item Only \ic{Users} may enroll in a \ic{Run}: individuals not registered to Data4Help cannot enroll in a \ic{Run}.
 			 	\end{itemize}
 \end{document}
