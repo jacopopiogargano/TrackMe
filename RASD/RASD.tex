@@ -1,9 +1,13 @@
 \documentclass{report}
-\usepackage{xcolor,comment, subfiles, graphicx, caption, longtable, hyperref, subfig}
+\usepackage{xcolor,comment, subfiles, graphicx, caption, longtable, hyperref, subfig, fancyhdr}
 \usepackage{float} %Used to force image to appear in the section in which it's declared
 
 % SECTION COMMANDS: here we include the commands for formatting and other purposes
 \newcommand\todo[1]{\textcolor{red}{#1}}
+
+%\renewcommand{\headrulewidth}{0pt} % erases the rule under the header
+%\renewcommand{\footrulewidth}{0.3pt} % erases the rule under the header
+
 
 \newcommand{\sups}[1]{\ensuremath{^{\textrm{#1}}}}
 
@@ -59,6 +63,14 @@
 %\author{
 %\large Gargano Jacopo Pio, Giannetti Cristian, Haag Federico}
 
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\color{gray}{\normalsize{RASD for TrackMe Project - 1.0}}}
+\lfoot{\textcolor{gray}{\small{Copyright © 2018, Gargano Jacopo Pio, \newline Giannetti Cristian, Haag Federico – All rights reserved}}}
+\rfoot{\textcolor{gray}{\newline \thepage}}
+\addtocontents{toc}{\protect\thispagestyle{fancy}}
+
+
 \begin{document}
 	\pagenumbering{gobble}
 	\begin{titlepage}
@@ -68,12 +80,16 @@
 			\includegraphics[width =\linewidth, height = 4cm, keepaspectratio]{PolitecnicoLogo.png}
 			\label{fig:PolitecnicoLogo}
 			\large \\[2ex]Computer Science and Engineering\\
-			\large Software Engineering 2 Project\\[10ex]			
+			\large Software Engineering 2 Project\\[9ex]			
 			\image{5cm}{TrackMeLogo.png}{}{TrackMeLogo}
-			\huge Requirement Analysis and Specification Document\\[2ex]
-			\normalsize Gargano Jacopo Pio, Giannetti Cristian, Haag Federico\\[1ex]
-			%\normalsize 11-11-2018 \\[1ex]
-			\normalsize Anno Accademico 2018-2019	 
+			\huge Requirement Analysis and Specification Document\\[4ex]
+
+			\normalsize Gargano Jacopo Pio, Giannetti Cristian, Haag Federico\\[1.5ex]
+			\normalsize 11 November 2018 \\[1.5ex]
+			\normalsize GitHub Repository: https://github.com/federicohaag/GarganoGiannettiHaag\\[3ex]
+			\normalsize Version 1.0
+
+
 		}
 		
 	\end{titlepage}
@@ -83,7 +99,8 @@
 	\newpage
 	\pagenumbering{arabic}
 	\tableofcontents
-	\let\tableofcontents\relax
+	\thispagestyle{fancy}
+%	\let\tableofcontents\relax
 	
 	\newpage
 	
@@ -93,8 +110,10 @@
 	\subfile{4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex}
 		
 	\chapter{Effort Spent}
+	\thispagestyle{fancy}
 	WORK IN PROGRESS
 	\chapter{References}
+	\thispagestyle{fancy}
 	WORK IN PROGRESS
 	
 \end{document}
