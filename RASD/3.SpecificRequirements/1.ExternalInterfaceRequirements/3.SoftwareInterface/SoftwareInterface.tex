@@ -2,19 +2,13 @@
 \begin{document}
 
 \subsection{Software Interfaces}
-			All the following requests contain a parameter named \ic{serviceID} that is the ID of the service that is performing the action. In case of requests of data, the data retrieved is relative to the service corresponding to the given serviceID.
-			Moreover, each request contains the authentication digest (\todo{add reference to HMAC standard in 3.5.3 security}).
+			Data4Help will expose an API to \ic{services} offered by \ic{third parties} to send \ic{user datas}. In details, it will enable to:
 			\begin{itemize}
-				\item GET - /user?username=...\&serviceID=... \\
-				Retrieves all records available for the given \ic{username}
-				\item GET - /user?username=...\&quantity=...\&serviceID=... \\
-				Retrieves last n records for the given \ic{username}. The quantity parameter must be an integer.
-				\item GET - /group?filter...\&serviceID=... \\
-				Retrieves all records available for all people using the given service filtered according to ....\\ \todo{Decidere quali sono i modi possibili di filtrare i dati collettivi}
-				\item PUT - /user?username=...\&serviceID=... \\
-				Request the specified user authorization for subscribing to data updates.
-				\item DELETE - /user?username=...\&serviceID=... \\
-				Unsubscribes the service from the data updates of the given user.
+				\item Retrieve all records available for a given \ic{username}
+				\item Retrieve last n records for a given \ic{username}, where n is a specified quantity
+				\item Retrieve all records available for all people using the given service filtered according to ....\\ \todo{Decidere quali sono i modi possibili di filtrare i dati collettivi}
+				\item Request the specified user authorization for subscribing to data updates.
+				\item Unsubscribe the service from the data updates of a given user.
 			\end{itemize}
 
 \end{document}
