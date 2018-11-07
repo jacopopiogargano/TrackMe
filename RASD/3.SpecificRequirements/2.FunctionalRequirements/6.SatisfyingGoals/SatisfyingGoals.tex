@@ -2,11 +2,13 @@
 \begin{document}
 
 \subsection{Satisfying Goals}
+The following is an analysis, for each goal of the system to be, of the requirements R\subs{n} and the domain assumptions D\subs{n} that satisfy the goal itself and of the use cases relative to it.
 \paragraph{Data4Help}
 \begin{itemize}
 
     \item[G\subs{1}]Collect \textit{User Data} through \textit{Smart Wearables}.
     \begin{itemize}
+        \item[R\subs{2}]At sign up, \ic{User} must provide: first name, last name, SSN, gender, date of birth, email and password.
         \item[R\subs{4}]At sign up, \ic{User} must accept terms and conditions, including the privacy statement.
         \item[R\subs{6}]Identify a \ic{User} by their identifier.
         \item[R\subs{8}]Receive \ic{User Data}.
@@ -30,6 +32,8 @@
 
     \item[G\subs{2}]Send specific \textit{User Data} to \textit{Third Parties} only if \textit{User} consent was given after\textit{Third Party} access request.
     \begin{itemize}
+            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third Party} must accept terms and conditions.
         \item[R\subs{1}]Unregistered individuals and companies must not be able to use Data4Help.
         \item[R\subs{6}]Identify a \ic{User} by their identifier.
         \item[R\subs{7}]Query the database for a \ic{User} by their identifier.
@@ -53,12 +57,14 @@
 
     \item[G\subs{3}]Send anonymized requested \textit{Group Data} to \textit{Third Parties} if the group it refers to is made up of 1000 or more \ic{Users}.
     \begin{itemize}
+            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third Party} must accept terms and conditions.
         \item[R\subs{11}]Store collected \ic{User Data} in a database.
         \item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
         \item[R\subs{13}]Receive \ic{Third Party} data access request.
         \item[R\subs{14}]Validate \ic{Third Party} data access request.
         \item[R\subs{15}]Authenticate \ic{Third Party} data access request.
-        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}.
+        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, geographical area.
         \item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
         \item[R\subs{23}]Properly anonymize \ic{Group Data}.
         \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third Party}.
@@ -72,6 +78,8 @@
 
     \item[G\subs{4}]Send \textit{Users Data} and \textit{Group Data} to subscribed authorized \textit{Third Parties} as soon as they are produced.
     \begin{itemize}
+            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third Party} must accept terms and conditions.
         \item[R\subs{7}]Query the database for a \ic{User} by their identifier.
         \item[R\subs{8}]Receive \ic{User Data}.
         \item[R\subs{9}]Validate \ic{User Data}.
@@ -79,7 +87,7 @@
         \item[R\subs{18}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
         \item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third Party}.
         \item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third Party} if the specific \ic{User} denied consent.
-        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}.
+        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, geographical area.
         \item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
         \item[R\subs{23}]Properly anonymize \ic{Group Data}.
         \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third Party}.
@@ -101,6 +109,7 @@
 
     \item[G\subs{5}]Allow \textit{Users} to manage their subscription to \textit{Services} and to Data4Help.
     \begin{itemize}
+    \item[R\subs{2}]At sign up, \ic{User} must provide: first name, last name, SSN, gender, date of birth, email and password.
         \item[R\subs{4}]At sign up, \ic{User} must accept terms and conditions, including the privacy statement.
         \item[R\subs{6}]Identify a \ic{User} by their identifier.
         \item[R\subs{7}]Query the database for a \ic{User} by their identifier.
@@ -179,6 +188,7 @@
 
     \item[G\subs{9}]Allow \textit{Users} to enroll in a \textit{Run} as \textit{Participants}. 
     \begin{itemize}
+    \item[R\subs{2}]At sign up, \ic{User} must provide: first name, last name, SSN, gender, date of birth, email and password.
         \item[R\subs{42}]Provide \ic{Users} enrollment for an existing \ic{Run}.
         \item[R\subs{43}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
         \item[R\subs{44}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
