@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.16)  5 NOV 2018 01:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  10 NOV 2018 23:53
 entering extended mode
 **./RASD.tex
 (RASD.tex
 LaTeX2e <2018-04-01> patch level 5
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\report.cls"
 Document Class: report 2014/09/29 v1.4h Standard LaTeX document class
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\size10.clo"
 File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 \c@part=\count80
@@ -20,17 +20,17 @@ File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) ("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.st
+) ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\xcolor\xcolor.st
 y"
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\color
 .cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-def\pdfte
 x.def"
 File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
 )
@@ -44,38 +44,38 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\comment\comment.st
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\comment\comment.st
 y"
 \CommentStream=\write3
  Excluding comment 'comment')
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfiles\subfiles.
 sty"
 Package: subfiles 2018/07/31 Federico Garcia, Gernot Salzer
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\verbatim.sty
 "
 Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks14
 \verbatim@line=\toks15
 \verbatim@in@stream=\read1
 ))
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphicx.
 sty"
 Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\keyval.st
 y"
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks16
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\graphics.
 sty"
 Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics-cfg\graph
 ics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
@@ -84,11 +84,11 @@ Package graphics Info: Driver file: pdftex.def on input line 99.
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption.st
 y"
 Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\caption3.s
 ty"
 Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
 Package caption3 Info: TeX engine: e-TeX on input line 64.
@@ -103,7 +103,7 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \c@caption@flags=\count89
 \c@ContinuedFloat=\count90
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.st
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\longtable.st
 y"
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \LTleft=\skip43
@@ -122,16 +122,54 @@ Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
 \c@LT@chunks=\count95
 \LT@p@ftn=\toks17
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count96
+\sf@farskip=\skip47
+\sf@captopadj=\dimen113
+\sf@capskip=\skip48
+\sf@nearskip=\skip49
+\c@subfigure=\count97
+\c@subfigure@save=\count98
+\c@lofdepth=\count99
+\c@subtable=\count100
+\c@subtable@save=\count101
+\c@lotdepth=\count102
+\sf@top=\skip50
+\sf@bottom=\skip51
+)
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
+sty"
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
+s
+\f@nch@headwidth=\skip52
+\f@nch@O@elh=\skip53
+\f@nch@O@erh=\skip54
+\f@nch@O@olh=\skip55
+\f@nch@O@orh=\skip56
+\f@nch@O@elf=\skip57
+\f@nch@O@erf=\skip58
+\f@nch@O@olf=\skip59
+\f@nch@O@orf=\skip60
+)
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks18
+\float@box=\box30
+\@float@everytoks=\toks19
+\@floatcapt=\box31
+)
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperref.
 sty"
 Package: hyperref 2018/09/30 v6.88a Hypertext links for LaTeX
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 hyperref.sty"
 Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
 
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\hobsub-
 generic.sty"
 Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
 Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
@@ -172,31 +210,31 @@ Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\generic\ifxetex\ifxetex.
 sty"
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\auxhook.s
 ty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\kvoptions
 .sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen113
-\Hy@linkcounter=\count96
-\Hy@pagecounter=\count97
+\@linkdim=\dimen114
+\Hy@linkcounter=\count104
+\Hy@pagecounter=\count105
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc.de
 f"
 File: pd1enc.def 2018/09/30 v6.88a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count98
+\Hy@SavedSpaceFactor=\count106
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperref.
 cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -207,16 +245,16 @@ Package hyperref Info: Plain pages OFF on input line 4550.
 Package hyperref Info: Backreferencing OFF on input line 4555.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4788.
-\c@Hy@tempcnt=\count99
- ("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
+\c@Hy@tempcnt=\count107
+ ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5141.
-\XeTeXLinkMargin=\dimen114
-\Fld@menulength=\count100
-\Field@Width=\dimen115
-\Fld@charsize=\dimen116
+\XeTeXLinkMargin=\dimen115
+\Fld@menulength=\count108
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
 Package hyperref Info: Hyper figures OFF on input line 6396.
 Package hyperref Info: Link nesting OFF on input line 6401.
 Package hyperref Info: Hyper index ON on input line 6404.
@@ -226,65 +264,26 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6421.
 Package hyperref Info: PDF/A mode OFF on input line 6426.
 LaTeX Info: Redefining \ref on input line 6466.
 LaTeX Info: Redefining \pageref on input line 6470.
-\Hy@abspage=\count101
-\c@Item=\count102
-\c@Hfootnote=\count103
+\Hy@abspage=\count109
+\c@Item=\count110
+\c@Hfootnote=\count111
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdftex.d
 ef"
 File: hpdftex.def 2018/09/30 v6.88a Hyperref driver for pdfTeX
-\Fld@listcount=\count104
-\c@bookmark@seq@number=\count105
+\Fld@listcount=\count112
+\c@bookmark@seq@number=\count113
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunfile
 check.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip47
-)
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
-\c@KVtest=\count106
-\sf@farskip=\skip48
-\sf@captopadj=\dimen117
-\sf@capskip=\skip49
-\sf@nearskip=\skip50
-\c@subfigure=\count107
-\c@subfigure@save=\count108
-\c@lofdepth=\count109
-\c@subtable=\count110
-\c@subtable@save=\count111
-\c@lotdepth=\count112
-\sf@top=\skip51
-\sf@bottom=\skip52
-)
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyhdr\fancyhdr.
-sty"
-Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footer
-s
-\f@nch@headwidth=\skip53
-\f@nch@O@elh=\skip54
-\f@nch@O@erh=\skip55
-\f@nch@O@olh=\skip56
-\f@nch@O@orh=\skip57
-\f@nch@O@elf=\skip58
-\f@nch@O@erf=\skip59
-\f@nch@O@olf=\skip60
-\f@nch@O@orf=\skip61
-)
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count113
-\float@exts=\toks18
-\float@box=\box30
-\@float@everytoks=\toks19
-\@floatcapt=\box31
-)
-(RASD.aux
+\Hy@SectionHShift=\skip61
+) (RASD.aux
 
 LaTeX Warning: Label `fig:nonfloat' multiply defined.
 
@@ -372,7 +371,7 @@ LaTeX Font Info:    ... okay on input line 74.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 74.
 LaTeX Font Info:    ... okay on input line 74.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count114
@@ -387,11 +386,11 @@ ii"
 \makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks21
 )
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
 base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\grfext.st
 y"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
 )
@@ -408,7 +407,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\caption\ltcaption.
 sty"
 Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
@@ -416,11 +415,11 @@ Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box33
 Package hyperref Info: Link coloring OFF on input line 74.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\generic\oberdiek\gettitl
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
@@ -445,7 +444,7 @@ Package pdftex.def Info: Images/TrackMeLogo.png  used on input line 84.
 (pdftex.def)             Requested size: 344.99873pt x 134.35492pt.
  [1
 
-{C:/Users/s_pan/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Po
+{C:/Users/jacop/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./Images/Po
 litecnicoLogo.png> <./Images/TrackMeLogo.png>] (RASD.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
@@ -453,7 +452,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
 
-("C:\Users\s_pan\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
@@ -497,18 +496,21 @@ Overfull \hbox (0.3238pt too wide) in paragraph at lines 9--10
 data \OT1/cmr/m/n/10 stored in TrackMe's
  []
 
-[6])) (2.OverallDescription/OverallDescription.tex [7]
+[6])
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
+ [7]) (2.OverallDescription/OverallDescription.tex [8]
 Chapter 2.
 (2.OverallDescription/1.ProductPerspective/ProductPerspective.tex
-<Images/Class_Diagrams/Class_Diagram_Data4Help.jpg, id=326, 1032.85875pt x 546.
-04pt>
+<Images/Class_Diagrams/Class_Diagram_Data4Help.jpg, id=338, 875.27pt x 760.8425
+pt>
 File: Images/Class_Diagrams/Class_Diagram_Data4Help.jpg Graphic file (type jpg)
 
 <use Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>
 Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_Data4Help.jpg  use
 d on input line 8.
-(pdftex.def)             Requested size: 344.98935pt x 182.38504pt.
-<Images/State_Charts/StateChart_Data4HelpUserData.jpg, id=327, 722.7pt x 666.49
+(pdftex.def)             Requested size: 344.99998pt x 299.89677pt.
+<Images/State_Charts/StateChart_Data4HelpUserData.jpg, id=339, 722.7pt x 666.49
 pt>
 File: Images/State_Charts/StateChart_Data4HelpUserData.jpg Graphic file (type j
 pg)
@@ -516,7 +518,14 @@ pg)
 Package pdftex.def Info: Images/State_Charts/StateChart_Data4HelpUserData.jpg  
 used on input line 9.
 (pdftex.def)             Requested size: 344.99533pt x 318.16235pt.
-<Images/State_Charts/StateChart_Data4HelpGroupData.jpg, id=328, 722.7pt x 710.6
+ [9
+
+]
+Overfull \vbox (6.20229pt too high) has occurred while \output is active []
+
+
+[10 <./Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>]
+<Images/State_Charts/StateChart_Data4HelpGroupData.jpg, id=350, 722.7pt x 710.6
 55pt>
 File: Images/State_Charts/StateChart_Data4HelpGroupData.jpg Graphic file (type 
 jpg)
@@ -524,108 +533,112 @@ jpg)
 Package pdftex.def Info: Images/State_Charts/StateChart_Data4HelpGroupData.jpg 
  used on input line 10.
 (pdftex.def)             Requested size: 344.99533pt x 339.2454pt.
- [8
-
- <./Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>] [9 <./Images/State_Char
-ts/StateChart_Data4HelpUserData.jpg>]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 13.
-<Images/State_Charts/StateChart_AutomatedSOS.jpg, id=340, 722.7pt x 776.9025pt>
+ [11 <./Images/State_Charts/StateChart_Data4HelpUserData.jpg>]
+<Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg, id=356, 875.27pt x 504.8
+8625pt>
+File: Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg Graphic file (type j
+pg)
+<use Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg>
+Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg  
+used on input line 22.
+(pdftex.def)             Requested size: 344.99998pt x 199.00801pt.
+<Images/State_Charts/StateChart_AutomatedSOS.jpg, id=357, 722.7pt x 776.9025pt>
 
 File: Images/State_Charts/StateChart_AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/State_Charts/StateChart_AutomatedSOS.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_AutomatedSOS.jpg  used 
-on input line 22.
+on input line 23.
 (pdftex.def)             Requested size: 344.09106pt x 369.8979pt.
- [10 <./Images/State_Charts/StateChart_Data4HelpGroupData.jpg>]
-<Images/Class_Diagrams/Class_Diagram_Track4Run.jpg, id=347, 1032.85875pt x 877.
-2775pt>
+ [12 <./Images/State_Charts/StateChart_Data4HelpGroupData.jpg>] [13 <./Images/C
+lass_Diagrams/Class_Diagram_AutomatedSOS.jpg>]
+<Images/Class_Diagrams/Class_Diagram_Track4Run.jpg, id=370, 875.27pt x 700.6175
+pt>
 File: Images/Class_Diagrams/Class_Diagram_Track4Run.jpg Graphic file (type jpg)
 
 <use Images/Class_Diagrams/Class_Diagram_Track4Run.jpg>
 Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_Track4Run.jpg  use
-d on input line 32.
-(pdftex.def)             Requested size: 344.98935pt x 293.02303pt.
-<Images/State_Charts/StateChart_Track4Run.jpg, id=348, 722.7pt x 666.49pt>
+d on input line 33.
+(pdftex.def)             Requested size: 344.99998pt x 276.15823pt.
+<Images/State_Charts/StateChart_Track4Run.jpg, id=371, 722.7pt x 666.49pt>
 File: Images/State_Charts/StateChart_Track4Run.jpg Graphic file (type jpg)
 <use Images/State_Charts/StateChart_Track4Run.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_Track4Run.jpg  used on 
-input line 33.
+input line 34.
 (pdftex.def)             Requested size: 344.99533pt x 318.16235pt.
- [11 <./Images/State_Charts/StateChart_AutomatedSOS.jpg>] [12 <./Images/Class_D
+ [14 <./Images/State_Charts/StateChart_AutomatedSOS.jpg>] [15 <./Images/Class_D
 iagrams/Class_Diagram_Track4Run.jpg>])
-(2.OverallDescription/2.ProductFunctions/ProductFunctions.tex [13 <./Images/Sta
-te_Charts/StateChart_Track4Run.jpg>] [14])
-(2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex [15])
+(2.OverallDescription/2.ProductFunctions/ProductFunctions.tex [16 <./Images/Sta
+te_Charts/StateChart_Track4Run.jpg>] [17])
+(2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex [18])
 (2.OverallDescription/4.AssumptionsDependenciesAndConstraints/AssumptionsDepend
 enciesAndConstraints.tex
 Overfull \hbox (2.48302pt too wide) in paragraph at lines 4--4
 []\OT1/cmr/bx/n/14.4 Assumptions, De-pen-den-cies and Con-straints 
  []
 
-[16] [17])) (3.SpecificRequirements/SpecificRequirements.tex [18]
+[19] [20])) (3.SpecificRequirements/SpecificRequirements.tex [21]
 Chapter 3.
 
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/ExternalInterfaceRequir
 ements.tex
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/1.UserInterface/UserInt
 erface.tex
-<Images/Mockups/0_FirstFrame.png, id=408, 431.6125pt x 843.15pt>
+<Images/Mockups/0_FirstFrame.png, id=429, 431.6125pt x 843.15pt>
 File: Images/Mockups/0_FirstFrame.png Graphic file (type png)
 <use Images/Mockups/0_FirstFrame.png>
 Package pdftex.def Info: Images/Mockups/0_FirstFrame.png  used on input line 7.
 
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/1_0_Login.png, id=409, 431.6125pt x 843.15pt>
+<Images/Mockups/1_0_Login.png, id=430, 431.6125pt x 843.15pt>
 File: Images/Mockups/1_0_Login.png Graphic file (type png)
 <use Images/Mockups/1_0_Login.png>
 Package pdftex.def Info: Images/Mockups/1_0_Login.png  used on input line 7.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/1_1_Registration.png, id=410, 431.6125pt x 843.15pt>
+<Images/Mockups/1_1_Registration.png, id=431, 431.6125pt x 843.15pt>
 File: Images/Mockups/1_1_Registration.png Graphic file (type png)
 <use Images/Mockups/1_1_Registration.png>
 Package pdftex.def Info: Images/Mockups/1_1_Registration.png  used on input lin
 e 8.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/2_Menu.png, id=411, 431.6125pt x 843.15pt>
+<Images/Mockups/2_Menu.png, id=432, 431.6125pt x 843.15pt>
 File: Images/Mockups/2_Menu.png Graphic file (type png)
 <use Images/Mockups/2_Menu.png>
 Package pdftex.def Info: Images/Mockups/2_Menu.png  used on input line 8.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_0_MyServices.png, id=412, 431.6125pt x 843.15pt>
+<Images/Mockups/3_0_MyServices.png, id=433, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_0_MyServices.png Graphic file (type png)
 <use Images/Mockups/3_0_MyServices.png>
 Package pdftex.def Info: Images/Mockups/3_0_MyServices.png  used on input line 
 9.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_1_DiscoverServices.png, id=413, 431.6125pt x 843.15pt>
+<Images/Mockups/3_1_DiscoverServices.png, id=434, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_1_DiscoverServices.png Graphic file (type png)
 <use Images/Mockups/3_1_DiscoverServices.png>
 Package pdftex.def Info: Images/Mockups/3_1_DiscoverServices.png  used on input
  line 9.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [19
+ [22
 
  <./Images/Mockups/0_FirstFrame.png> <./Images/Mockups/1_0_Login.png>]
-<Images/Mockups/3_2_ServicePageData4Help.png, id=424, 431.6125pt x 843.15pt>
+<Images/Mockups/3_2_ServicePageData4Help.png, id=445, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_2_ServicePageData4Help.png Graphic file (type png)
 <use Images/Mockups/3_2_ServicePageData4Help.png>
 Package pdftex.def Info: Images/Mockups/3_2_ServicePageData4Help.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_3_RevokeConsentData4Help.png, id=425, 431.6125pt x 843.15pt>
+<Images/Mockups/3_3_RevokeConsentData4Help.png, id=446, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_3_RevokeConsentData4Help.png Graphic file (type png)
 <use Images/Mockups/3_3_RevokeConsentData4Help.png>
 Package pdftex.def Info: Images/Mockups/3_3_RevokeConsentData4Help.png  used on
  input line 10.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_4_AutomatedSOS.png, id=426, 431.6125pt x 843.15pt>
+<Images/Mockups/3_4_AutomatedSOS.png, id=447, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_4_AutomatedSOS.png Graphic file (type png)
 <use Images/Mockups/3_4_AutomatedSOS.png>
 Package pdftex.def Info: Images/Mockups/3_4_AutomatedSOS.png  used on input lin
 e 11.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png, id=427, 431.6125pt x 84
+<Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png, id=448, 431.6125pt x 84
 3.15pt>
 File: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png Graphic file (type 
 png)
@@ -633,37 +646,37 @@ png)
 Package pdftex.def Info: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png 
  used on input line 11.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [20 <./Images/Mockups/1_1_Registration.png> <./Images/Mockups/2_Menu.png> <./I
+ [23 <./Images/Mockups/1_1_Registration.png> <./Images/Mockups/2_Menu.png> <./I
 mages/Mockups/3_0_MyServices.png> <./Images/Mockups/3_1_DiscoverServices.png>]
-<Images/Mockups/5_1_CreateRunTrack4Run.png, id=442, 431.6125pt x 843.15pt>
+<Images/Mockups/5_1_CreateRunTrack4Run.png, id=463, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_1_CreateRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_1_CreateRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_1_CreateRunTrack4Run.png  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_4_DiscoverRunsTrack4Run.png, id=443, 431.6125pt x 843.15pt>
+<Images/Mockups/5_4_DiscoverRunsTrack4Run.png, id=464, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_4_DiscoverRunsTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_4_DiscoverRunsTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_4_DiscoverRunsTrack4Run.png  used on 
 input line 12.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_5_WatchRunTrack4Run.png, id=444, 431.6125pt x 843.15pt>
+<Images/Mockups/5_5_WatchRunTrack4Run.png, id=465, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_5_WatchRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_5_WatchRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_5_WatchRunTrack4Run.png  used on inpu
 t line 13.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_6_LiveRunTrack4Run.png, id=445, 431.6125pt x 843.15pt>
+<Images/Mockups/5_6_LiveRunTrack4Run.png, id=466, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_6_LiveRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_6_LiveRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_6_LiveRunTrack4Run.png  used on input
  line 13.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [21 <./Images/Mockups/3_2_ServicePageData4Help.png> <./Images/Mockups/3_3_Revo
+ [24 <./Images/Mockups/3_2_ServicePageData4Help.png> <./Images/Mockups/3_3_Revo
 keConsentData4Help.png> <./Images/Mockups/3_4_AutomatedSOS.png> <./Images/Mocku
 ps/5_3_OrganizerRegistrationTrack4Run.png>])
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/2.HardwareInterface/Har
-dwareInterface.tex [22 <./Images/Mockups/5_1_CreateRunTrack4Run.png> <./Images/
+dwareInterface.tex [25 <./Images/Mockups/5_1_CreateRunTrack4Run.png> <./Images/
 Mockups/5_4_DiscoverRunsTrack4Run.png> <./Images/Mockups/5_5_WatchRunTrack4Run.
 png> <./Images/Mockups/5_6_LiveRunTrack4Run.png>])
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/3.SoftwareInterface/Sof
@@ -671,345 +684,358 @@ twareInterface.tex)
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/4.CommunicationInterfac
 e/CommunicationInterface.tex))
 (3.SpecificRequirements/2.FunctionalRequirements/FunctionalRequirements.tex
-Overfull \hbox (2.69507pt too wide) in paragraph at lines 9--10
-[]\OT1/cmr/m/n/10 Unregistered in-di-vid-u-als and com-pa-nies must not be able
- to use Data4Help. 
- []
-
-[23] [24] [25]
-Underfull \hbox (badness 10000) in paragraph at lines 86--88
-
- []
-
-
-Overfull \hbox (4.07701pt too wide) in paragraph at lines 91--92
-[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
- in-clud-ing Au-to-mat-ed-SOS and Track4Run,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 94--96
-
- []
-
-[26]
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 133--135
-
- []
-
-[27]
-Underfull \hbox (badness 10000) in paragraph at lines 157--159
-
- []
-
-
-Overfull \hbox (4.07701pt too wide) in paragraph at lines 159--160
-[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
- in-clud-ing Au-to-mat-ed-SOS and Track4Run,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 161--163
-
- []
-
-[28]
-Overfull \hbox (1.91553pt too wide) in paragraph at lines 179--181
-[]\OT1/cmr/m/n/10 Allow \OT1/cmr/m/it/10 Users \OT1/cmr/m/n/10 to re-quest the 
-dele-tion of all their data stored by TrackMe
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 179--181
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 200--202
-
- []
-
-
-Overfull \hbox (4.07701pt too wide) in paragraph at lines 204--205
-[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
- in-clud-ing Au-to-mat-ed-SOS and Track4Run,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 207--209
-
- []
-
-[29]
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 238--240
-
- []
-
-[30]
-Underfull \hbox (badness 10000) in paragraph at lines 251--253
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
-
- []
-
-
-Overfull \hbox (4.07701pt too wide) in paragraph at lines 265--266
-[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
- in-clud-ing Au-to-mat-ed-SOS and Track4Run,
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 268--270
-
- []
-
-[31] [32] [33]
-<Images/Use_Case_Diagrams/User.jpg, id=529, 986.68625pt x 634.37pt>
+(3.SpecificRequirements/2.FunctionalRequirements/1.Scenarios/Scenarios.tex
+[26] [27] [28])
+(3.SpecificRequirements/2.FunctionalRequirements/2.UseCaseDiagrams/UseCaseDiagr
+ams.tex
+<Images/Use_Case_Diagrams/User.jpg, id=511, 986.68625pt x 634.37pt>
 File: Images/Use_Case_Diagrams/User.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/User.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/User.jpg  used on input line 
-331.
+5.
 (pdftex.def)             Requested size: 344.99908pt x 221.81018pt.
-<Images/Use_Case_Diagrams/ThirdParty.jpg, id=530, 986.68625pt x 722.7pt>
+<Images/Use_Case_Diagrams/ThirdParty.jpg, id=512, 986.68625pt x 720.6925pt>
 File: Images/Use_Case_Diagrams/ThirdParty.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/ThirdParty.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/ThirdParty.jpg  used on input
- line 332.
-(pdftex.def)             Requested size: 344.99908pt x 252.69514pt.
-<Images/Use_Case_Diagrams/AutomatedSOS.jpg, id=531, 986.68625pt x 389.455pt>
+ line 6.
+(pdftex.def)             Requested size: 344.99908pt x 251.99323pt.
+<Images/Use_Case_Diagrams/AutomatedSOS.jpg, id=513, 986.68625pt x 449.68pt>
 File: Images/Use_Case_Diagrams/AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/AutomatedSOS.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/AutomatedSOS.jpg  used on inp
-ut line 333.
-(pdftex.def)             Requested size: 344.99908pt x 136.1746pt.
- [34 <./Images/Use_Case_Diagrams/User.jpg>]
-<Images/Use_Case_Diagrams/AutomatedSOS2.jpg, id=538, 986.68625pt x 389.455pt>
-File: Images/Use_Case_Diagrams/AutomatedSOS2.jpg Graphic file (type jpg)
-<use Images/Use_Case_Diagrams/AutomatedSOS2.jpg>
-Package pdftex.def Info: Images/Use_Case_Diagrams/AutomatedSOS2.jpg  used on in
-put line 334.
-(pdftex.def)             Requested size: 344.99908pt x 136.1746pt.
-<Images/Use_Case_Diagrams/Organizer.jpg, id=539, 986.68625pt x 224.84pt>
+ut line 7.
+(pdftex.def)             Requested size: 344.99908pt x 157.23253pt.
+ [29 <./Images/Use_Case_Diagrams/User.jpg>]
+<Images/Use_Case_Diagrams/Organizer.jpg, id=520, 986.68625pt x 224.84pt>
 File: Images/Use_Case_Diagrams/Organizer.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/Organizer.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/Organizer.jpg  used on input 
-line 335.
+line 8.
 (pdftex.def)             Requested size: 344.99908pt x 78.61626pt.
- [35 <./Images/Use_Case_Diagrams/ThirdParty.jpg> <./Images/Use_Case_Diagrams/Au
-tomatedSOS.jpg>]
-<Images/Use_Case_Diagrams/Spectator.jpg, id=546, 986.68625pt x 224.84pt>
+<Images/Use_Case_Diagrams/Spectator.jpg, id=521, 986.68625pt x 355.3275pt>
 File: Images/Use_Case_Diagrams/Spectator.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/Spectator.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/Spectator.jpg  used on input 
-line 336.
-(pdftex.def)             Requested size: 344.99908pt x 78.61626pt.
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 342--369
+line 9.
+(pdftex.def)             Requested size: 344.99908pt x 124.24178pt.
+ [30 <./Images/Use_Case_Diagrams/ThirdParty.jpg> <./Images/Use_Case_Diagrams/Au
+tomatedSOS.jpg>])
+(3.SpecificRequirements/2.FunctionalRequirements/3.UseCasesAnalysis/UseCasesAna
+lysis.tex
+Overfull \hbox (24.0pt too wide) in alignment at lines 9--36
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 369
+Underfull \vbox (badness 10000) detected at line 36
  []
 
-[36 <./Images/Use_Case_Diagrams/AutomatedSOS2.jpg> <./Images/Use_Case_Diagrams/
-Organizer.jpg> <./Images/Use_Case_Diagrams/Spectator.jpg>]
-Overfull \hbox (24.0pt too wide) in alignment at lines 373--399
+[31 <./Images/Use_Case_Diagrams/Organizer.jpg> <./Images/Use_Case_Diagrams/Spec
+tator.jpg>]
+Overfull \hbox (24.0pt too wide) in alignment at lines 42--68
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 399
+Underfull \vbox (badness 10000) detected at line 68
+ []
+
+[32]
+Overfull \hbox (24.0pt too wide) in alignment at lines 74--96
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 96
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 102--124
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 124
+ []
+
+[33]
+Overfull \hbox (24.0pt too wide) in alignment at lines 130--154
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 154
+ []
+
+[34]
+Overfull \hbox (24.0pt too wide) in alignment at lines 160--179
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 179
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 185--204
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 204
+ []
+
+[35]
+Overfull \hbox (24.0pt too wide) in alignment at lines 210--225
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 225
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 231--246
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 246
+ []
+
+[36]
+Overfull \hbox (24.0pt too wide) in alignment at lines 252--273
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 273
+ []
+
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 279--296
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 296
  []
 
 [37]
-Overfull \hbox (24.0pt too wide) in alignment at lines 403--425
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 425
- []
-
-[38]
-Overfull \hbox (24.0pt too wide) in alignment at lines 429--451
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 451
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 455--474
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 474
- []
-
-[39]
-Overfull \hbox (24.0pt too wide) in alignment at lines 478--497
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 497
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 501--516
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 516
- []
-
-[40]
-Overfull \hbox (24.0pt too wide) in alignment at lines 520--535
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 535
- []
-
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 539--560
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 560
- []
-
-[41]
-Overfull \hbox (24.0pt too wide) in alignment at lines 564--581
- [] [] 
- []
-
-
-Underfull \vbox (badness 10000) detected at line 581
- []
-
-
-Underfull \hbox (badness 1072) in paragraph at lines 603--604
+Underfull \hbox (badness 1072) in paragraph at lines 315--316
 []\OT1/cmr/m/n/10 AutomatedSOS sends \OT1/cmr/m/it/10 User data \OT1/cmr/m/n/10
  in-clud-ing
  []
 
 
-Overfull \hbox (24.0pt too wide) in alignment at lines 592--616
+Overfull \hbox (24.0pt too wide) in alignment at lines 304--328
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 616
+Underfull \vbox (badness 10000) detected at line 328
  []
 
-[42]
-Overfull \hbox (24.0pt too wide) in alignment at lines 623--649
+[38]
+Overfull \hbox (24.0pt too wide) in alignment at lines 336--362
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 649
+Underfull \vbox (badness 10000) detected at line 362
  []
 
-[43]
-Overfull \hbox (24.0pt too wide) in alignment at lines 653--673
+
+Overfull \hbox (24.0pt too wide) in alignment at lines 368--388
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 673
+Underfull \vbox (badness 10000) detected at line 388
  []
 
-[44]
-Overfull \hbox (24.0pt too wide) in alignment at lines 677--702
+[39]
+Overfull \hbox (24.0pt too wide) in alignment at lines 394--419
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 702
+Underfull \vbox (badness 10000) detected at line 419
  []
 
-
-Overfull \hbox (24.0pt too wide) in alignment at lines 706--727
+[40]
+Overfull \hbox (24.0pt too wide) in alignment at lines 425--446
  [] [] 
  []
 
 
-Underfull \vbox (badness 10000) detected at line 727
+Underfull \vbox (badness 10000) detected at line 446
  []
 
-[45]
-<Images/Sequence_Diagrams/AddService.jpg, id=693, 974.64125pt x 774.895pt>
+)
+(3.SpecificRequirements/2.FunctionalRequirements/4.SequenceDiagrams/SequenceDia
+grams.tex
+<Images/Sequence_Diagrams/AddService.jpg, id=677, 974.64125pt x 774.895pt>
 File: Images/Sequence_Diagrams/AddService.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/AddService.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/AddService.jpg  used on input
- line 733.
+ line 5.
 (pdftex.def)             Requested size: 344.99622pt x 274.29153pt.
-<Images/Sequence_Diagrams/RequestUserData.jpg, id=694, 974.64125pt x 498.86375p
+<Images/Sequence_Diagrams/RequestUserData.jpg, id=678, 974.64125pt x 498.86375p
 t>
 File: Images/Sequence_Diagrams/RequestUserData.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RequestUserData.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RequestUserData.jpg  used on 
-input line 734.
+input line 6.
 (pdftex.def)             Requested size: 344.99622pt x 176.58406pt.
- [46]
-<Images/Sequence_Diagrams/RequestGroupData.jpg, id=704, 974.64125pt x 572.1375p
+ [41]
+<Images/Sequence_Diagrams/RequestGroupData.jpg, id=693, 974.64125pt x 572.1375p
 t>
 File: Images/Sequence_Diagrams/RequestGroupData.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RequestGroupData.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RequestGroupData.jpg  used on
- input line 735.
+ input line 7.
 (pdftex.def)             Requested size: 344.99622pt x 202.52095pt.
-<Images/Sequence_Diagrams/AutomatedSOS.jpg, id=705, 974.64125pt x 643.40375pt>
+<Images/Sequence_Diagrams/AutomatedSOS.jpg, id=694, 974.64125pt x 643.40375pt>
 File: Images/Sequence_Diagrams/AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/AutomatedSOS.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/AutomatedSOS.jpg  used on inp
-ut line 736.
+ut line 8.
 (pdftex.def)             Requested size: 344.99622pt x 227.74724pt.
- [47 <./Images/Sequence_Diagrams/AddService.jpg> <./Images/Sequence_Diagrams/Re
+ [42 <./Images/Sequence_Diagrams/AddService.jpg> <./Images/Sequence_Diagrams/Re
 questUserData.jpg>]
-<Images/Sequence_Diagrams/RunOrganizing.jpg, id=712, 974.64125pt x 602.25pt>
+<Images/Sequence_Diagrams/RunOrganizing.jpg, id=702, 974.64125pt x 602.25pt>
 File: Images/Sequence_Diagrams/RunOrganizing.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RunOrganizing.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RunOrganizing.jpg  used on in
-put line 737.
+put line 9.
 (pdftex.def)             Requested size: 344.99622pt x 213.17995pt.
-<Images/Sequence_Diagrams/EnrollRun.jpg, id=713, 974.64125pt x 732.7375pt>
+<Images/Sequence_Diagrams/EnrollRun.jpg, id=703, 974.64125pt x 732.7375pt>
 File: Images/Sequence_Diagrams/EnrollRun.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/EnrollRun.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/EnrollRun.jpg  used on input 
-line 738.
+line 10.
 (pdftex.def)             Requested size: 344.99622pt x 259.36894pt.
- [48 <./Images/Sequence_Diagrams/RequestGroupData.jpg> <./Images/Sequence_Diagr
+ [43 <./Images/Sequence_Diagrams/RequestGroupData.jpg> <./Images/Sequence_Diagr
 ams/AutomatedSOS.jpg>])
+(3.SpecificRequirements/2.FunctionalRequirements/5.Requirements/Requirements.te
+x [44 <./Images/Sequence_Diagrams/RunOrganizing.jpg> <./Images/Sequence_Diagram
+s/EnrollRun.jpg>]
+Overfull \hbox (2.69507pt too wide) in paragraph at lines 8--9
+[]\OT1/cmr/m/n/10 Unregistered in-di-vid-u-als and com-pa-nies must not be able
+ to use Data4Help. 
+ []
+
+[45] [46])
+(3.SpecificRequirements/2.FunctionalRequirements/6.SatisfyingGoals/SatisfyingGo
+als.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--19
+
+ []
+
+
+Overfull \hbox (4.07701pt too wide) in paragraph at lines 22--23
+[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
+ in-clud-ing Au-to-mat-ed-SOS and Track4Run,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--27
+
+ []
+
+[47]
+Underfull \hbox (badness 10000) in paragraph at lines 49--51
+
+ []
+
+[48]
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--100
+
+ []
+
+[49]
+Overfull \hbox (4.07701pt too wide) in paragraph at lines 100--101
+[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
+ in-clud-ing Au-to-mat-ed-SOS and Track4Run,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 102--104
+
+ []
+
+
+Overfull \hbox (1.91553pt too wide) in paragraph at lines 122--124
+[]\OT1/cmr/m/n/10 Allow \OT1/cmr/m/it/10 Users \OT1/cmr/m/n/10 to re-quest the 
+dele-tion of all their data stored by TrackMe
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--124
+
+ []
+
+[50]
+Underfull \hbox (badness 10000) in paragraph at lines 143--145
+
+ []
+
+
+Overfull \hbox (4.07701pt too wide) in paragraph at lines 147--148
+[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
+ in-clud-ing Au-to-mat-ed-SOS and Track4Run,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--164
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--168
+
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 183--185
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 197--199
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 206--208
+
+ []
+
+
+Overfull \hbox (4.07701pt too wide) in paragraph at lines 211--212
+[]\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
+ in-clud-ing Au-to-mat-ed-SOS and Track4Run,
+ []
+
+[52]
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
+
+ []
+
+))
 (3.SpecificRequirements/3.PerformanceRequirements/PerformanceRequirements.tex
-[49 <./Images/Sequence_Diagrams/RunOrganizing.jpg> <./Images/Sequence_Diagrams/
-EnrollRun.jpg>]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -1019,57 +1045,63 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
-) (3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex)
+[53]) (3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex)
 (3.SpecificRequirements/5.SoftwareSystemAttributes/SoftwareSystemAttributes.tex
-[50])) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [51]
+[54])) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [55]
 Chapter 4.
-) [52
+) [56
 
 ]
 Chapter 5.
-[53
+[57
 
-]
+] [58] [59]
 Chapter 6.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 119.
-[54
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
+[60
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 119.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
  (RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 119.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 119.
-Package rerunfilecheck Info: File `RASD.out' has not changed.
-(rerunfilecheck)             Checksum: D87CD20B49398898D2A8E81967FE42CD;3393.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
 
+
+Package rerunfilecheck Warning: File `RASD.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `RASD.out':
+(rerunfilecheck)             Before: D87CD20B49398898D2A8E81967FE42CD;3393
+(rerunfilecheck)             After:  AFF56FCAFA6A487C9A33C0EF67B039D1;3460.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 119.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
  ) 
 Here is how much of TeX's memory you used:
- 7740 strings out of 492970
- 127590 string characters out of 3126593
- 218837 words of memory out of 3000000
- 11103 multiletter control sequences out of 15000+200000
+ 7791 strings out of 492970
+ 130384 string characters out of 3126593
+ 217752 words of memory out of 3000000
+ 11098 multiletter control sequences out of 15000+200000
  7569 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,16n,57p,1099b,638s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/s_pan/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/s_pan/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/s_pan
+ 40i,16n,57p,1200b,687s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jacop/AppData/Loc
+al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jacop
 /AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r9.pfb><C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy9.pfb><C:/Users/s_pan/AppData/Local/Programs/MiKTeX 2
+Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
+r9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on RASD.pdf (55 pages, 4174733 bytes).
+Output written on RASD.pdf (61 pages, 4430369 bytes).
 PDF statistics:
- 849 PDF objects out of 1000 (max. 8388607)
- 307 named destinations out of 1000 (max. 500000)
+ 899 PDF objects out of 1000 (max. 8388607)
+ 333 named destinations out of 1000 (max. 500000)
  579 words of extra memory for PDF output out of 10000 (max. 10000000)
 

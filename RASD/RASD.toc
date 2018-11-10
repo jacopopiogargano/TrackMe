@@ -12,85 +12,95 @@
 \contentsline {paragraph}{Track4Run}{5}{section*.8}
 \contentsline {section}{\numberline {1.4}Definitions, Acronyms, Abbreviations}{6}{section.1.4}
 \contentsline {subsection}{\numberline {1.4.1}Definitions}{6}{subsection.1.4.1}
-\contentsline {subsection}{\numberline {1.4.2}Acronyms}{6}{subsection.1.4.2}
+\contentsline {subsection}{\numberline {1.4.2}Acronyms}{7}{subsection.1.4.2}
 \contentsline {subsection}{\numberline {1.4.3}Abbreviations}{7}{subsection.1.4.3}
 \contentsline {section}{\numberline {1.5}Revision History}{7}{section.1.5}
 \contentsline {section}{\numberline {1.6}Reference Documents}{7}{section.1.6}
 \contentsline {section}{\numberline {1.7}Document Structure}{7}{section.1.7}
-\contentsline {chapter}{\numberline {2}Overall Description}{8}{chapter.2}
-\contentsline {section}{\numberline {2.1}Product perspective}{8}{section.2.1}
-\contentsline {subsubsection}{Data4Help}{8}{section*.9}
-\contentsline {subsubsection}{AutomatedSOS}{11}{section*.13}
-\contentsline {subsubsection}{Track4Run}{12}{section*.15}
-\contentsline {section}{\numberline {2.2}Product functions}{13}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Data4Help}{13}{subsection.2.2.1}
-\contentsline {subsubsection}{User Registration}{13}{section*.18}
-\contentsline {subsubsection}{Third Party Registration}{14}{section*.19}
-\contentsline {subsubsection}{User Data Acquisition}{14}{section*.20}
-\contentsline {subsubsection}{Third Party Data Request}{14}{section*.21}
-\contentsline {subsubsection}{Data Management and Privacy}{14}{section*.22}
-\contentsline {subsection}{\numberline {2.2.2}AutomatedSOS}{15}{subsection.2.2.2}
-\contentsline {subsubsection}{User Subscription}{15}{section*.23}
-\contentsline {subsubsection}{Health Status Monitoring}{15}{section*.24}
-\contentsline {subsubsection}{Calling an Ambulance}{15}{section*.25}
-\contentsline {subsection}{\numberline {2.2.3}Track4Run}{15}{subsection.2.2.3}
-\contentsline {subsubsection}{User Registration}{15}{section*.26}
-\contentsline {subsubsection}{Run Creation and Path Definition}{15}{section*.27}
-\contentsline {subsubsection}{Display Runners on Map}{15}{section*.28}
-\contentsline {section}{\numberline {2.3}User characteristics}{16}{section.2.3}
-\contentsline {subsection}{\numberline {2.3.1}Data4Help}{16}{subsection.2.3.1}
-\contentsline {paragraph}{Users:}{16}{section*.29}
-\contentsline {paragraph}{Third parties:}{16}{section*.30}
-\contentsline {subsection}{\numberline {2.3.2}AutomatedSOS}{16}{subsection.2.3.2}
-\contentsline {paragraph}{Users:}{16}{section*.31}
-\contentsline {subsection}{\numberline {2.3.3}Track4Run}{16}{subsection.2.3.3}
-\contentsline {paragraph}{Organizers:}{16}{section*.32}
-\contentsline {paragraph}{Participants:}{16}{section*.33}
-\contentsline {paragraph}{Spectators:}{16}{section*.34}
-\contentsline {section}{\numberline {2.4}Assumptions, Dependencies and Constraints}{16}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Domain Assumptions}{16}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Dependencies}{17}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Constraints}{17}{subsection.2.4.3}
-\contentsline {paragraph}{Data4Help}{17}{section*.35}
-\contentsline {paragraph}{AutomatedSOS}{17}{section*.36}
-\contentsline {paragraph}{Track4Run}{18}{section*.37}
-\contentsline {chapter}{\numberline {3}Specific Requirements}{19}{chapter.3}
-\contentsline {section}{\numberline {3.1}External Interface Requirements}{19}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{19}{subsection.3.1.1}
-\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{23}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{23}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{23}{subsection.3.1.4}
-\contentsline {section}{\numberline {3.2}Functional Requirements}{24}{section.3.2}
-\contentsline {paragraph}{Data4Help}{24}{section*.45}
-\contentsline {paragraph}{AutomatedSOS}{25}{section*.46}
-\contentsline {paragraph}{Track4Run}{25}{section*.47}
-\contentsline {subsection}{\numberline {3.2.1}Satisfying Goals}{26}{subsection.3.2.1}
-\contentsline {paragraph}{Data4Help}{26}{section*.48}
-\contentsline {paragraph}{AutomatedSOS}{29}{section*.49}
-\contentsline {paragraph}{Track4Run}{30}{section*.50}
-\contentsline {subsection}{\numberline {3.2.2}Scenarios}{31}{subsection.3.2.2}
-\contentsline {paragraph}{Data4Help}{31}{section*.51}
-\contentsline {paragraph}{AutomatedSOS}{33}{section*.52}
-\contentsline {paragraph}{Track4Run}{33}{section*.53}
-\contentsline {subsection}{\numberline {3.2.3}Use Cases}{34}{subsection.3.2.3}
-\contentsline {subsubsection}{Use Case Diagrams}{34}{section*.54}
-\contentsline {subsubsection}{Use Case Analysis}{36}{section*.61}
-\contentsline {paragraph}{Data4Help}{36}{section*.62}
-\contentsline {paragraph}{AutomatedSOS}{42}{section*.63}
-\contentsline {paragraph}{Track4Run}{43}{section*.64}
-\contentsline {subsection}{\numberline {3.2.4}Sequence Diagrams}{47}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Performance Requirements}{50}{section.3.3}
-\contentsline {section}{\numberline {3.4}Design Constraints}{50}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Standards Compliance}{50}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Hardware Limitations}{50}{subsection.3.4.2}
-\contentsline {subsection}{\numberline {3.4.3}Other}{51}{subsection.3.4.3}
-\contentsline {section}{\numberline {3.5}Software System Attributes}{51}{section.3.5}
-\contentsline {subsection}{\numberline {3.5.1}Reliability}{51}{subsection.3.5.1}
-\contentsline {subsection}{\numberline {3.5.2}Availability}{51}{subsection.3.5.2}
-\contentsline {paragraph}{AutomatedSOS}{51}{section*.71}
-\contentsline {subsection}{\numberline {3.5.3}Security}{51}{subsection.3.5.3}
-\contentsline {subsection}{\numberline {3.5.4}Maintainability}{51}{subsection.3.5.4}
-\contentsline {subsection}{\numberline {3.5.5}Portability}{51}{subsection.3.5.5}
-\contentsline {chapter}{\numberline {4}Formal Analysis using Alloy}{52}{chapter.4}
-\contentsline {chapter}{\numberline {5}Effort Spent}{53}{chapter.5}
-\contentsline {chapter}{\numberline {6}References}{54}{chapter.6}
+\contentsline {paragraph}{First chapter}{7}{section*.9}
+\contentsline {paragraph}{Second chapter}{7}{section*.10}
+\contentsline {paragraph}{Third chapter}{8}{section*.11}
+\contentsline {paragraph}{Fourth chapter}{8}{section*.12}
+\contentsline {paragraph}{Fifth chapter}{8}{section*.13}
+\contentsline {paragraph}{Sixth chapter}{8}{section*.14}
+\contentsline {chapter}{\numberline {2}Overall Description}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Product perspective}{10}{section.2.1}
+\contentsline {subsubsection}{Data4Help}{10}{section*.15}
+\contentsline {subsubsection}{AutomatedSOS}{13}{section*.19}
+\contentsline {subsubsection}{Track4Run}{15}{section*.22}
+\contentsline {section}{\numberline {2.2}Product functions}{16}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Data4Help}{16}{subsection.2.2.1}
+\contentsline {subsubsection}{User Registration}{16}{section*.25}
+\contentsline {subsubsection}{Third Party Registration}{17}{section*.26}
+\contentsline {subsubsection}{User Data Acquisition}{17}{section*.27}
+\contentsline {subsubsection}{Third Party Data Request}{17}{section*.28}
+\contentsline {subsubsection}{Data Management and Privacy}{17}{section*.29}
+\contentsline {subsection}{\numberline {2.2.2}AutomatedSOS}{18}{subsection.2.2.2}
+\contentsline {subsubsection}{User Subscription}{18}{section*.30}
+\contentsline {subsubsection}{Health Status Monitoring}{18}{section*.31}
+\contentsline {subsubsection}{Calling an Ambulance}{18}{section*.32}
+\contentsline {subsection}{\numberline {2.2.3}Track4Run}{18}{subsection.2.2.3}
+\contentsline {subsubsection}{User Registration}{18}{section*.33}
+\contentsline {subsubsection}{Run Creation and Path Definition}{18}{section*.34}
+\contentsline {subsubsection}{Display Runners on Map}{18}{section*.35}
+\contentsline {section}{\numberline {2.3}User characteristics}{19}{section.2.3}
+\contentsline {subsection}{\numberline {2.3.1}Data4Help}{19}{subsection.2.3.1}
+\contentsline {paragraph}{Users:}{19}{section*.36}
+\contentsline {paragraph}{Third parties:}{19}{section*.37}
+\contentsline {subsection}{\numberline {2.3.2}AutomatedSOS}{19}{subsection.2.3.2}
+\contentsline {paragraph}{Users:}{19}{section*.38}
+\contentsline {subsection}{\numberline {2.3.3}Track4Run}{19}{subsection.2.3.3}
+\contentsline {paragraph}{Organizers:}{19}{section*.39}
+\contentsline {paragraph}{Participants:}{19}{section*.40}
+\contentsline {paragraph}{Spectators:}{19}{section*.41}
+\contentsline {section}{\numberline {2.4}Assumptions, Dependencies and Constraints}{19}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Domain Assumptions}{19}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Dependencies}{20}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Constraints}{20}{subsection.2.4.3}
+\contentsline {paragraph}{Data4Help}{20}{section*.42}
+\contentsline {paragraph}{AutomatedSOS}{21}{section*.43}
+\contentsline {paragraph}{Track4Run}{21}{section*.44}
+\contentsline {chapter}{\numberline {3}Specific Requirements}{22}{chapter.3}
+\contentsline {section}{\numberline {3.1}External Interface Requirements}{22}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}User Interfaces}{22}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Hardware Interfaces}{26}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Software Interfaces}{26}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Communication Interfaces}{26}{subsection.3.1.4}
+\contentsline {section}{\numberline {3.2}Functional Requirements}{26}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Scenarios}{26}{subsection.3.2.1}
+\contentsline {paragraph}{Data4Help}{26}{section*.52}
+\contentsline {paragraph}{AutomatedSOS}{28}{section*.53}
+\contentsline {paragraph}{Track4Run}{28}{section*.54}
+\contentsline {subsection}{\numberline {3.2.2}Use Cases}{29}{subsection.3.2.2}
+\contentsline {subsubsection}{Use Case Diagrams}{29}{section*.55}
+\contentsline {subsubsection}{Use Case Analysis}{31}{section*.61}
+\contentsline {paragraph}{Data4Help}{31}{section*.62}
+\contentsline {paragraph}{AutomatedSOS}{38}{section*.63}
+\contentsline {paragraph}{Track4Run}{39}{section*.64}
+\contentsline {subsection}{\numberline {3.2.3}Sequence Diagrams}{42}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Requirements}{45}{subsection.3.2.4}
+\contentsline {paragraph}{Data4Help}{45}{section*.71}
+\contentsline {paragraph}{AutomatedSOS}{46}{section*.72}
+\contentsline {paragraph}{Track4Run}{46}{section*.73}
+\contentsline {subsection}{\numberline {3.2.5}Satisfying Goals}{47}{subsection.3.2.5}
+\contentsline {paragraph}{Data4Help}{47}{section*.74}
+\contentsline {paragraph}{AutomatedSOS}{51}{section*.75}
+\contentsline {paragraph}{Track4Run}{52}{section*.76}
+\contentsline {section}{\numberline {3.3}Performance Requirements}{53}{section.3.3}
+\contentsline {section}{\numberline {3.4}Design Constraints}{54}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Standards Compliance}{54}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Hardware Limitations}{54}{subsection.3.4.2}
+\contentsline {subsection}{\numberline {3.4.3}Other}{54}{subsection.3.4.3}
+\contentsline {section}{\numberline {3.5}Software System Attributes}{54}{section.3.5}
+\contentsline {subsection}{\numberline {3.5.1}Reliability}{54}{subsection.3.5.1}
+\contentsline {subsection}{\numberline {3.5.2}Availability}{54}{subsection.3.5.2}
+\contentsline {paragraph}{AutomatedSOS}{55}{section*.77}
+\contentsline {subsection}{\numberline {3.5.3}Security}{55}{subsection.3.5.3}
+\contentsline {subsection}{\numberline {3.5.4}Maintainability}{55}{subsection.3.5.4}
+\contentsline {subsection}{\numberline {3.5.5}Portability}{55}{subsection.3.5.5}
+\contentsline {chapter}{\numberline {4}Formal Analysis using Alloy}{56}{chapter.4}
+\contentsline {chapter}{\numberline {5}Effort Spent}{57}{chapter.5}
+\contentsline {paragraph}{Gargano Jacopo Pio}{57}{section*.78}
+\contentsline {paragraph}{Giannetti Cristian}{58}{section*.79}
+\contentsline {paragraph}{Haag Federico}{59}{section*.80}
+\contentsline {chapter}{\numberline {6}References}{60}{chapter.6}
