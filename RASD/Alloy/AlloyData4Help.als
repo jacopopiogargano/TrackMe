@@ -80,7 +80,7 @@ fun getAnonUsersGroupsByFilter[d4h: Data4Help, f: Filter] : set AnonUsersGroup{
 	(Data.(d4h.groupdata)) 
 }
 
-fun sendGroupDatasss[d4h: Data4Help, aug:  AnonUsersGroup] :  Data -> AnonUsersGroup{
+fun retrieveDataToAnonUsersGroupByGroup[d4h: Data4Help, aug:  AnonUsersGroup] :  Data -> AnonUsersGroup{
 	d4h.groupdata :> aug
 }
 
@@ -156,7 +156,7 @@ pred sendGroupData [f: Filter, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: 
 	tp' in s.thirdParty  
 	aug in Data.(d4h.groupdata)
 	f in aug.filter 
-	tp'.groupdata = tp.groupdata + sendGroupDatasss[d4h,aug]
+	tp'.groupdata = tp.groupdata + retrieveDataToAnonUsersGroupByGroup[d4h,aug]
 }
 
 pred show {}
