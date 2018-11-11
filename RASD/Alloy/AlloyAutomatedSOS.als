@@ -1,4 +1,5 @@
---------------------------------------------------------- SIGNATURES -------------------------------------------------
+-- SIGNATURES
+
 sig Individual {}
 
 sig HealthData {
@@ -32,7 +33,6 @@ one sig Data4Help{
 }
 
 sig Service{
-	-- users who gave consent to their data acquisition by the service
 	users: set User,
 	subscribedUsers: set User
 }{subscribedUsers in users}
@@ -55,18 +55,22 @@ sig UserInNeed{
 	user: one User
 }
 
+-- FUNCTIONS
 
---------------------------------------------------FUNCTIONS----------------------------------------------------
 fun retrieveUserData[d4h: Data4Help, u: User] : set Data {
 	d4h.userdata.u
 }
---------------------------------------------------- FACTS -------------------------------------------------------
+
+-- FACTS
+
 fact userIndividualRelationshipIsUnique{
-	all disj u1, u2:User, i:Individual | not (u1.individual = i and u2.individual = i)
+	all disj u1, u2:User, i:Individual |
+	not (u1.individual = i and u2.individual = i)
 }
 
 fact userUserInNeedRelationshipIsUnique{
-	all disj uin1, uin2: UserInNeed, u: User | not (uin1.user = u and uin2.user = u)
+	all disj uin1, uin2: UserInNeed, u: User |
+	not (uin1.user = u and uin2.user = u)
 }
 
 fact healthDataToDataConnection{
@@ -74,7 +78,7 @@ fact healthDataToDataConnection{
 	hd in d.healthData iff hd.data = d
 }
 
-fact PostionToDataConnection{
+fact postionToDataConnection{
 	all d:Data, p: Position | 
 	p in d.positions iff p.data = d
 }
@@ -89,8 +93,7 @@ fact allPositionBelongsToOnlyOneData{
 	not (p in d1.positions and p in d2.positions)
 }
 
-
-fact userInNeed {
+fact userInNeedDefinition{
 	all uin: UserInNeed, asos: AutomatedSOS, d4h: Data4Help| some hr: HeartRate |
 	((hr.value < asos.heartRateLowerThreshold or hr.value > asos.heartRateUpperThreshold) 
 	and hr in retrieveUserData[d4h, uin.user].healthData.heartRate)
@@ -98,13 +101,13 @@ fact userInNeed {
 	(uin.user in asos.subscribedUsers and uin in asos.usersInNeed)
 }
 
-fact ifUserInNeedIsAssignedToLocalEmergencyServicesTheyAreInLocalEmergencServicesUsersInNeed{
+fact ifUserInNeedIsAssignedToLocalEmergencyServicesTheyAreLocalEmergencServicesUsersInNeed{
 	all uin: UserInNeed, asos: AutomatedSOS, les: LocalEmergencyServices |
 	uin in asos.userInNeedHandling.les iff uin in les.usersInNeed
 }
 
 pred show {}
 
------------------------------------------------ CHECKS and RUNS -------------------------------------------------------
-check assignUserInNeedToLocalEmergencyServicesOkay for 10
-run show for 3 but exactly 3 User, 2 HeartRate, 0 Service
+-- RUN
+
+run show for 3 but exactly 3 User, 2 HeartRate, 0 Service, 1 UserInNeed, 1 LocalEmergencyServices
