@@ -5,17 +5,9 @@
 %The system to be must respect two main performance requirements:
 \begin{itemize}
 	\item[PR\subs{1}]AutomatedSOS must call local emergency services within 5 seconds from the moment it identified a \ic{User} as \ic{User in need}.
-	\item[PR\subs{2}]Data4Help, AutomatedSOS and Track4Run must have a high speed Internet connection.
 \end{itemize}
 
 Requirement PR\subs{1} refers to the reaction time of the system to be. Being able to respect this requirement can mean saving a person's life, besides making the system to be reliable. This is why AutomatedSOS must always be ready to call local emergency services as soon as needed.\\
-
-Having a high speed Internet connection - PR\subs{2} - is fundamental for guaranteeing a high quality service. For each of the three services that build up the system to be, this requirement has a specific purpose:
-\begin{description}
-	\item[Data4Help:] reducing delay between data production on \ic{User Smart wearable} and data collection and sharing with \ic{Third parties}. In particular, AutomatedSOS subscribed \ic{User} data collection and sharing with AutomatedSOS is crucial for satisfying PR\subs{1}. 
-	\item[AutomatedSOS:] reducing delay between data collection by Data4Help and analysis for possible identification of a \ic{User in need}.
-	\item[Track4Run:] increase real time accuracy while displaying \ic{Users} positions during a \ic{Run} for \ic{Spectators} to watch.\\
-\end{description}
 
 The system to be depends on external parties and pieces of hardware. These have a great impact on the performance and on the functions of the system to be. It is possible to put constraints on the quality of external pieces of hardware compliant with the system to be (e.g. sensors quality and accuracy, \ic{Smart wearable} connection to smartphone). By doing this, the system will be able to send accurate and precise data to \ic{Services}, positively contributing to their performance level.
 

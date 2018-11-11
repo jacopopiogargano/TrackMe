@@ -3,40 +3,43 @@
 	
 	\section{Product perspective}
 
-		\subsubsection{Data4Help}
+		\subsection{Data4Help}
 
-			\image {13cm} {Class_Diagrams/Class_Diagram_Data4Help.jpg} {Data4Help class diagram} {Data4HelpClassDiagram}
-			\image {13cm} {State_Charts/StateChart_Data4HelpUserData.jpg} {Data4Help state chart referred to \ic{User data} request} {Data4HelpUserDataStateChart}
-			\image {13cm} {State_Charts/StateChart_Data4HelpGroupData.jpg} {Data4Help state chart referred to \ic{Group data} request} {Data4HelpGroupDataStateChart}
+			\image {10cm} {Class_Diagrams/Class_Diagram_Data4Help.jpg} {Data4Help class diagram} {Data4HelpClassDiagram}
+			\image {10cm} {State_Charts/StateChart_Data4HelpUserData.jpg} {Data4Help state chart referred to \ic{User data} request} {Data4HelpUserDataStateChart}
+			\image {10cm} {State_Charts/StateChart_Data4HelpGroupData.jpg} {Data4Help state chart referred to \ic{Group data} request} {Data4HelpGroupDataStateChart}
 
+			\paragraph{Shared Phenomena}
 			\begin{itemize}
-				\item \ic{User} subscribes to Data4Help
-				\item \ic{User} log in to Data4Help account on the app
-				\item \ic{User} adds a new \ic{Service} on personal Data4Help account granting to it the direct access of data
-				\item \ic{User} unsubscribes from Data4Help
-				\item \ic{Smart wearables} send data to Data4Help system
+				\item \ic{User} subscribes to Data4Help.
+				\item \ic{User} logs in to Data4Help.
+				\item \ic{User} adds a new \ic{Service} on personal Data4Help account granting to it the direct access of data.
+				\item \ic{User} unsubscribes from Data4Help.
+				\item \ic{Smart wearables} send data to Data4Help through smartphones.
 			\end{itemize}
 
-		\subsubsection{AutomatedSOS}
+		\subsection{AutomatedSOS}
 
-			\image {13cm} {Class_Diagrams/Class_Diagram_AutomatedSOS.jpg} {AutomatedSOS class diagram} {AutomatedSOSClassDiagram}
-			\image {13cm} {State_Charts/StateChart_AutomatedSOS.jpg} {AutomatedSOS state chart} {AutomatedSOSStateChart}
-			The product, because it is built on top of Data4Help, inherites from it the same shared phenomena.
+			\image {10cm} {Class_Diagrams/Class_Diagram_AutomatedSOS.jpg} {AutomatedSOS class diagram} {AutomatedSOSClassDiagram}
+			\image {10cm} {State_Charts/StateChart_AutomatedSOS.jpg} {AutomatedSOS state chart} {AutomatedSOSStateChart}
+			The product, as it is built on top of Data4Help, inherits from it the same shared phenomena.
 
+			\paragraph{Shared Phenomena}
 			\begin{itemize}
-				\item \ic{User} becomes a \ic{User in need}
-				\item The system calls an ambulance
+				\item \ic{User} becomes a \ic{User in need}.
+				\item AutomatedSOS calls local emergency services.
 			\end{itemize}
 
-		\subsubsection{Track4Run}
+		\subsection{Track4Run}
 
-			\image {13cm} {Class_Diagrams/Class_Diagram_Track4Run.jpg} {Track4Run class diagram} {Track4RunClassDiagram}
-			\image {13cm} {State_Charts/StateChart_Track4Run.jpg} {Track4Run state chart} {Track4RunStateChart}
-			The product, because it is built on top of Data4Help, inherites from it the same shared phenomena.
+			\image {10cm} {Class_Diagrams/Class_Diagram_Track4Run.jpg} {Track4Run class diagram} {Track4RunClassDiagram}
+			\image {10cm} {State_Charts/StateChart_Track4Run.jpg} {Track4Run state chart} {Track4RunStateChart}
+			The product, because it is built on top of Data4Help, inherits from it the same shared phenomena.
 
+			\paragraph{Shared Phenomena}
 			\begin{itemize}
-				\item \ic{Organizer} sets a path for a running competition
-				\item \ic{User} enrolls to a running competition
-				\item \ic{Spectators} watches the \ic{Participants}' tracking map			
+				\item \ic{Organizer} creates a running competition.
+				\item \ic{User} enrolls in a running competition.
+				\item \ic{Spectators} watches the \ic{Participants}' tracking map.		
 			\end{itemize}
 \end{document}

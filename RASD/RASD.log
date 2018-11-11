@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  10 NOV 2018 23:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  11 NOV 2018 19:24
 entering extended mode
 **./RASD.tex
 (RASD.tex
@@ -306,9 +306,6 @@ LaTeX Warning: Label `fig:nonfloat' multiply defined.
 LaTeX Warning: Label `fig:nonfloat' multiply defined.
 
 
-LaTeX Warning: Label `UseCaseDiagram' multiply defined.
-
-
 LaTeX Warning: Label `fig:nonfloat' multiply defined.
 
 
@@ -432,12 +429,12 @@ LaTeX Info: Redefining \nameref on input line 74.
 \@outlinefile=\write4
 \openout4 = `RASD.out'.
 
-<Images/PolitecnicoLogo.png, id=207, 803.0pt x 501.875pt>
+<Images/PolitecnicoLogo.png, id=223, 803.0pt x 501.875pt>
 File: Images/PolitecnicoLogo.png Graphic file (type png)
 <use Images/PolitecnicoLogo.png>
 Package pdftex.def Info: Images/PolitecnicoLogo.png  used on input line 80.
 (pdftex.def)             Requested size: 182.08852pt x 113.80533pt.
-<Images/TrackMeLogo.png, id=209, 1121.18875pt x 436.63126pt>
+<Images/TrackMeLogo.png, id=225, 1121.18875pt x 436.63126pt>
 File: Images/TrackMeLogo.png Graphic file (type png)
 <use Images/TrackMeLogo.png>
 Package pdftex.def Info: Images/TrackMeLogo.png  used on input line 84.
@@ -450,13 +447,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 67.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 70.
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 67.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 70.
 
 [1
 
@@ -471,14 +468,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--8
 
  []
 
-[3
 
-]
 Underfull \hbox (badness 10000) in paragraph at lines 9--10
 
  []
 
+[3
 
+]
 Underfull \hbox (badness 10000) in paragraph at lines 11--12
 
  []
@@ -490,155 +487,157 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
 [4]) (1.Introduction/3.Goals/Goals.tex)
 (1.Introduction/4.DefinitionsAcronymsAbbreviations/DefinitionsAcronymsAbbreviat
-ions.tex [5]
+ions.tex
 Overfull \hbox (0.3238pt too wide) in paragraph at lines 9--10
 []\OT1/cmr/m/n/10 a com-pany that is will-ing to ac-cess \OT1/cmr/m/it/10 User 
 data \OT1/cmr/m/n/10 stored in TrackMe's
  []
 
-[6])
+[5] [6])
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
  [7]) (2.OverallDescription/OverallDescription.tex [8]
 Chapter 2.
 (2.OverallDescription/1.ProductPerspective/ProductPerspective.tex
-<Images/Class_Diagrams/Class_Diagram_Data4Help.jpg, id=338, 875.27pt x 760.8425
+<Images/Class_Diagrams/Class_Diagram_Data4Help.jpg, id=357, 875.27pt x 760.8425
 pt>
 File: Images/Class_Diagrams/Class_Diagram_Data4Help.jpg Graphic file (type jpg)
 
 <use Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>
 Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_Data4Help.jpg  use
 d on input line 8.
-(pdftex.def)             Requested size: 344.99998pt x 299.89677pt.
-<Images/State_Charts/StateChart_Data4HelpUserData.jpg, id=339, 722.7pt x 666.49
+(pdftex.def)             Requested size: 327.33063pt x 284.5374pt.
+<Images/State_Charts/StateChart_Data4HelpUserData.jpg, id=358, 722.7pt x 666.49
 pt>
 File: Images/State_Charts/StateChart_Data4HelpUserData.jpg Graphic file (type j
 pg)
 <use Images/State_Charts/StateChart_Data4HelpUserData.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_Data4HelpUserData.jpg  
 used on input line 9.
-(pdftex.def)             Requested size: 344.99533pt x 318.16235pt.
- [9
-
-]
-Overfull \vbox (6.20229pt too high) has occurred while \output is active []
-
-
-[10 <./Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>]
-<Images/State_Charts/StateChart_Data4HelpGroupData.jpg, id=350, 722.7pt x 710.6
+(pdftex.def)             Requested size: 308.52737pt x 284.5308pt.
+<Images/State_Charts/StateChart_Data4HelpGroupData.jpg, id=359, 722.7pt x 710.6
 55pt>
 File: Images/State_Charts/StateChart_Data4HelpGroupData.jpg Graphic file (type 
 jpg)
 <use Images/State_Charts/StateChart_Data4HelpGroupData.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_Data4HelpGroupData.jpg 
  used on input line 10.
-(pdftex.def)             Requested size: 344.99533pt x 339.2454pt.
- [11 <./Images/State_Charts/StateChart_Data4HelpUserData.jpg>]
-<Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg, id=356, 875.27pt x 504.8
+(pdftex.def)             Requested size: 289.35056pt x 284.52805pt.
+ [9
+
+ <./Images/Class_Diagrams/Class_Diagram_Data4Help.jpg>] [10 <./Images/State_Cha
+rts/StateChart_Data4HelpUserData.jpg>]
+<Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg, id=370, 875.27pt x 504.8
 8625pt>
 File: Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg Graphic file (type j
 pg)
 <use Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg>
 Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_AutomatedSOS.jpg  
-used on input line 22.
+used on input line 23.
 (pdftex.def)             Requested size: 344.99998pt x 199.00801pt.
-<Images/State_Charts/StateChart_AutomatedSOS.jpg, id=357, 722.7pt x 776.9025pt>
+<Images/State_Charts/StateChart_AutomatedSOS.jpg, id=371, 722.7pt x 776.9025pt>
 
 File: Images/State_Charts/StateChart_AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/State_Charts/StateChart_AutomatedSOS.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_AutomatedSOS.jpg  used 
-on input line 23.
-(pdftex.def)             Requested size: 344.09106pt x 369.8979pt.
- [12 <./Images/State_Charts/StateChart_Data4HelpGroupData.jpg>] [13 <./Images/C
+on input line 24.
+(pdftex.def)             Requested size: 264.68204pt x 284.53319pt.
+ [11 <./Images/State_Charts/StateChart_Data4HelpGroupData.jpg>] [12 <./Images/C
 lass_Diagrams/Class_Diagram_AutomatedSOS.jpg>]
-<Images/Class_Diagrams/Class_Diagram_Track4Run.jpg, id=370, 875.27pt x 700.6175
+<Images/Class_Diagrams/Class_Diagram_Track4Run.jpg, id=384, 875.27pt x 700.6175
 pt>
 File: Images/Class_Diagrams/Class_Diagram_Track4Run.jpg Graphic file (type jpg)
 
 <use Images/Class_Diagrams/Class_Diagram_Track4Run.jpg>
 Package pdftex.def Info: Images/Class_Diagrams/Class_Diagram_Track4Run.jpg  use
-d on input line 33.
+d on input line 35.
 (pdftex.def)             Requested size: 344.99998pt x 276.15823pt.
-<Images/State_Charts/StateChart_Track4Run.jpg, id=371, 722.7pt x 666.49pt>
+<Images/State_Charts/StateChart_Track4Run.jpg, id=385, 722.7pt x 666.49pt>
 File: Images/State_Charts/StateChart_Track4Run.jpg Graphic file (type jpg)
 <use Images/State_Charts/StateChart_Track4Run.jpg>
 Package pdftex.def Info: Images/State_Charts/StateChart_Track4Run.jpg  used on 
-input line 34.
-(pdftex.def)             Requested size: 344.99533pt x 318.16235pt.
- [14 <./Images/State_Charts/StateChart_AutomatedSOS.jpg>] [15 <./Images/Class_D
-iagrams/Class_Diagram_Track4Run.jpg>])
-(2.OverallDescription/2.ProductFunctions/ProductFunctions.tex [16 <./Images/Sta
-te_Charts/StateChart_Track4Run.jpg>] [17])
-(2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex [18])
+input line 36.
+(pdftex.def)             Requested size: 308.52737pt x 284.5308pt.
+
+[13 <./Images/State_Charts/StateChart_AutomatedSOS.jpg>] [14 <./Images/Class_Di
+agrams/Class_Diagram_Track4Run.jpg>])
+(2.OverallDescription/2.ProductFunctions/ProductFunctions.tex [15 <./Images/Sta
+te_Charts/StateChart_Track4Run.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 18--20
+
+ []
+
+[16]) (2.OverallDescription/3.UserCharacteristics/UserCharacteristics.tex
+[17])
 (2.OverallDescription/4.AssumptionsDependenciesAndConstraints/AssumptionsDepend
 enciesAndConstraints.tex
 Overfull \hbox (2.48302pt too wide) in paragraph at lines 4--4
 []\OT1/cmr/bx/n/14.4 Assumptions, De-pen-den-cies and Con-straints 
  []
 
-[19] [20])) (3.SpecificRequirements/SpecificRequirements.tex [21]
+[18] [19])) (3.SpecificRequirements/SpecificRequirements.tex [20]
 Chapter 3.
 
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/ExternalInterfaceRequir
 ements.tex
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/1.UserInterface/UserInt
 erface.tex
-<Images/Mockups/0_FirstFrame.png, id=429, 431.6125pt x 843.15pt>
+<Images/Mockups/0_FirstFrame.png, id=444, 431.6125pt x 843.15pt>
 File: Images/Mockups/0_FirstFrame.png Graphic file (type png)
 <use Images/Mockups/0_FirstFrame.png>
 Package pdftex.def Info: Images/Mockups/0_FirstFrame.png  used on input line 7.
 
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/1_0_Login.png, id=430, 431.6125pt x 843.15pt>
+<Images/Mockups/1_0_Login.png, id=445, 431.6125pt x 843.15pt>
 File: Images/Mockups/1_0_Login.png Graphic file (type png)
 <use Images/Mockups/1_0_Login.png>
 Package pdftex.def Info: Images/Mockups/1_0_Login.png  used on input line 7.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/1_1_Registration.png, id=431, 431.6125pt x 843.15pt>
+<Images/Mockups/1_1_Registration.png, id=446, 431.6125pt x 843.15pt>
 File: Images/Mockups/1_1_Registration.png Graphic file (type png)
 <use Images/Mockups/1_1_Registration.png>
 Package pdftex.def Info: Images/Mockups/1_1_Registration.png  used on input lin
 e 8.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/2_Menu.png, id=432, 431.6125pt x 843.15pt>
+<Images/Mockups/2_Menu.png, id=447, 431.6125pt x 843.15pt>
 File: Images/Mockups/2_Menu.png Graphic file (type png)
 <use Images/Mockups/2_Menu.png>
 Package pdftex.def Info: Images/Mockups/2_Menu.png  used on input line 8.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_0_MyServices.png, id=433, 431.6125pt x 843.15pt>
+<Images/Mockups/3_0_MyServices.png, id=448, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_0_MyServices.png Graphic file (type png)
 <use Images/Mockups/3_0_MyServices.png>
 Package pdftex.def Info: Images/Mockups/3_0_MyServices.png  used on input line 
 9.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_1_DiscoverServices.png, id=434, 431.6125pt x 843.15pt>
+<Images/Mockups/3_1_DiscoverServices.png, id=449, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_1_DiscoverServices.png Graphic file (type png)
 <use Images/Mockups/3_1_DiscoverServices.png>
 Package pdftex.def Info: Images/Mockups/3_1_DiscoverServices.png  used on input
  line 9.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [22
+ [21
 
  <./Images/Mockups/0_FirstFrame.png> <./Images/Mockups/1_0_Login.png>]
-<Images/Mockups/3_2_ServicePageData4Help.png, id=445, 431.6125pt x 843.15pt>
+<Images/Mockups/3_2_ServicePageData4Help.png, id=460, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_2_ServicePageData4Help.png Graphic file (type png)
 <use Images/Mockups/3_2_ServicePageData4Help.png>
 Package pdftex.def Info: Images/Mockups/3_2_ServicePageData4Help.png  used on i
 nput line 10.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_3_RevokeConsentData4Help.png, id=446, 431.6125pt x 843.15pt>
+<Images/Mockups/3_3_RevokeConsentData4Help.png, id=461, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_3_RevokeConsentData4Help.png Graphic file (type png)
 <use Images/Mockups/3_3_RevokeConsentData4Help.png>
 Package pdftex.def Info: Images/Mockups/3_3_RevokeConsentData4Help.png  used on
  input line 10.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/3_4_AutomatedSOS.png, id=447, 431.6125pt x 843.15pt>
+<Images/Mockups/3_4_AutomatedSOS.png, id=462, 431.6125pt x 843.15pt>
 File: Images/Mockups/3_4_AutomatedSOS.png Graphic file (type png)
 <use Images/Mockups/3_4_AutomatedSOS.png>
 Package pdftex.def Info: Images/Mockups/3_4_AutomatedSOS.png  used on input lin
 e 11.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png, id=448, 431.6125pt x 84
+<Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png, id=463, 431.6125pt x 84
 3.15pt>
 File: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png Graphic file (type 
 png)
@@ -646,37 +645,37 @@ png)
 Package pdftex.def Info: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png 
  used on input line 11.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [23 <./Images/Mockups/1_1_Registration.png> <./Images/Mockups/2_Menu.png> <./I
+ [22 <./Images/Mockups/1_1_Registration.png> <./Images/Mockups/2_Menu.png> <./I
 mages/Mockups/3_0_MyServices.png> <./Images/Mockups/3_1_DiscoverServices.png>]
-<Images/Mockups/5_1_CreateRunTrack4Run.png, id=463, 431.6125pt x 843.15pt>
+<Images/Mockups/5_1_CreateRunTrack4Run.png, id=478, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_1_CreateRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_1_CreateRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_1_CreateRunTrack4Run.png  used on inp
 ut line 12.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_4_DiscoverRunsTrack4Run.png, id=464, 431.6125pt x 843.15pt>
+<Images/Mockups/5_4_DiscoverRunsTrack4Run.png, id=479, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_4_DiscoverRunsTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_4_DiscoverRunsTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_4_DiscoverRunsTrack4Run.png  used on 
 input line 12.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_5_WatchRunTrack4Run.png, id=465, 431.6125pt x 843.15pt>
+<Images/Mockups/5_5_WatchRunTrack4Run.png, id=480, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_5_WatchRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_5_WatchRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_5_WatchRunTrack4Run.png  used on inpu
 t line 13.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
-<Images/Mockups/5_6_LiveRunTrack4Run.png, id=466, 431.6125pt x 843.15pt>
+<Images/Mockups/5_6_LiveRunTrack4Run.png, id=481, 431.6125pt x 843.15pt>
 File: Images/Mockups/5_6_LiveRunTrack4Run.png Graphic file (type png)
 <use Images/Mockups/5_6_LiveRunTrack4Run.png>
 Package pdftex.def Info: Images/Mockups/5_6_LiveRunTrack4Run.png  used on input
  line 13.
 (pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
- [24 <./Images/Mockups/3_2_ServicePageData4Help.png> <./Images/Mockups/3_3_Revo
+ [23 <./Images/Mockups/3_2_ServicePageData4Help.png> <./Images/Mockups/3_3_Revo
 keConsentData4Help.png> <./Images/Mockups/3_4_AutomatedSOS.png> <./Images/Mocku
 ps/5_3_OrganizerRegistrationTrack4Run.png>])
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/2.HardwareInterface/Har
-dwareInterface.tex [25 <./Images/Mockups/5_1_CreateRunTrack4Run.png> <./Images/
+dwareInterface.tex [24 <./Images/Mockups/5_1_CreateRunTrack4Run.png> <./Images/
 Mockups/5_4_DiscoverRunsTrack4Run.png> <./Images/Mockups/5_5_WatchRunTrack4Run.
 png> <./Images/Mockups/5_6_LiveRunTrack4Run.png>])
 (3.SpecificRequirements/1.ExternalInterfaceRequirements/3.SoftwareInterface/Sof
@@ -685,41 +684,41 @@ twareInterface.tex)
 e/CommunicationInterface.tex))
 (3.SpecificRequirements/2.FunctionalRequirements/FunctionalRequirements.tex
 (3.SpecificRequirements/2.FunctionalRequirements/1.Scenarios/Scenarios.tex
-[26] [27] [28])
+[25] [26] [27])
 (3.SpecificRequirements/2.FunctionalRequirements/2.UseCaseDiagrams/UseCaseDiagr
 ams.tex
-<Images/Use_Case_Diagrams/User.jpg, id=511, 986.68625pt x 634.37pt>
+<Images/Use_Case_Diagrams/User.jpg, id=526, 986.68625pt x 634.37pt>
 File: Images/Use_Case_Diagrams/User.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/User.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/User.jpg  used on input line 
 5.
 (pdftex.def)             Requested size: 344.99908pt x 221.81018pt.
-<Images/Use_Case_Diagrams/ThirdParty.jpg, id=512, 986.68625pt x 720.6925pt>
+<Images/Use_Case_Diagrams/ThirdParty.jpg, id=527, 986.68625pt x 720.6925pt>
 File: Images/Use_Case_Diagrams/ThirdParty.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/ThirdParty.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/ThirdParty.jpg  used on input
  line 6.
 (pdftex.def)             Requested size: 344.99908pt x 251.99323pt.
-<Images/Use_Case_Diagrams/AutomatedSOS.jpg, id=513, 986.68625pt x 449.68pt>
+<Images/Use_Case_Diagrams/AutomatedSOS.jpg, id=528, 986.68625pt x 449.68pt>
 File: Images/Use_Case_Diagrams/AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/AutomatedSOS.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/AutomatedSOS.jpg  used on inp
 ut line 7.
 (pdftex.def)             Requested size: 344.99908pt x 157.23253pt.
- [29 <./Images/Use_Case_Diagrams/User.jpg>]
-<Images/Use_Case_Diagrams/Organizer.jpg, id=520, 986.68625pt x 224.84pt>
+ [28 <./Images/Use_Case_Diagrams/User.jpg>]
+<Images/Use_Case_Diagrams/Organizer.jpg, id=534, 986.68625pt x 224.84pt>
 File: Images/Use_Case_Diagrams/Organizer.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/Organizer.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/Organizer.jpg  used on input 
 line 8.
 (pdftex.def)             Requested size: 344.99908pt x 78.61626pt.
-<Images/Use_Case_Diagrams/Spectator.jpg, id=521, 986.68625pt x 355.3275pt>
+<Images/Use_Case_Diagrams/Spectator.jpg, id=535, 986.68625pt x 355.3275pt>
 File: Images/Use_Case_Diagrams/Spectator.jpg Graphic file (type jpg)
 <use Images/Use_Case_Diagrams/Spectator.jpg>
 Package pdftex.def Info: Images/Use_Case_Diagrams/Spectator.jpg  used on input 
 line 9.
 (pdftex.def)             Requested size: 344.99908pt x 124.24178pt.
- [30 <./Images/Use_Case_Diagrams/ThirdParty.jpg> <./Images/Use_Case_Diagrams/Au
+ [29 <./Images/Use_Case_Diagrams/ThirdParty.jpg> <./Images/Use_Case_Diagrams/Au
 tomatedSOS.jpg>])
 (3.SpecificRequirements/2.FunctionalRequirements/3.UseCasesAnalysis/UseCasesAna
 lysis.tex
@@ -731,7 +730,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 9--36
 Underfull \vbox (badness 10000) detected at line 36
  []
 
-[31 <./Images/Use_Case_Diagrams/Organizer.jpg> <./Images/Use_Case_Diagrams/Spec
+[30 <./Images/Use_Case_Diagrams/Organizer.jpg> <./Images/Use_Case_Diagrams/Spec
 tator.jpg>]
 Overfull \hbox (24.0pt too wide) in alignment at lines 42--68
  [] [] 
@@ -741,7 +740,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 42--68
 Underfull \vbox (badness 10000) detected at line 68
  []
 
-[32]
+[31]
 Overfull \hbox (24.0pt too wide) in alignment at lines 74--96
  [] [] 
  []
@@ -759,7 +758,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 102--124
 Underfull \vbox (badness 10000) detected at line 124
  []
 
-[33]
+[32]
 Overfull \hbox (24.0pt too wide) in alignment at lines 130--154
  [] [] 
  []
@@ -768,7 +767,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 130--154
 Underfull \vbox (badness 10000) detected at line 154
  []
 
-[34]
+[33]
 Overfull \hbox (24.0pt too wide) in alignment at lines 160--179
  [] [] 
  []
@@ -786,7 +785,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 185--204
 Underfull \vbox (badness 10000) detected at line 204
  []
 
-[35]
+[34]
 Overfull \hbox (24.0pt too wide) in alignment at lines 210--225
  [] [] 
  []
@@ -804,7 +803,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 231--246
 Underfull \vbox (badness 10000) detected at line 246
  []
 
-[36]
+[35]
 Overfull \hbox (24.0pt too wide) in alignment at lines 252--273
  [] [] 
  []
@@ -822,7 +821,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 279--296
 Underfull \vbox (badness 10000) detected at line 296
  []
 
-[37]
+[36]
 Underfull \hbox (badness 1072) in paragraph at lines 315--316
 []\OT1/cmr/m/n/10 AutomatedSOS sends \OT1/cmr/m/it/10 User data \OT1/cmr/m/n/10
  in-clud-ing
@@ -837,7 +836,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 304--328
 Underfull \vbox (badness 10000) detected at line 328
  []
 
-[38]
+[37]
 Overfull \hbox (24.0pt too wide) in alignment at lines 336--362
  [] [] 
  []
@@ -855,7 +854,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 368--388
 Underfull \vbox (badness 10000) detected at line 388
  []
 
-[39]
+[38]
 Overfull \hbox (24.0pt too wide) in alignment at lines 394--419
  [] [] 
  []
@@ -864,7 +863,7 @@ Overfull \hbox (24.0pt too wide) in alignment at lines 394--419
 Underfull \vbox (badness 10000) detected at line 419
  []
 
-[40]
+[39]
 Overfull \hbox (24.0pt too wide) in alignment at lines 425--446
  [] [] 
  []
@@ -876,58 +875,58 @@ Underfull \vbox (badness 10000) detected at line 446
 )
 (3.SpecificRequirements/2.FunctionalRequirements/4.SequenceDiagrams/SequenceDia
 grams.tex
-<Images/Sequence_Diagrams/AddService.jpg, id=677, 974.64125pt x 774.895pt>
+<Images/Sequence_Diagrams/AddService.jpg, id=690, 974.64125pt x 774.895pt>
 File: Images/Sequence_Diagrams/AddService.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/AddService.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/AddService.jpg  used on input
  line 5.
 (pdftex.def)             Requested size: 344.99622pt x 274.29153pt.
-<Images/Sequence_Diagrams/RequestUserData.jpg, id=678, 974.64125pt x 498.86375p
+<Images/Sequence_Diagrams/RequestUserData.jpg, id=691, 974.64125pt x 498.86375p
 t>
 File: Images/Sequence_Diagrams/RequestUserData.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RequestUserData.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RequestUserData.jpg  used on 
 input line 6.
 (pdftex.def)             Requested size: 344.99622pt x 176.58406pt.
- [41]
-<Images/Sequence_Diagrams/RequestGroupData.jpg, id=693, 974.64125pt x 572.1375p
+ [40]
+<Images/Sequence_Diagrams/RequestGroupData.jpg, id=706, 974.64125pt x 572.1375p
 t>
 File: Images/Sequence_Diagrams/RequestGroupData.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RequestGroupData.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RequestGroupData.jpg  used on
  input line 7.
 (pdftex.def)             Requested size: 344.99622pt x 202.52095pt.
-<Images/Sequence_Diagrams/AutomatedSOS.jpg, id=694, 974.64125pt x 643.40375pt>
+<Images/Sequence_Diagrams/AutomatedSOS.jpg, id=707, 974.64125pt x 643.40375pt>
 File: Images/Sequence_Diagrams/AutomatedSOS.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/AutomatedSOS.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/AutomatedSOS.jpg  used on inp
 ut line 8.
 (pdftex.def)             Requested size: 344.99622pt x 227.74724pt.
- [42 <./Images/Sequence_Diagrams/AddService.jpg> <./Images/Sequence_Diagrams/Re
+ [41 <./Images/Sequence_Diagrams/AddService.jpg> <./Images/Sequence_Diagrams/Re
 questUserData.jpg>]
-<Images/Sequence_Diagrams/RunOrganizing.jpg, id=702, 974.64125pt x 602.25pt>
+<Images/Sequence_Diagrams/RunOrganizing.jpg, id=714, 974.64125pt x 602.25pt>
 File: Images/Sequence_Diagrams/RunOrganizing.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/RunOrganizing.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/RunOrganizing.jpg  used on in
 put line 9.
 (pdftex.def)             Requested size: 344.99622pt x 213.17995pt.
-<Images/Sequence_Diagrams/EnrollRun.jpg, id=703, 974.64125pt x 732.7375pt>
+<Images/Sequence_Diagrams/EnrollRun.jpg, id=715, 974.64125pt x 732.7375pt>
 File: Images/Sequence_Diagrams/EnrollRun.jpg Graphic file (type jpg)
 <use Images/Sequence_Diagrams/EnrollRun.jpg>
 Package pdftex.def Info: Images/Sequence_Diagrams/EnrollRun.jpg  used on input 
 line 10.
 (pdftex.def)             Requested size: 344.99622pt x 259.36894pt.
- [43 <./Images/Sequence_Diagrams/RequestGroupData.jpg> <./Images/Sequence_Diagr
+ [42 <./Images/Sequence_Diagrams/RequestGroupData.jpg> <./Images/Sequence_Diagr
 ams/AutomatedSOS.jpg>])
 (3.SpecificRequirements/2.FunctionalRequirements/5.Requirements/Requirements.te
-x [44 <./Images/Sequence_Diagrams/RunOrganizing.jpg> <./Images/Sequence_Diagram
+x [43 <./Images/Sequence_Diagrams/RunOrganizing.jpg> <./Images/Sequence_Diagram
 s/EnrollRun.jpg>]
 Overfull \hbox (2.69507pt too wide) in paragraph at lines 8--9
 []\OT1/cmr/m/n/10 Unregistered in-di-vid-u-als and com-pa-nies must not be able
  to use Data4Help. 
  []
 
-[45] [46])
+[44] [45])
 (3.SpecificRequirements/2.FunctionalRequirements/6.SatisfyingGoals/SatisfyingGo
 als.tex
 Underfull \hbox (badness 10000) in paragraph at lines 17--19
@@ -945,12 +944,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--27
 
  []
 
-[47]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 49--51
 
  []
 
-[48]
+[47]
 Underfull \hbox (badness 10000) in paragraph at lines 71--73
 
  []
@@ -960,7 +959,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 98--100
 
  []
 
-[49]
+[48]
 Overfull \hbox (4.07701pt too wide) in paragraph at lines 100--101
 []\OT1/cmr/m/n/10 Data4Help and all \OT1/cmr/m/it/10 Ser-vices\OT1/cmr/m/n/10 ,
  in-clud-ing Au-to-mat-ed-SOS and Track4Run,
@@ -982,7 +981,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--124
 
  []
 
-[50]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
@@ -1008,7 +1007,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 166--168
 
  []
 
-[51]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 183--185
 
  []
@@ -1029,42 +1028,37 @@ Overfull \hbox (4.07701pt too wide) in paragraph at lines 211--212
  in-clud-ing Au-to-mat-ed-SOS and Track4Run,
  []
 
-[52]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 214--216
 
  []
 
 ))
 (3.SpecificRequirements/3.PerformanceRequirements/PerformanceRequirements.tex
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
-
- []
-
-[53]) (3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex)
+) (3.SpecificRequirements/4.DesignConstraints/DesignConstraints.tex [52])
 (3.SpecificRequirements/5.SoftwareSystemAttributes/SoftwareSystemAttributes.tex
-[54])) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [55]
+)) (4.FormalAnalysisUsingAlloy/FormalAnalysisUsingAlloy.tex [53]
 Chapter 4.
-) [56
+) [54
 
 ]
 Chapter 5.
-[57
+[55
 
-] [58] [59]
+] [56] [57]
 Chapter 6.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 186.
-[60
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 195.
+[58
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 186.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 195.
  (RASD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 186.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 186.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 195.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 195.
 
 
 Package rerunfilecheck Warning: File `RASD.out' has changed.
@@ -1072,36 +1066,42 @@ Package rerunfilecheck Warning: File `RASD.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `RASD.out':
-(rerunfilecheck)             Before: D87CD20B49398898D2A8E81967FE42CD;3393
-(rerunfilecheck)             After:  AFF56FCAFA6A487C9A33C0EF67B039D1;3460.
+(rerunfilecheck)             Before: D2486E9799741812C3F11C9CD50869CD;3663
+(rerunfilecheck)             After:  24498DF13DB59F40D38905078DB5532B;3605.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 186.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 195.
  ) 
 Here is how much of TeX's memory you used:
- 7791 strings out of 492970
- 130384 string characters out of 3126593
- 217752 words of memory out of 3000000
- 11098 multiletter control sequences out of 15000+200000
+ 7794 strings out of 492970
+ 130476 string characters out of 3126593
+ 217853 words of memory out of 3000000
+ 11102 multiletter control sequences out of 15000+200000
  7569 words of font info for 27 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 40i,16n,57p,1200b,687s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jacop/AppData/Loc
-al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jacop
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
-Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-r9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on RASD.pdf (61 pages, 4430369 bytes).
+ 40i,16n,57p,1200b,697s stack positions out of 5000i,500n,10000p,200000b,50000s
+pdfTeX warning (dest): name{subsection.3.5.5} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.3.4.3} has been referenced but does not 
+exist, replaced by a fixed one
+
+<C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/Mi
+KTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jacop/AppData/Local
+/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jacop/A
+ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Us
+ers/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9
+.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
+nts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9
+/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on RASD.pdf (59 pages, 4427608 bytes).
 PDF statistics:
- 899 PDF objects out of 1000 (max. 8388607)
- 333 named destinations out of 1000 (max. 500000)
- 579 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 332 named destinations out of 1000 (max. 500000)
+ 611 words of extra memory for PDF output out of 10000 (max. 10000000)
 
