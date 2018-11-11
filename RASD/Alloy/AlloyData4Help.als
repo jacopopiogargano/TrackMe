@@ -64,7 +64,8 @@ fun getAllUsersFromAnonUsersGroup[d4h: Data4Help, aug: AnonUsersGroup] : set Use
 	(getAllDataOfAnonUsersGroup[d4h, aug]).(d4h.userdata)
 }
 
-fun retrieveDataToAnonUsersGroupByGroup[d4h: Data4Help, aug:  AnonUsersGroup] :  Data -> AnonUsersGroup{
+fun retrieveDataToAnonUsersGroupByGroup[d4h: Data4Help, aug:  AnonUsersGroup] :
+	Data -> AnonUsersGroup{
 	d4h.groupdata :> aug
 }
 
@@ -123,7 +124,8 @@ fact anonUsersGroupsAreMadeOfUsersThatRespectFilter {
 
 fact dataIsOfAnonUsersGroup {
 	all tp:ThirdParty, aug: AnonUsersGroup, d4h: Data4Help |
-	aug in Data.(tp.groupdata) implies getAllDataOfAnonUsersGroup[d4h, aug] in tp.groupdata.AnonUsersGroup
+	aug in Data.(tp.groupdata) implies getAllDataOfAnonUsersGroup[d4h, aug]
+		in tp.groupdata.AnonUsersGroup
 }
 
 -- PREDICATES
@@ -136,7 +138,8 @@ pred sendUserData [u: User, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: Dat
 	tp'.userdata = tp.userdata + retrieveUserData[d4h, u]
 }
 
-pred sendGroupData [f: Filter, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: Data4Help, aug: AnonUsersGroup] {
+pred sendGroupData [f: Filter, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: Data4Help,
+	aug: AnonUsersGroup] {
 	aug in Data.(d4h.groupdata)
 	f in aug.filter
 	tp = s.thirdParty
@@ -151,20 +154,23 @@ pred show {}
 
 assert sendUserDataOkay{
 	all tp', tp: ThirdParty, u:User, s:Service, d4h:Data4Help |
-	retrieveUserData[d4h,u] not in tp.userdata and sendUserData[u, s, tp, tp', d4h] implies retrieveUserData[d4h, u] in tp'.userdata
+	retrieveUserData[d4h,u] not in tp.userdata and sendUserData[u, s, tp, tp', d4h]
+		implies retrieveUserData[d4h, u] in tp'.userdata
 }
 
 assert sendGroupDataOkay{
 	all tp,tp': ThirdParty, f: Filter, s: Service, d4h: Data4Help, aug: AnonUsersGroup |
-	sendGroupData[f, s, tp, tp', d4h, aug] implies ( aug in Data.(tp'.groupdata) and getAllDataOfAnonUsersGroup[d4h, aug] in tp'.groupdata.AnonUsersGroup)
+	sendGroupData[f, s, tp, tp', d4h, aug] implies ( aug in Data.(tp'.groupdata) and
+		getAllDataOfAnonUsersGroup[d4h, aug] in tp'.groupdata.AnonUsersGroup)
 }
 
--- CHECKS and RUNS
+-- CHECKS and RUN
 
 check sendUserDataOkay for 10
 check sendGroupDataOkay for 10
 
-run show for 4 but exactly 4 User, 4 Data, 1 ThirdParty, 2 Service, 1 AnonUsersGroup, 3 HealthData, 3 Position
+run show for 4 but exactly 4 User, 4 Data, 1 ThirdParty, 2 Service, 1 AnonUsersGroup,
+	3 HealthData, 3 Position
 
 
 
