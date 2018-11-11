@@ -1,4 +1,4 @@
---------------------------------------------------------- SIGNATURES -------------------------------------------------
+-- SIGNATURES 
 
 sig Individual{
 	age: one Int
@@ -21,7 +21,6 @@ sig Position{
 	long: one Int
 }{timestamp>0}
 
-
 sig Data {
 	healthData: set HealthData,
 	positions: set Position
@@ -40,7 +39,6 @@ sig Filter{
 }
 
 sig Service{
-	-- users who gave consent to their data acquisition by the service
 	thirdParty: one ThirdParty,
 	users: set User,
 	subscribedUsers: set User
@@ -52,20 +50,10 @@ sig ThirdParty {
 	groupdata: Data -> AnonUsersGroup
 }{services.users = Data.userdata}
 
-
---------------------------------------------------FUNCTIONS----------------------------------------------------
-
-fun getAllUsers[d4h: Data4Help] : set User{
-	Data.(d4h.userdata)
-}
+-- FUNCTIONS
 
 fun retrieveUserData[d4h: Data4Help, u: User] : Data->User {
 	d4h.userdata :> u
-}
-
-fun getAllUsersAges[d4h: Data4Help]  : set Int {
-		
-	getAllUsers[d4h].age
 }
 
 fun getAllDataOfAnonUsersGroup[d4h: Data4Help, aug: AnonUsersGroup] : set Data {
@@ -76,19 +64,15 @@ fun getAllUsersFromAnonUsersGroup[d4h: Data4Help, aug: AnonUsersGroup] : set Use
 	(getAllDataOfAnonUsersGroup[d4h, aug]).(d4h.userdata)
 }
 
-fun getAnonUsersGroupsByFilter[d4h: Data4Help, f: Filter] : set AnonUsersGroup{
-	(Data.(d4h.groupdata)) 
-}
-
 fun retrieveDataToAnonUsersGroupByGroup[d4h: Data4Help, aug:  AnonUsersGroup] :  Data -> AnonUsersGroup{
 	d4h.groupdata :> aug
 }
 
-
---------------------------------------------------- FACTS -------------------------------------------------------
+-- FACTS
 
 fact userIndividualRelationshipIsUnique{
-	all disj u1, u2:User, i:Individual | not (u1.individual = i and u2.individual = i)
+	all disj u1, u2:User, i:Individual |
+	not (u1.individual = i and u2.individual = i)
 }
 
 fact healthDataToDataConnection{
@@ -96,7 +80,7 @@ fact healthDataToDataConnection{
 	hd in d.healthData iff hd.data = d
 }
 
-fact PostionToDataConnection{
+fact postionToDataConnection{
 	all d:Data, p: Position | 
 	p in d.positions iff p.data = d
 }
@@ -117,17 +101,19 @@ fact allPositionBelongsToOnlyOneData{
 }
 
 fact serviceCanBeOfOnlyOneThirdParty{
-	all s:Service | all disj t1,t2: ThirdParty | not (s in t1.services and s in t2.services)
+	all s:Service | all disj t1,t2: ThirdParty |
+	not (s in t1.services and s in t2.services)
 }
 
 fact serviceThirdPartyRelationshipIsUnique{
-	all s:Service, tp:ThirdParty | s.thirdParty = tp iff s in tp.services
+	all s:Service, tp:ThirdParty |
+	s.thirdParty = tp iff s in tp.services
 }
 
 fact anonUsersGroupsAreMadeUpOfMoreThan2Users {
 	all aug: AnonUsersGroup, d4h: Data4Help |
 	#(getAllUsersFromAnonUsersGroup[d4h, aug]) > 2
-	--#TODO: add comment
+	-- #(getAllUsersFromAnonUsersGroup[d4h, aug]) >= 1000
 }
 
 fact anonUsersGroupsAreMadeOfUsersThatRespectFilter {
@@ -140,28 +126,28 @@ fact dataIsOfAnonUsersGroup {
 	aug in Data.(tp.groupdata) implies getAllDataOfAnonUsersGroup[d4h, aug] in tp.groupdata.AnonUsersGroup
 }
 
------------------------------------------------ PREDICATES -------------------------------------------------------
-
---pred thirdPartyDoesNotHaveData
+-- PREDICATES
 
 pred sendUserData [u: User, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: Data4Help] {
-	tp = s.thirdParty
-	tp' = s.thirdParty
 	u in s.users
+	tp = s.thirdParty
+	tp'.services = tp.services
+	tp'.groupdata = tp.groupdata
 	tp'.userdata = tp.userdata + retrieveUserData[d4h, u]
 }
 
 pred sendGroupData [f: Filter, s: Service, tp:ThirdParty, tp': ThirdParty, d4h: Data4Help, aug: AnonUsersGroup] {
-	tp in s.thirdParty
-	tp' in s.thirdParty  
 	aug in Data.(d4h.groupdata)
-	f in aug.filter 
+	f in aug.filter
+	tp = s.thirdParty
+	tp'.services = tp.services
+	tp'.userdata = tp.userdata
 	tp'.groupdata = tp.groupdata + retrieveDataToAnonUsersGroupByGroup[d4h,aug]
 }
 
 pred show {}
 
------------------------------------------------ ASSERTIONS -------------------------------------------------------
+-- ASSERTIONS
 
 assert sendUserDataOkay{
 	all tp', tp: ThirdParty, u:User, s:Service, d4h:Data4Help |
@@ -173,14 +159,12 @@ assert sendGroupDataOkay{
 	sendGroupData[f, s, tp, tp', d4h, aug] implies ( aug in Data.(tp'.groupdata) and getAllDataOfAnonUsersGroup[d4h, aug] in tp'.groupdata.AnonUsersGroup)
 }
 
-
-
-
------------------------------------------------ CHECKS and RUNS -------------------------------------------------------
+-- CHECKS and RUNS
 
 check sendUserDataOkay for 10
 check sendGroupDataOkay for 10
-run show for 4 but exactly 3 User, 3 Data, 1 ThirdParty, 1 Service, 5 HealthData, 2 AnonUsersGroup
+
+run show for 4 but exactly 4 User, 4 Data, 1 ThirdParty, 2 Service, 1 AnonUsersGroup, 3 HealthData, 3 Position
 
 
 
