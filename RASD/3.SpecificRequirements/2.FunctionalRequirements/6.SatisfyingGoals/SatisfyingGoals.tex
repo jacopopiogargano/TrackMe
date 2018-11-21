@@ -30,80 +30,80 @@ The following is an analysis, for each goal of the system to be, of the requirem
 
     \end{itemize}
 
-    \item[G\subs{2}]Send specific \textit{User Data} to \textit{Third Parties} only if \textit{User} consent was given after\textit{Third Party} access request.
+    \item[G\subs{2}]Send specific \textit{User Data} to \textit{Third parties} only if \textit{User} consent was given after\textit{Third party} access request.
     \begin{itemize}
-            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
-            \item[R\subs{5}]At sign up, \ic{Third Party} must accept \ic{Terms and conditions}.
+            \item[R\subs{3}]At sign up, \ic{Third party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third party} must accept \ic{Terms and conditions}.
         \item[R\subs{1}]Unregistered individuals and companies must not be able to use Data4Help.
         \item[R\subs{6}]Identify a \ic{User} by their identifier.
         \item[R\subs{7}]Query the database for a \ic{User} by their identifier.
         \item[R\subs{11}]Store collected \ic{User Data} in a database.
         \item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
-        \item[R\subs{13}]Receive \ic{Third Party} data access request.
-        \item[R\subs{14}]Validate \ic{Third Party} data access request.
-        \item[R\subs{15}]Authenticate \ic{Third Party} data access request.
+        \item[R\subs{13}]Receive \ic{Third party} data access request.
+        \item[R\subs{14}]Validate \ic{Third party} data access request.
+        \item[R\subs{15}]Authenticate \ic{Third party} data access request.
         \item[R\subs{16}]Forward \ic{User Data} access request to the specific \ic{User}.
         \item[R\subs{17}]Receive \ic{User} consent approval or denial.
         \item[R\subs{18}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
-        \item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third Party}.
-        \item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third Party} if the specific \ic{User} denied consent.
+        \item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third party}.
+        \item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third party} if the specific \ic{User} denied consent.
         \\
-        \item[U\subs{2}]Third Party Sign Up
-        \item[U\subs{4}]Third Party Login
+        \item[U\subs{2}]Third party Sign Up
+        \item[U\subs{4}]Third party Login
         \item[U\subs{5}]Data4Help collects User Data
-        \item[U\subs{6}]Third Party requests User Data
+        \item[U\subs{6}]Third party requests User Data
         \item[U\subs{11}]User revokes consent to a Service
     \end{itemize}
 
-    \item[G\subs{3}]Send anonymized requested \textit{Group Data} to \textit{Third Parties} if the group it refers to is made up of 1000 or more \ic{Users}.
+    \item[G\subs{3}]Send anonymized requested \textit{Group Data} to \textit{Third parties} if the group it refers to is made up of 1000 or more \ic{Users}.
     \begin{itemize}
-            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
-            \item[R\subs{5}]At sign up, \ic{Third Party} must accept \ic{Terms and conditions}.
+            \item[R\subs{3}]At sign up, \ic{Third party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third party} must accept \ic{Terms and conditions}.
         \item[R\subs{11}]Store collected \ic{User Data} in a database.
         \item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
-        \item[R\subs{13}]Receive \ic{Third Party} data access request.
-        \item[R\subs{14}]Validate \ic{Third Party} data access request.
-        \item[R\subs{15}]Authenticate \ic{Third Party} data access request.
-        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, residence.
+        \item[R\subs{13}]Receive \ic{Third party} data access request.
+        \item[R\subs{14}]Validate \ic{Third party} data access request.
+        \item[R\subs{15}]Authenticate \ic{Third party} data access request.
+        \item[R\subs{21}]\ic{Third party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, residence.
         \item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
         \item[R\subs{23}]Properly anonymize \ic{Group Data}.
-        \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third Party}.
+        \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third party}.
         \item[R\subs{25}]Not send \ic{Group Data} if the group it refers to is made up of less than 1000 \ic{Users}.
         \\
-        \item[U\subs{2}]Third Party Sign Up
-        \item[U\subs{4}]Third Party Login
+        \item[U\subs{2}]Third party Sign Up
+        \item[U\subs{4}]Third party Login
         \item[U\subs{5}]Data4Help collects User Data
-        \item[U\subs{7}]Third Party requests Group Data
+        \item[U\subs{7}]Third party requests Group Data
     \end{itemize}
 
-    \item[G\subs{4}]Send \textit{User data} and \textit{Group Data} to subscribed authorized \textit{Third Parties} as soon as they are produced.
+    \item[G\subs{4}]Send \textit{User data} and \textit{Group Data} to subscribed authorized \textit{Third parties} as soon as they are produced.
     \begin{itemize}
-            \item[R\subs{3}]At sign up, \ic{Third Party} must provide a company name.
-            \item[R\subs{5}]At sign up, \ic{Third Party} must accept \ic{Terms and conditions}.
+            \item[R\subs{3}]At sign up, \ic{Third party} must provide a company name.
+            \item[R\subs{5}]At sign up, \ic{Third party} must accept \ic{Terms and conditions}.
         \item[R\subs{7}]Query the database for a \ic{User} by their identifier.
         \item[R\subs{8}]Receive \ic{User Data}.
         \item[R\subs{9}]Validate \ic{User Data}.
         \item[R\subs{10}]Authenticate \ic{User Data}.
         \item[R\subs{18}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
-        \item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third Party}.
-        \item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third Party} if the specific \ic{User} denied consent.
-        \item[R\subs{21}]\ic{Third Party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, residence.
+        \item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third party}.
+        \item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third party} if the specific \ic{User} denied consent.
+        \item[R\subs{21}]\ic{Third party} must be able to set specific constraints to define a group of \ic{Users}: age, sex, residence.
         \item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
         \item[R\subs{23}]Properly anonymize \ic{Group Data}.
-        \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third Party}.
+        \item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third party}.
         \item[R\subs{25}]Not send \ic{Group Data} if the group it refers to is made up of less than 1000 \ic{Users}.
-        \item[R\subs{26}]Receive \ic{Third Party} subscription request.
-        \item[R\subs{27}]Validate \ic{Third Party} subscription request.
-        \item[R\subs{28}]Authenticate \ic{Third Party} subscription request.
-        \item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third Parties} as soon as they are produced.
+        \item[R\subs{26}]Receive \ic{Third party} subscription request.
+        \item[R\subs{27}]Validate \ic{Third party} subscription request.
+        \item[R\subs{28}]Authenticate \ic{Third party} subscription request.
+        \item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third parties} as soon as they are produced.
         \\
         \item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
         \item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
         \item[D\subs{11}]\ic{Users} own a working \ic{Smart Wearable} which is always connected to the \ic{User}'s smartphone.
         \\
         \item[U\subs{5}]Data4Help collects User Data
-        \item[U\subs{8}]Third Party subscribes to New User Data
-        \item[U\subs{9}]Third Party subscribes to New Group Data
+        \item[U\subs{8}]Third party subscribes to New User Data
+        \item[U\subs{9}]Third party subscribes to New Group Data
         \item[U\subs{11}]User revokes consent to a Service
     \end{itemize}
 
@@ -138,12 +138,12 @@ The following is an analysis, for each goal of the system to be, of the requirem
         \item[R\subs{8}]Receive \ic{User Data}.
         \item[R\subs{9}]Validate \ic{User Data}.
         \item[R\subs{10}]Authenticate \ic{User Data}.
-        \item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third Parties} as soon as they are produced.
+        \item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third parties} as soon as they are produced.
         \item[R\subs{36}]Compare \ic{User Data} against certain thresholds.
         \item[R\subs{38}]\ic{User} must be able to reactivate AutomatedSOS monitoring.
         \\
         \item[D\subs{2}]\ic{User data} collected at a certain instant corresponds to the actual status (GPS position and health data) of the \ic{User} at that precise moment.              
-        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
+        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new \ic{User data} of all their \ic{Users}.
         \item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
         \item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
         \item[D\subs{11}]\ic{Users} own a working \ic{Smart Wearable} which is always connected to the \ic{User}'s smartphone.
@@ -162,7 +162,7 @@ The following is an analysis, for each goal of the system to be, of the requirem
         \item[R\subs{37}]Call local emergency services providing necessary \ic{User Data} of \ic{User in need}.
         \\
         \item[D\subs{3}]The maps in use accurately represent the world.
-        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
+        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new \ic{User data} of all their \ic{Users}.
         \item[D\subs{7}]When AutomatedSOS needs to send an ambulance to a \ic{User in need} it forwards the request to local emergency services, which eventually dispatch an ambulance.
         \\
         \item[U\subs{5}]Data4Help collects User Data
@@ -206,7 +206,7 @@ The following is an analysis, for each goal of the system to be, of the requirem
         \item[R\subs{48}]Query the database for a \ic{Run} given its identifier.
         \\
         \item[D\subs{3}]The maps in use accurately represent the world.
-        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new data.
+        \item[D\subs{6}]AutomatedSOS and Track4Run are subscribed to new \ic{User data} of all their \ic{Users}.
         \item[D\subs{8}]\ic{Smart Wearables} are correctly worn by \ic{Users}.
         \item[D\subs{9}]Data4Help and all \ic{Services}, including AutomatedSOS and Track4Run, are always online.
         \item[D\subs{10}]\ic{Users} own a working smartphone which is always connected to the Internet.
