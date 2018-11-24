@@ -1,5 +1,246 @@
 \begin{document}
- \chapter{Requirements Traceability}
-	WORK IN PROGRESS
+\chapter{Requirements Traceability}
+\todo{Description} fare riferimenti a component diagrams
+
+\paragraph{Data4Help}
+\begin{itemize}
+	\item[R\subs{1}]Unregistered individuals and companies must not be able to use Data4Help.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{2}]At sign up, \ic{User} must provide: first name, last name, SSN, gender, date of birth, email and password.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{3}]At sign up, \ic{Third party} must provide a company name.
+	\begin{enumerate}
+		\item Authentication (Data4Help)
+	\end{enumerate}
+	\item[R\subs{4}]At sign up, \ic{User} must accept \ic{Terms and conditions}, including the \ic{Privacy statement}.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{5}]At sign up, \ic{Third party} must accept \ic{Terms and conditions}.
+	\begin{enumerate}
+		\item Authentication (Data4Help)
+	\end{enumerate}
+	\item[R\subs{6}]Identify a \ic{User} by their identifier.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{7}]Query the database for a \ic{User} by their identifier.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{8}]Receive \ic{User Data}.
+	\begin{enumerate}
+		\item Authentication (User App and Data4Help)
+		\item Data Collector
+		\item Data Sender
+		\item Data Receiver
+	\end{enumerate}
+	\item[R\subs{9}]Validate \ic{User Data}.
+	\begin{enumerate}
+		\item Data Receiver
+	\end{enumerate}
+	\item[R\subs{10}]Authenticate \ic{User Data}.
+	\begin{enumerate}
+		\item Data Receiver
+	\end{enumerate}
+	\item[R\subs{11}]Store collected \ic{User Data} in a database.
+	\begin{enumerate}
+		\item Data Receiver
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
+	\begin{enumerate}
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{13}]Receive \ic{Third party} data access request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{14}]Validate \ic{Third party} data access request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{15}]Authenticate \ic{Third party} data access request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{16}]Forward \ic{User Data} access request to the specific \ic{User}.
+	\begin{enumerate}
+		\item Request Manager
+		\item Authorization
+		\item Data Manager
+		\item Services Manager (Data4Help)
+	\end{enumerate}
+	\item[R\subs{17}]Receive \ic{User} consent approval or denial.
+	\begin{enumerate}
+		\item Services Manager (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{18}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
+	\begin{enumerate}
+		\item Authorization
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third party}.
+	\begin{enumerate}
+		\item Request Manager
+		\item Authorization
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third party} if the specific \ic{User} denied consent.
+	\begin{enumerate}
+		\item Request Manager
+		\item Authorization
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{21}]\ic{Third party} must be able to set specific constraints to define a group of \ic{Users}: age, gender, residence.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
+	\begin{enumerate}
+		\item Anonymizer
+	\end{enumerate}
+	\item[R\subs{23}]Properly anonymize \ic{Group Data}.
+	\begin{enumerate}
+		\item Anonymizer
+	\end{enumerate}
+	\item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third party}.
+	\begin{enumerate}
+		\item Anonymizer
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{25}]Not send \ic{Group Data} if the group it refers to is made up of less than 1000 \ic{Users}.
+	\begin{enumerate}
+		\item Anonymizer
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{26}]Receive \ic{Third party} subscription request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{27}]Validate \ic{Third party} subscription request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{28}]Authenticate \ic{Third party} subscription request.
+	\begin{enumerate}
+		\item Request Manager
+	\end{enumerate}
+	\item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third parties} as soon as they are produced.
+	\begin{enumerate}
+		\item Data Receiver
+		\item Data Manager
+		\item Services Manager (Data4Help)
+		\item Authorization
+	\end{enumerate}
+	\item[R\subs{30}]Allow \ic{Users} to subscribe to \ic{Services}.
+	\begin{enumerate}
+		\item Services Manager (Data4Help)
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{31}]Allow \ic{Users} to unsubscribe from \ic{Services}.
+	\begin{enumerate}
+		\item Services Manager (Data4Help)
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{32}]Send a specific \ic{User} all their data stored, if requested by them.
+	\begin{enumerate}
+		\item Services Manager (Data4Help)
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{33}]Delete a \ic{User} specific data, if requested by them.
+	\begin{enumerate}
+		\item Services Manager (Data4Help)
+		\item Data Manager
+	\end{enumerate}
+	\item[R\subs{34}]Allow \ic{Users} to request all their data stored by TrackMe at any time.
+	\begin{enumerate}
+		\item Services Manager (User App and Data4Help)
+	\end{enumerate}
+	\item[R\subs{35}]Allow \ic{Users} to request the deletion of all their data stored by TrackMe at any time.
+	\begin{enumerate}
+		\item Services Manager (User App and Data4Help)
+	\end{enumerate}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{AutomatedSOS}
+\begin{itemize}
+	\item[R\subs{36}]Receive \ic{User Data} from Data4Help.
+	\begin{enumerate}
+		\item Data Receiver (AutomatedSOS)
+	\end{enumerate}
+	\item[R\subs{37}]Compare \ic{User Data} against certain thresholds.
+	\begin{enumerate}
+		\item Data Analyzer
+	\end{enumerate}
+	\item[R\subs{38}]Call local emergency services providing necessary \ic{User Data} of \ic{User in need}.
+	\begin{enumerate}
+		\item Local Emergency Services Caller
+	\end{enumerate}
+	\item[R\subs{39}]\ic{User} must be able to reactivate AutomatedSOS monitoring.
+	\begin{enumerate}
+		\item Services Manager (User App and Data4Help)
+		\item User Monitor
+		\todo{spiegare interface}
+	\end{enumerate}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\paragraph{Track4Run}
+\begin{itemize}
+	\item[R\subs{40}]Receive \ic{User Data} from Data4Help.
+	\begin{enumerate}
+		\item Data Receiver (Track4Run)
+	\end{enumerate}
+	\item[R\subs{41}]At sign up, \ic{Organizers} must provide: first name, last name, email and password.
+	\begin{enumerate}
+		\item Authentication
+	\end{enumerate}
+	\item[R\subs{42}]At sign up, \ic{Organizers} must accept \ic{Terms and conditions}.
+	\begin{enumerate}
+		\item Authentication
+	\end{enumerate}
+	\item[R\subs{43}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date, maximum number of \ic{Participants} and enrollment closure date.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{44}]Provide \ic{Users} enrollment for an existing \ic{Run}.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{45}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{46}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{47}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{48}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{49}]Identify a \ic{Run} by its identifier.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+	\item[R\subs{50}]Query the database for a \ic{Run} given its identifier.
+	\begin{enumerate}
+		\item Run Manager
+	\end{enumerate}
+\end{itemize}
+
+
 \thispagestyle{fancy}
- \end{document}
+\end{document}
