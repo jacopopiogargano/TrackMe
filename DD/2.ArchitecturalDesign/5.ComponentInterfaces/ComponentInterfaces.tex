@@ -1,6 +1,111 @@
 \documentclass[../../DD.tex]{subfiles}
+
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
 \begin{document}
 \section{Component Interfaces}
-	WORK IN PROGRESS
+\todo{Insserire di seguito testo introduttivo}
+	\begin{lstlisting}
+public interface d4h_registerAndLogin {
+	boolean isUsernameValid(String username);
+	boolean isPasswordValid(String password);
+	boolean login(String username, String password);
+	boolean userExists(String username);
+	boolean signUp(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
+}
+
+public interface d4h_services {
+	List<Service> lookupServices(String namelike);
+	List<Service> getAllServices();
+	List<Service> getUserServices(String username);  // requires auth
+	Service getServiceByID(int serviceID);
+	boolean addServiceToUserServices(int serviceID, String username);  // requires auth
+	boolean deleteServiceFromUserServices(int serviceID, String username);  // requires auth
+}
+
+public interface d4h_data {
+	boolean receiveData(Data data);  // requires auth
+	List<Data> getAllUserData(String username);  // requires auth
+	boolean deleteAllUserData(String username);  // requires auth
+}
+
+public interface d4h_requestData{
+	Data getUserData(UserDataRequest request); // requires auth
+	List<Data> getGroupData(GroupDataRequest request); // requires auth
+}
+
+
+public interface userapp_servicesManagement {
+	//TODO: capire con prof. DiNitto se inserire o meno
+}
+
+public interface userapp_loginAndRegister {
+	//TODO: capire con prof. DiNitto se inserire o meno
+}
+
+public interface asos_commands{
+	boolean reactivateMonitoring(String username); // requires auth
+	boolean subscribeUser(User user);
+	boolean removeUser(User user);
+}
+
+public interface service_newData{
+	boolean receiveData(Data data, String username);  // requires auth
+}
+
+public interface t4r_spectator{
+	Run getRunByID(String ID);
+	List<Run> getAllRuns();
+}
+
+public interface t4r_runManagement{
+	boolean createRun(String name, Date date, DateTime time, Position start, int maxNumberOfParticipants, Date enrollmentClosureDate);
+	boolean setPath(List<Position> path);
+}
+
+public interface t4r_registerAndLogin{
+	boolean isUsernameValid(String username);
+	boolean isPasswordValid(String password);
+	boolean login(String username, String password);
+	boolean organizerExists(String username);
+	boolean signUp(String fullname, Date dateOfBirth, String email, String password);
+}
+
+public interface db_queries{
+	getUserByUsername(String username);
+	insertUser(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
+	deleteUser(String username);
+	insertData(Data data);
+	getUserData(String username);
+	deleteAllUserData(String username);
+	insertServiceForUserServices(String serviceID, String username);
+	deleteServiceFromUserServices(String serviceID, String username);
+	getAllUserServices(String username);
+	getAllServices();
+	//TODO: capire con prof. DiNitto se fare tutta la lista come qui o fare solo doQuery(String query)
+}
+	\end{lstlisting}
 	
 \end{document}
