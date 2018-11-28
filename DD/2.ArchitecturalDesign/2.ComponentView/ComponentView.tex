@@ -2,10 +2,38 @@
 \begin{document}
 \section{Component View}
 
-	\image {13cm} {Component_Diagrams/ComponentData4HelpView.jpg} {Data4Help Component View} {ComponentData4HelpView}
-	\image {13cm} {Component_Diagrams/ComponentData4Help.jpg} {Data4Help Component View} {ComponentData4Help}
-	\image {13cm} {Component_Diagrams/ComponentUserAppData4Help.jpg} {Data4Help User Application Component View} {ComponentUserAppData4Help}
-	\image {13cm} {Component_Diagrams/ComponentAutomatedSOS.jpg} {AutomatedSOS Component View} {ComponentAutomatedSOS}
-	\image {13cm} {Component_Diagrams/ComponentTrack4Run.jpg} {Track4Run Component View} {ComponentTrack4Run}
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% D4H GENERAL COMPONENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	A general view of the main components of the system to be is given. The main components are the Data4Help User Application and server side Application. They communicate through three different interfaces offered by Data4Help. These will be further explained in later diagrams. \todo{Da fare una volta rivisto il diagram}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% D4H COMPONENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	These are the components of the Data4Help server side Application, with the relative interfaces offered to external components \todo{and also between internal ones}.
+	The Authentication component is needed to authenticate the \ic{User} through the User Application. It needs to access the database where all login information is stored. The Data Receiver is needed to receive data from the User Application as soon as it is collected. It then sends it over to the Data Manager, whose function is to manage all \ic{User Data} stored from Data4Help. In fact, it uses the Database Interface to query it.
+	The Data Manager has a crucial role when it comes to \ic{Third party} requests. A \ic{Third party} may send a request through the Request Data interface. The request is forwarded to the Authorization if it is a \ic{User data} request, and to the Anonymizer if it is a \ic{Group data} one. These two components ask the Data Manager for the data they need to satisfy the request. Once the Authorization gets the data back, it checks if \ic{User} consent was given. If consent was not given, then it forwards the request to the User Application. The Anonymizer, instead, checks if the data it got back from the Data Manager refers to minimum 1000 \ic{Users}. If data can be sent to the \ic{Third party}, then it is sent to the Request Manager that can forward it to the \ic{Third party} \todo{using the Consent Interface}.
+	Finally, the Services Manager implements the Services Interface, which allows \ic{Users} to add new or manage their \ic{Services} through the User Application. Moreover, it uses the New Data Interface offered by the Third Party Service System when it needs to send new \ic{User data} or \ic{Group data} to \ic{Third parties}.
+	\todo{capire la questione Service Commands Interface}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% D4H User App COMPONENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	The User Application is used by \ic{Users} to use Data4Help and the \ic{Services} they added. They can do this through several components and interfaces. They must be authenticated in order to use the Application. Through the Authentication component, they can sign up and login into their Data4Help account. Moreover, the User Application will use the Registration and Login interface to authenticate in Data4Help. Once the \ic{User} and the User Application are authenticated, the User Application can start collecting \ic{User data} from both the smartphone and the \ic{Smart wearable} through the Data Interface of the Data Collector. This forwards the data to Data4Help through the DataSender and the Data Interface of Data4Help.
+	The Services Manager allows \ic{Users} to add and manage their \ic{Services}. Together with the Service Search Engine, they exploit the Services Interface offered by Data4Help to accomplish their main functions.
+	Finally, the purpose of the Service Controller is to allow the usage of a \ic{Service} on the User Application through the Service Commands Interface.
+
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% ASOS COMPONENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	The main component of AutomatedSOS is the User Monitor. It offers the Service Commands Interface which provides all the possible commands to the User Application. In particular, it allows \ic{Users} to reactivate their data monitoring. This component also uses the Database Interface to store which Local Emergency Services are in charge of assisting a specific \ic{User in need}.
+	When new data is received from Data4Help, through the New Data Interface, it is passed to the Data Analyzer through the User Monitor. The Data Analyzer compares the \ic{User data} against certain thresholds, possibly identifying it as \ic{Anomalous data}. When a \ic{User} is identified as a \ic{User in need}, then the Local Emergency Services Caller calls the Local Emergency Services and the User Monitor stores the (\ic{User}, Local emergency Services) couple in the database.
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% T4R COMPONENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	At the core of Track4Run lies the Run Manager. It is responsible for everything that concerns a \ic{Run}. It offers several interfaces. First of all, it offers the Service Commands Interface, for the User Application to interact with the \ic{Service}. In particular, it gives \ic{Users} the possibility to enroll in a \ic{Run} as \ic{Participants} and to lookup \ic{Runs}. It also gives \ic{Organizers} the possibility to create and manage a \ic{Run} through the Run Management interface from the \ic{Organizers} dedicated website. It uses the Database Interface to store relevant data in a database. Finally, it offers the Spectators Interface to \ic{Spectators} to watch a \ic{Run} through the \ic{Spectators} dedicated website.
+	The Authentication allows \ic{Organizers} to sign up and login in the dedicated website through the Registration and Login interface.
+	Finally, the Data Receiver offers the New Data Interface, as all \ic{Services} do so as to receive new data from Data4Help. It forwards the just received data to the Run Manager, which is in charge of displaying it to \ic{Spectators} and of storing it in the database.
+
+
+
 	
 \end{document}
