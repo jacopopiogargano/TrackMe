@@ -11,6 +11,7 @@
 	The User Application is able to receive notifications from Data4Help by querying the server side Application for new notifications. The Services Manager asks the Notifications Manager for new notifications. If there are any new notifications for the \ic{User}, then it returns them, otherwise it tells the Services Manager that there are no new notifications.
 
 	%\image {13cm} {Sequence_Diagrams/SequenceUserDataRequest.jpg} {User Data Request Sequence Diagram} {UserDataRequestSequenceDiagram}
+	A \ic{Third party} may request access to a specific \ic{User data}. It sends a request to the Third Party Request Manager, which forwards it to the Data Manager. This last component queries the database for \ic{User data}. Assuming that the query returns non-empty \ic{User data}, the Third Party Request Manager gets the data and checks if the \ic{User} gave consent to the specific \ic{Third party Service} that is requesting their data. If the consent was granted, then the \ic{User data} is sent to the Third Party Service System. Otherwise, the Third Party Request Manager asks the Notifications Manager to add a new notification for that \ic{User}, which is then stored in the database. The notification refers to the fact that the \ic{Third party Service} wants to acquire their data.
 
 	%\image {13cm} {Sequence_Diagrams/SequenceGroupDataRequest.jpg} {Group Data Request Sequence Diagram} {GroupDataRequestSequenceDiagram}
 	When performing a \ic{Group data} request, the \ic{Third party} sends a request from the Third Party Service System to the Third Party Request Manager of Data4Help. This last component asks the Data Manager for group data, which queries the database for data. The \ic{Group data} is sent back to the Third Party Request Manager, which checks the cardinality. If the data refers to more than 1000 \ic{Users}, the data is anonymized and sent to the Third Party Service System which made the request. Otherwise, a request denial is sent back.
@@ -22,6 +23,7 @@
 
 
 	%\image {13cm} {Sequence_Diagrams/SequenceUserInNeedAssistance.jpg} {User In Need Assistance Sequence Diagram} {UserInNeedAssistanceSequenceDiagram}
+	When new \ic{User data} is collected by Data4Help, if the \ic{User} is subscribed to AutomatedSOS, the data will be sent to AutomatedSOS for analysis. In particular, the Data Receiver will receive the data, and will pass it over to the Data Analyzer which compares it against certain thresholds. If the data is identified as \ic{Anomalous data}, then the Data Analyzer notifies the User Monitor that the \ic{User} is in need of assistance. The User Monitor sends a call request to the Local Emergency Services Caller, which calls the Local Emergency Services. This component sends a call confirmation back to the User Monitor and finally the User Monitor stores the \ic{User in need} data in the database.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TRACK4RUN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
