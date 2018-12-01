@@ -4,14 +4,14 @@
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DATA4HELP OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	This diagram is a general overview of the system to be.\\
-	The \ic{User} interacts with their smartphone performing several actions, including but not limited to managing their services, sending their consent, and using a service. The smartphone is constantly connected to the Data4Help Server both calling it through its REST APIs and thorugh a Socket connection so as to send new data as soon as it is collected(\todo{SPIEGARE MEGLIO SOCKET}). The smartphone is also connected to the \ic{User's Smart wearable}, allowing for continuos data collection.\\
+	The \ic{User} interacts with their smartphone performing several actions, including but not limited to managing their services, sending their consent, and using a service. The smartphone is constantly connected to the Data4Help Server both calling it through its REST APIs and through a Socket connection so as to send new data as soon as it is collected(\todo{SPIEGARE MEGLIO SOCKET}). The smartphone is also connected to the \ic{User's Smart wearable}, allowing for continuous data collection.\\
 	The Data4Help Server is the core of the system to be. It manages all \ic{User} requests, collects its data and sends them to the database - DB Server through \todo{completare}. It also sends through a Socket connection newly collected \ic{User data} only to those \ic{Services Users} are subscribed to. It allows the forwarding of \ic{Third Party User data} requests to \ic{Users} and supports the interaction of \ic{Third Parties} with the system through their dedicated website.
 	Lastly, the Third Party Service System communicates with the \ic{User's} smartphone via HTTP. \todo{SPIEGARE}
 
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AUTOMATEDSOS OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-	
+	AutomatedSOS is based on a central server which receives \ic{User data} as soon as it is produced and constantly analyzes it. The data is sent from Data4Help to AutomatedSOS via a Socket connection always active. When AutomatedSOS recognizes a \ic{User} as a \ic{User in need}, it calls Local Emergency Services and store in the AutomatedSOS database all the relevant information, including to which Local Emergency Service the \ic{User} is being taken care of.
 
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TRACK4RUN OVERVIEW %%%%%%%%%%%%%%%%%%%%%%%%%%%%
