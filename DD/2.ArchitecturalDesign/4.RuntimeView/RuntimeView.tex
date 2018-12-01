@@ -13,9 +13,10 @@
 	%\image {13cm} {Sequence_Diagrams/SequenceUserDataRequest.jpg} {User Data Request Sequence Diagram} {UserDataRequestSequenceDiagram}
 
 	%\image {13cm} {Sequence_Diagrams/SequenceGroupDataRequest.jpg} {Group Data Request Sequence Diagram} {GroupDataRequestSequenceDiagram}
+	When performing a \ic{Group data} request, the \ic{Third party} sends a request from the Third Party Service System to the Third Party Request Manager of Data4Help. This last component asks the Data Manager for group data, which queries the database for data. The \ic{Group data} is sent back to the Third Party Request Manager, which checks the cardinality. If the data refers to more than 1000 \ic{Users}, the data is anonymized and sent to the Third Party Service System which made the request. Otherwise, a request denial is sent back.
 	
 	%\image {13cm} {Sequence_Diagrams/SequenceAddNewService.jpg} {Add New Service Sequence Diagram} {AddNewServiceSequenceDiagram}
-
+	When a \ic{User} wants to add a new \ic{Service}, the User Application Services Manager sends a request for available \ic{Services} to Data4Help. The request is received by the Services Manager that forwards it to the Data Manager, which queries the database. The list of \ic{Services} is sent back to the User Application. The \ic{User} then selects a \ic{Service} and its details are returned to the User Application by Data4Help. If the \ic{User} decides to add the \ic{Service} and give consent to their data acquisition by the Third party, then it sends the choice to the Services Manager. This last one forwards the information to the Data Manager, which stores the consent in the database, together with adding the \ic{Service} to the list of \ic{Services} for the specific \ic{User}. Moreover, the Services Manager sends a consent notification to the Third Party Service System. A confirmation is sent back to the User Application.
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AUTOMATEDSOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -28,5 +29,6 @@
 	When they want to organize a \ic{Run}, \ic{Organizers} login into their dedicated website and send a \ic{Run} creation request to the Run Manager of Track4Run. This last one checks the \ic{Run} data is correct and if it is, it creates the \ic{Run}.
 
 	%\image {13cm} {Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg} {Participant Enrollment Sequence Diagram} {ParticipantEnrollmentSequenceDiagram}
+	In this diagram the \ic{Participant} enrollment process is shown in details. A \ic{User} who wants to enroll in a \ic{Run} needs to first have all the available \ic{Runs}. This is done by querying the Service Interface Provider through the Service Interface. The Service Interface Provider forwards the User Application requests to the Run Manager, which queries the database. It returns the list of available \ic{Runs} to the User Application. Assuming that the list is not empty, the \ic{User} will express their selection and the Data4Help components will return the \ic{Run} details. The \ic{User} may then select to enroll in the selected \ic{Run}. The Run Manager is in charge of checking if the \ic{User} can enroll or not - the latter may happen because the enrollment is closed. If the \ic{User} can enroll in the \ic{Run}, the Run Manager saves the enrollment in the database and sends a confirmation to the User Application. Otherwise, an enrollment denial is sent back.
 
 \end{document}
