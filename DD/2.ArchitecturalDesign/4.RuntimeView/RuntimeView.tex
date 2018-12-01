@@ -1,6 +1,32 @@
 \documentclass[../../DD.tex]{subfiles}
 \begin{document}
 \section{Runtime View\label{sect:2.4}}
-	WORK IN PROGRESS
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DATA4HELP %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%\image {13cm} {Sequence_Diagrams/SequenceDiagramLogin.jpg} {Login Sequence Diagram} {LoginSequenceDiagram}
+	In this sequence diagram the \ic{User} login on the User Application is shown. The component involved in the process is the Authentication, which checks the credentials inserted by the \ic{User}.
+
+	%\image {13cm} {Sequence_Diagrams/SequenceDiagramNotifications.jpg} {Notifications Sequence Diagram} {NotificationsSequenceDiagram}
+	The User Application is able to receive notifications from Data4Help by querying the server side Application for new notifications. The Services Manager asks the Notifications Manager for new notifications. If there are any new notifications for the \ic{User}, then it returns them, otherwise it tells the Services Manager that there are no new notifications.
+
+	%\image {13cm} {Sequence_Diagrams/SequenceUserDataRequest.jpg} {User Data Request Sequence Diagram} {UserDataRequestSequenceDiagram}
+
+	%\image {13cm} {Sequence_Diagrams/SequenceGroupDataRequest.jpg} {Group Data Request Sequence Diagram} {GroupDataRequestSequenceDiagram}
 	
+	%\image {13cm} {Sequence_Diagrams/SequenceAddNewService.jpg} {Add New Service Sequence Diagram} {AddNewServiceSequenceDiagram}
+
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% AUTOMATEDSOS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+	%\image {13cm} {Sequence_Diagrams/SequenceUserInNeedAssistance.jpg} {User In Need Assistance Sequence Diagram} {UserInNeedAssistanceSequenceDiagram}
+	
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TRACK4RUN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	%\image {13cm} {Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg} {Run Organization Sequence Diagram} {RunOrganizationSequenceDiagram}
+	When they want to organize a \ic{Run}, \ic{Organizers} login into their dedicated website and send a \ic{Run} creation request to the Run Manager of Track4Run. This last one checks the \ic{Run} data is correct and if it is, it creates the \ic{Run}.
+
+	%\image {13cm} {Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg} {Participant Enrollment Sequence Diagram} {ParticipantEnrollmentSequenceDiagram}
+
 \end{document}
