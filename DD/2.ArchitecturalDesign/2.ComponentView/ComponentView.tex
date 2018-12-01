@@ -2,12 +2,12 @@
 \begin{document}
 \section{Component View}
 
-	\image {13cm} {Component_Diagrams/ComponentData4HelpView.jpg} {Data4Help Component View} {ComponentData4HelpView}
+	\image {13cm} {Component_Diagrams/ComponentData4HelpView.jpg} {Data4Help Component Diagram} {ComponentData4HelpView}
 
 	A general view of the main components of the system to be is given. The core components are the Data4Help User Application and the server side Application. They communicate through three different interfaces offered by Data4Help. These will be further explained in the following two diagrams. Here they are simplified under the Data4Help Interface. The User Application receives data from the Smart Wearable through the Data Interface and pushes them to Data4Help. It finally uses the Service Interface to retrieve the \ic{Service} website and interact with it.
 	The server side Application provides an interface for the Third Party Service System to send data requests. It also sends newly collected data to the Third Party Service System through the New Data Interface. It finally communicates with the database through the offered Database Interface.
 
-	\image {13cm} {Component_Diagrams/ComponentData4Help.jpg} {Data4Help Component View} {ComponentData4Help}
+	\image {13cm} {Component_Diagrams/ComponentData4Help.jpg} {Data4Help Component Diagram} {ComponentData4Help}
 
 	These are the internal components and interfaces of the Data4Help server side Application, together with the interfaces offered to external components.
 	The Authentication component is needed to authenticate the \ic{User} through the User Application. It needs to access the database where all login information is stored through the Database Interface.
@@ -16,19 +16,19 @@
 	Furthermore, the Notifications Manager is needed to provide notifications to the User Application. In fact, the application constantly queries the Data4Help Server for new notifications through the Notifications Interface. The Notifications Manager interacts with the database to retrieve all notifications for a given \ic{User}.
 	Finally, the Services Manager implements the Services Interface, which allows \ic{Users} to add new \ic{Services} or manage the ones they already have through the User Application. Moreover, it uses the New Data Interface offered by the Third Party Service System when it needs to send new \ic{User data} or \ic{Group data} to \ic{Third parties}.
 
-	\image {13cm} {Component_Diagrams/ComponentUserAppData4Help.jpg} {Data4Help User Application Component View} {ComponentUserAppData4Help}
+	\image {13cm} {Component_Diagrams/ComponentUserAppData4Help.jpg} {Data4Help User Application Component Diagram} {ComponentUserAppData4Help}
 
 	The User Application is used by \ic{Users} to interact with Data4Help and the \ic{Services} they added. They can do this through several components and interfaces. They must be authenticated in order to use the Application. In order to do so, through the Authentication component, they can sign up and login into their Data4Help account. Moreover, the User Application will use the Registration and Login Interface offered by the server side Application to authenticate into it.
 	The User Application collects \ic{User data} from both the smartphone and the \ic{Smart wearable} through the Data Interface of the Data Collector. This forwards the data to Data4Help through the Data Interface offered by the Data Sender which sends them to Data4Help.
 	The Services Manager allows \ic{Users} to add and manage their \ic{Services}. Together with the Service Search Engine, they exploit the Services Interface offered by Data4Help to accomplish their main functions. Moreover, the Services Manager is the component in charge of constantly asking Data4Help for new notifications through the Notifications Interface.
 	Furthermore, the purpose of the Service Controller is to allow the usage of a \ic{Service} on the User Application through the Service Interface. In fact, the Third Party System will offer this interface for the User Application to connect and interact with. Finally, the Service Controller connects to Google Maps to obtain maps information for \ic{Services} like Track4Run.
 
-	\image {13cm} {Component_Diagrams/ComponentAutomatedSOS.jpg} {AutomatedSOS Component View} {ComponentAutomatedSOS}
+	\image {13cm} {Component_Diagrams/ComponentAutomatedSOS.jpg} {AutomatedSOS Component Diagram} {ComponentAutomatedSOS}
 
 	The main component of AutomatedSOS is the User Monitor. It offers the AutomatedSOS Commands Interface for the Service Interface Provider to forward commands received from the interaction with the User Application through the Service Interface. In particular, it allows \ic{Users} to reactivate their data monitoring. This component also uses the Database Interface to store which Local Emergency Services are in charge of assisting a specific \ic{User in need}.
 	When new data is received from Data4Help, through the New Data Interface, it is passed to the Data Analyzer through the Data Analyzer Interface. The Data Analyzer compares the \ic{User data} against certain thresholds, possibly identifying it as \ic{Anomalous data}. When a \ic{User} is identified as a \ic{User in need}, the User Monitor sends a call request through the Caller Interface to the Local Emergency Services Caller, which calls the Local Emergency Services.
 
-	\image {13cm} {Component_Diagrams/ComponentTrack4Run.jpg} {Track4Run Component View} {ComponentTrack4Run}
+	\image {13cm} {Component_Diagrams/ComponentTrack4Run.jpg} {Track4Run Component Diagram} {ComponentTrack4Run}
 
 	At the core of Track4Run lies the Run Manager. It is responsible for everything that concerns a \ic{Run}. It offers several interfaces. First of all, it offers the Track4Run Commands Interface, for the Service Interface Provider to forward commands received from the interaction with the User Application through the Service Interface. In particular, it gives \ic{Users} the possibility to enroll in a \ic{Run} as \ic{Participants} and to lookup \ic{Runs}. The Run Manager also gives \ic{Organizers} the possibility to create and manage a \ic{Run} through the Run Management Interface from the \ic{Organizers} dedicated website. It uses the Database Interface to store relevant data in a database. Moreover, it offers the Spectators Interface to \ic{Spectators} to watch a \ic{Run} through the \ic{Spectators} dedicated website.
 	The Authentication allows \ic{Organizers} to sign up and login in the dedicated website through the Registration and Login interface.
