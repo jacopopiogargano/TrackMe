@@ -1,12 +1,160 @@
 \begin{document}
  \chapter{Implementation, Integration and Test Plan}
-	- fare lista dei components
-	- fare component per component da quali component dipende Dependency Matrix tipo
-	- disegnare Gant durata dei component uguale per tutti
+	\section{Implementation Plan}
+		\todo{Inserire quì una introduzione}
 
-	- unit testing quando finisci ogni component (copertura maggiore del 80) SonarQube, Junit
+		\subsection{Components List}
+			The following list includes all the components that must be implemented. The list is product based so components are separated in three parts: \ic{Data4Help}, \ic{AutomatedSOS}, \ic{Track4Run}. 
+			\paragraph{Data4Help}
+			\begin{itemize}
+				\item{Data4Help App}
+					\begin{itemize}
+						\item{Service controller}
+						\item{Authentication}
+						\item{Data sender}
+						\item{Data collector}
+						\item{Services manager}
+					\end{itemize}
+				\item{Data4Help Server}
+					\begin{itemize}
+						\item{Request manager}
+						\item{Notifications manager}
+						\item{Services manager}
+						\item{Data manager}
+						\item{Data receiver}
+						\item{Authentication}
+					\end{itemize}
+				\item{Data4help Database}
+				\item{Data4help Third parties Website}
+			\end{itemize}
+			\paragraph{Track4Run}
+			\begin{itemize}
+				\item{Track4Run Organizers website}
+				\item{Track4Run Spectators website}
+				\item{Track4Run Server}
+					\begin{itemize}
+						\item{Run manager}
+						\item{Service interface provider (website)}
+						\item{Data receiver}
+						\item{Authentication}
+					\end{itemize}
+				\item{Track4Run Database}
+			\end{itemize}
+			\paragraph{AutomatedSOS}
+			\begin{itemize}
+				\item{AutomatedSOS Server}
+					\begin{itemize}
+						\item{Service interface provider (website)}
+						\item{Data analyzer}
+						\item{User monitor}
+						\item{Data receiver}
+						\item{Local emergency services caller}
+					\end{itemize}
+				\item{AutomatedSOS Database}
+			\end{itemize}
 
-	- analisi delle integrazioni (cosa va integrato con cosa) con dipendenze
-	- lista ordinata dei test di integrazione
+		\subsection{Components dependencies}
+		The following list of components reflects the logical or architectural dependencies between the components listed in previous list.
+		\paragraph{Data4Help}
+		\begin{itemize}
+
+			\item{Data4Help App: Service controller}
+			\begin{itemize}\item{Data4Help Server: Services manager}\end{itemize}
+
+			\item{Data4Help App: Authentication}
+			\begin{itemize}\item{Data4Help Server: Authentication}\end{itemize}
+
+			\item{Data4Help App: Data sender}
+			\begin{itemize}\item{Data4Help Server: Data receiver}\end{itemize}
+
+			\item{Data4Help App: Data collector}
+			\begin{itemize}\item{Data4Help App: Data sender}\end{itemize}
+
+			\item{Data4Help App: Services manager}
+			\begin{itemize}\item{Data4Help Server: Notifications manager}\item{Data4Help Server: Services manager}\end{itemize}
+
+			\item{Data4Help Server: Request manager}
+			\begin{itemize}\item{Data4Help Server: Notifications manager}\item{Data4Help Server: Data manager}\end{itemize}
+
+			\item{Data4Help Server: Notifications manager}
+			\begin{itemize}\item{Data4Help Server: Data4Help Database}\end{itemize}
+
+			\item{Data4Help Server: Services manager}
+			\begin{itemize}\item{Data4Help Server: Data manager}\end{itemize}
+
+			\item{Data4Help Server: Data manager}
+			\begin{itemize}\item{Data4Help Database}\end{itemize}
+
+			\item{Data4Help Server: Data receiver}
+			\begin{itemize}\item{Data4Help Server: Data manager}\end{itemize}
+
+			\item{Data4Help Server: Authentication}
+			\begin{itemize}\item{Data4Help Database}\end{itemize}
+
+			\item{Data4help Database}
+			\begin{itemize}\item{No components dependencies}\end{itemize}
+			
+		\end{itemize}
+
+		\paragraph{AutomatedSOS}
+		It depends entirely on \ic{Data4Help}. The following listed dependencies are relative only to the ones between \ic{AutomatedSOS} components.
+		\begin{itemize}
+			\item{AutomatedSOS Server: Service interface provider(website)}
+			\begin{itemize}\item{AutomatedSOS Server: User monitor}\end{itemize}
+
+			\item{AutomatedSOS Server: Data analyzer}
+			\begin{itemize}\item{AutomatedSOS Server: Data receiver}\end{itemize}
+
+			\item{AutomatedSOS Server: User monitor}
+			\begin{itemize}\item{AutomatedSOS Database}\item{Local emergency services caller}\end{itemize}
+
+			\item{AutomatedSOS Server: Data receiver}
+			\begin{itemize}\item{Data analyzer}\end{itemize}
+
+			\item{AutomatedSOS Server: Local emergency services caller}
+			\begin{itemize}\item{No components dependencies}\end{itemize}
+
+			\item{AutomatedSOS Database}
+			\begin{itemize}\item{No components dependencies}\end{itemize}
+		\end{itemize}
+
+		\paragraph{Track4Run}
+		It depends entirely on \ic{Data4Help}. The following listed dependencies are relative only to the ones between \ic{Track4Run} components.
+		\begin{itemize}
+			\item{Track4Run Organizers website}
+			\begin{itemize}\item{Track4Run Server: Authentication}\item{Track4Run Server: Run manager}\end{itemize}
+			\item{Track4Run Spectators website}
+			\begin{itemize}\item{Track4Run Server: Run manager}\end{itemize}
+			\item{Track4Run Server: Run manager}
+			\begin{itemize}\item{Track4Run Database}\end{itemize}
+			\item{Track4Run Server: Service interface provider (website)}
+			\begin{itemize}\item{Track4Run Server: Run manager}\end{itemize}
+			\item{Track4Run Server: Data receiver}
+			\begin{itemize}\item{Track4Run Server: Run manager}\end{itemize}
+			\item{Track4Run Server: Authentication}
+			\begin{itemize}\item{Track4Run Database}\end{itemize}
+			\item{Track4run Database}
+			\begin{itemize}\item{No components dependencies}\end{itemize}
+		\end{itemize}
+	\subsection{Gantt Chart}
+	The following diagram is a tentative Gantt Diagram including as activities the implementation of all the previously listed components. The main main aim of the following chart is to show graphically the previously listed dependencies; an attempt of estimating the duration of the activities was made but because it is not included in the purpose of this document it is to be considered just an approximatively estimation to make the chart more meaningful.
+	\\
+	\\
+	\todo{Inserire quì il Gantt Chart}
+
+\section{Integration Plan}
+	\todo{Inserire quì la lista delle integrazioni che vanno testate}
+
+\section{Testing Plan}
+	\subsection{Unit Testing}
+	It must be performed during the development of each component and finalized at the end of each component. It is recommended to create enough tests to reach a coverage of 90\% using some tools like SonarQube or JUnit \todo{verificare quest'ultima parte di sonarqube e junit}.
+	\subsubsection{Gantt Chart}
+	Unit testing is included in components development so the Gantt Chart for this kind of activities would completally overlap the implementation one (see at section \todo{Inserire riferimento}).
+	\subsection{Integration testing} Must be performed on each case listed in the previous section. To execute integration testing all the components to be integrated must be completed. The testing can be executed in parallel with respect to main implementation: this means that during the integration testing, the implementation of new components can go on.\\
+	The following Gantt Chart shows the order of the tests.
+	\todo{Decidere se dire che non si fa stima del testing per cui si testa finchè ho una cosa nuova da testare (meglio se rilascio poche cose in breve tempo: cioè se rilascio blocchi da integrare un po per volta), oppure se dire che si ha uno schedule anche per il testing (meglio nel caso in cui rilasci molte cose in breve tempo).}\\
+	\subsubsection{Gantt Chart}
+	\todo{Inserire quì il Gantt Chart}
+
 \thispagestyle{fancy}
  \end{document}
