@@ -1,12 +1,36 @@
 \documentclass[../../DD.tex]{subfiles}
 
 
-
 \begin{document}
 \section{Component Interfaces}
-\todo{Inserire di seguito testo introduttivo}
-	\begin{lstlisting}
-public interface d4h_registerAndLogin {
+\todo{Inserire testo}
+\begin{lstlisting}
+
+//Generic Interfaces
+
+public interface dataInterface{
+	boolean receiveData(Data data);  // requires auth
+}
+
+public interface service_newDataInterface{
+	boolean receiveData(Data data, String username);  // requires auth
+}
+
+public interface service_serviceInterface{
+	boolean executeCommand(String command);
+}
+
+
+//Data4Help Interfaces
+public interface d4h_getNotificationsInterface{
+	List<String> getNotifications(String username);
+}
+
+public interface d4h_addNotificationsInterface{
+	boolean addNotifications (List<String> notifications, String username)
+}
+
+public interface d4h_registerAndLoginInterface{
 	boolean isUsernameValid(String username);
 	boolean isPasswordValid(String password);
 	boolean login(String username, String password);
@@ -14,7 +38,7 @@ public interface d4h_registerAndLogin {
 	boolean signUp(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
 }
 
-public interface d4h_services {
+public interface d4h_servicesInterface{
 	List<Service> lookupServices(String namelike);
 	List<Service> getAllServices();
 	List<Service> getUserServices(String username);  // requires auth
@@ -23,47 +47,44 @@ public interface d4h_services {
 	boolean deleteServiceFromUserServices(int serviceID, String username);  // requires auth
 }
 
-public interface d4h_data {
-	boolean receiveData(Data data);  // requires auth
-	List<Data> getAllUserData(String username);  // requires auth
-	boolean deleteAllUserData(String username);  // requires auth
-}
-
-public interface d4h_requestData{
+public interface d4h_requestDataInterface{
 	Data getUserData(UserDataRequest request); // requires auth
 	List<Data> getGroupData(GroupDataRequest request); // requires auth
 }
 
 
-public interface userapp_servicesManagement {
-	//TODO: capire con prof. DiNitto se inserire o meno
-}
+//AutomatedSOS Interfaces
 
-public interface userapp_loginAndRegister {
-	//TODO: capire con prof. DiNitto se inserire o meno
-}
-
-public interface asos_commands{
+public interface asos_automatedSOSCommandsInterface{
 	boolean reactivateMonitoring(String username); // requires auth
 	boolean subscribeUser(User user);
 	boolean removeUser(User user);
 }
 
-public interface service_newData{
-	boolean receiveData(Data data, String username);  // requires auth
+public interface asos_callerInterface{
+	boolean call(String username, Data userData);
 }
 
-public interface t4r_spectator{
+
+//Track4Run Interfaces
+
+public interface t4r_automatedSOSCommandsInterface{
+	boolean enroll(User user, Run run); // requires auth
+	boolean removeUser(User user, Run run);
+	List<Run> getAvailableRuns();
+}
+
+public interface t4r_spectatorsInterface{
 	Run getRunByID(String ID);
 	List<Run> getAllRuns();
 }
 
-public interface t4r_runManagement{
+public interface t4r_runManagementInterface{
 	boolean createRun(String name, Date date, DateTime time, Position start, int maxNumberOfParticipants, Date enrollmentClosureDate);
 	boolean setPath(List<Position> path);
 }
 
-public interface t4r_registerAndLogin{
+public interface t4r_registerAndLoginInterface{
 	boolean isUsernameValid(String username);
 	boolean isPasswordValid(String password);
 	boolean login(String username, String password);
@@ -71,7 +92,7 @@ public interface t4r_registerAndLogin{
 	boolean signUp(String fullname, Date dateOfBirth, String email, String password);
 }
 
-public interface db_queries{
+public interface db_queriesInterface{
 	getUserByUsername(String username);
 	insertUser(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
 	deleteUser(String username);
@@ -82,8 +103,9 @@ public interface db_queries{
 	deleteServiceFromUserServices(String serviceID, String username);
 	getAllUserServices(String username);
 	getAllServices();
+	insertNotification(String notification);
 	//TODO: capire con prof. DiNitto se fare tutta la lista come qui o fare solo doQuery(String query)
 }
-	\end{lstlisting}
-	
+\end{lstlisting}
+
 \end{document}
