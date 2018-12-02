@@ -1,6 +1,20 @@
 \documentclass[../../DD.tex]{subfiles}
 \begin{document}
 \section{Selected Architectural Styles}
-	WORK IN PROGRESS
-	
+	- 3 tier architecture (client server db)
+		- Per data4help e services Remote Presentation	 
+		- spiegare il discorso di website all'interno dell'applicazione e PERCHE:
+			- ogni servizio non deve implementare un app specifica, ma se ha già un website, può usare quello, platform independent
+	- Connection and communication
+		- Socket for constant data push
+		- rest api per chiamate e comandi
+		- http per il discorso di sopra
+	- in track4run abbiamo deciso di tenere separati i 3 attori perche non ha senso che uno spectator o un organizer siano utenti di d4h, non condividendo i dati
+		- spiegare i 3 attori di cosa hanno bisogno (organizer --> website per organizzare / registrazione, spectator solo un'interfaccia)
+	- Quando si tratta di inviare dati (data interface) allora è il ricevitore che espone l'interfaccia
+		- Appena il dato è prodotto, arriva al ricevitore, che deve essere sempre up
+	- Quando si tratta di inviare notifiche, è chi le deve ricevere che chiede se ce ne sono
+		- L'app quando si connette chiede al server
+	- Ci sono delle interfacce che devono essere implementate dai servizi 3 parti: Service Interface, New Data Interface
+
 \end{document}
