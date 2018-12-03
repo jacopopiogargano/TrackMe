@@ -1,165 +1,178 @@
 \begin{document}
 \chapter{Requirements Traceability}
-\todo{Description} fare riferimenti a component diagrams
+The following is a way to ensure that all requirements defined in section 3.2.5 of \hyperref[ref:3]{[3]} are satisfied by the components defined in section \hyperref[sect:2.2]{2.2} of this document. Each component is needed in order to fulfill one or more requirements, therefore all components defined have a specific purpose. Moreover, where applicable, references to sequence diagrams are included so as to provide a graphical representation on how components fulfill each requirement.
 
 \paragraph{Data4Help}
 \begin{itemize}
 	\item[R\subs{1}]Unregistered individuals and companies must not be able to use Data4Help.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
-	\end{enumerate}
+		\item Login Sequence Diagram
+	\end{itemize}
 	\item[R\subs{2}]At sign up, \ic{User} must provide: first name, last name, SSN, gender, date of birth, email and password.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{3}]At sign up, \ic{Third party} must provide a company name.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{4}]At sign up, \ic{User} must accept \ic{Terms and conditions}, including the \ic{Privacy statement}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{5}]At sign up, \ic{Third party} must accept \ic{Terms and conditions}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{6}]Identify a \ic{User} by their identifier.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
-	\end{enumerate}
+		\item Login Sequence Diagram
+	\end{itemize}
 	\item[R\subs{7}]Query the database for a \ic{User} by their identifier.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{8}]Receive \ic{User Data}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication (User App and Data4Help)
 		\item Data Collector (User App)
 		\item Data Sender (User App)
 		\item Data Receiver
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{9}]Validate \ic{User Data}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{10}]Authenticate \ic{User Data}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{11}]Store collected \ic{User Data} in a database.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver
 		\item Data Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Manager
-	\end{enumerate}
+		\item User Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{13}]Receive \ic{Third party} data access request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+		\item Group Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{14}]Validate \ic{Third party} data access request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{15}]Authenticate \ic{Third party} data access request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{16}]Forward \ic{User Data} access request to the specific \ic{User}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
 		\item Notifications Manager
 		\item Services Manager (User App)
-	\end{enumerate}
+		\item User Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{17}]Receive \ic{User} consent approval or denial.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (User App and Data4Help)
-	\end{enumerate}
+		\item Add New Service Sequence Diagram
+	\end{itemize}
 	\item[R\subs{18}]Check if a specific \ic{User} gave consent to a specific \ic{Service}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
 		\item Data Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{19}]Send specific\ic{User Data} to the requesting \ic{Third party}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
 		\item Data Manager
-	\end{enumerate}
+		\item User Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{20}]Not send specific\ic{User Data} to the requesting \ic{Third party} if the specific \ic{User} denied consent.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
 		\item Data Manager
-	\end{enumerate}
+		\item User Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{21}]\ic{Third party} must be able to set specific constraints to define a group of \ic{Users}: age, gender, residence.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+		\item Group Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{23}]Properly anonymize \ic{Group Data}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+		\item Group Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{24}]Send \ic{Group Data} to the requesting \ic{Third party}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+		\item Group Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{25}]Not send \ic{Group Data} if the group it refers to is made up of less than 1000 \ic{Users}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+		\item Group Data Request Sequence Diagram
+	\end{itemize}
 	\item[R\subs{26}]Receive \ic{Third party} subscription request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{27}]Validate \ic{Third party} subscription request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{28}]Authenticate \ic{Third party} subscription request.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third parties} as soon as they are produced.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver
 		\item Data Manager
 		\item Services Manager (Data4Help)
 		\item Third Party Request Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{30}]Allow \ic{Users} to subscribe to \ic{Services}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
-	\end{enumerate}
+		\item Add New Service Sequence Diagram
+	\end{itemize}
 	\item[R\subs{31}]Allow \ic{Users} to unsubscribe from \ic{Services}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{32}]Send a specific \ic{User} all their data stored, if requested by them.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{33}]Delete a \ic{User} specific data, if requested by them.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{34}]Allow \ic{Users} to request all their data stored by TrackMe at any time.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (User App and Data4Help)
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{35}]Allow \ic{Users} to request the deletion of all their data stored by TrackMe at any time.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Services Manager (User App and Data4Help)
-	\end{enumerate}
+	\end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -167,24 +180,27 @@
 \paragraph{AutomatedSOS}
 \begin{itemize}
 	\item[R\subs{36}]Receive \ic{User Data} from Data4Help.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver (AutomatedSOS)
-	\end{enumerate}
+		\item User In Need Assistance Sequence Diagram
+	\end{itemize}
 	\item[R\subs{37}]Compare \ic{User Data} against certain thresholds.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Analyzer
-	\end{enumerate}
+		\item User In Need Assistance Sequence Diagram
+	\end{itemize}
 	\item[R\subs{38}]Call local emergency services providing necessary \ic{User Data} of \ic{User in need}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item User Monitor
 		\item Local Emergency Services Caller
-	\end{enumerate}
+		\item User In Need Assistance Sequence Diagram
+	\end{itemize}
 	\item[R\subs{39}]\ic{User} must be able to reactivate AutomatedSOS monitoring.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Service Controller (User App)
 		\item Service Interface Provider
 		\item User Monitor
-	\end{enumerate}
+	\end{itemize}
 \end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -192,51 +208,58 @@
 \paragraph{Track4Run}
 \begin{itemize}
 	\item[R\subs{40}]Receive \ic{User Data} from Data4Help.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Data Receiver
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{41}]At sign up, \ic{Organizers} must provide: first name, last name, email and password.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{42}]At sign up, \ic{Organizers} must accept \ic{Terms and conditions}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Authentication
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{43}]Allow \ic{Organizers} to create a \ic{Run}, defining: name, path, date, maximum number of \ic{Participants} and enrollment closure date.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Run Organization Sequence Diagram
+	\end{itemize}
 	\item[R\subs{44}]Provide \ic{Users} enrollment for an existing \ic{Run}.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
 		\item Service Interface Provider
 		\item Service Controller (User App)
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 	\item[R\subs{45}]Prevent a \ic{User} from enrolling in a \ic{Run} if the maximum number of \ic{Participants} was already reached.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 	\item[R\subs{46}]Prevent a \ic{User} from enrolling in a \ic{Run} if it already started or finished.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 	\item[R\subs{47}]Prevent a \ic{User} from enrolling in a \ic{Run} if enrollment is closed.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 	\item[R\subs{48}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+	\end{itemize}
 	\item[R\subs{49}]Identify a \ic{Run} by its identifier.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 	\item[R\subs{50}]Query the database for a \ic{Run} given its identifier.
-	\begin{enumerate}
+	\begin{itemize}
 		\item Run Manager
-	\end{enumerate}
+		\item Participants Enrollment Sequence Diagram
+	\end{itemize}
 \end{itemize}
 
 
