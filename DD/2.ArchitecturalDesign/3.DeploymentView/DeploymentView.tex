@@ -1,6 +1,10 @@
 \documentclass[../../DD.tex]{subfiles}
 \begin{document}
 \section{Deployment View}
+	
+	\indent The following are deployment diagrams. Their purpose is to show how the three systems will look like from a physical point of view - both hardware and software - when they will be implemented and delivered.\\
+	\indent All three systems will have a central server architecture split in several servers to ensure reliability and availability. A load balancer is included in all three systems to balance the calls from the clients and send them to the less busy servers. There are two load balancers for availability. All servers communicate with the relative database through a TCP/IP protocol. Track4Run has a Web Server since it needs to offer a website for \ic{Spectators} and \ic{Organizers}.
+
 	\image {13cm} {Deployment_Diagrams/DeploymentDiagramData4Help.jpg} {Data4Help Deployment Diagram} {DeploymentDiagramData4Help}
 
 	\image {13cm} {Deployment_Diagrams/DeploymentDiagramAutomatedSOS.jpg} {AutomatedSOS Deployment Diagram} {DeploymentDiagramAutomatedSOS}
