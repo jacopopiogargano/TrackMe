@@ -9,4 +9,159 @@
 
 	\subsection{Interfaces Use}
 
+		\subsubsection{Data4Help Server}
+		\begin{itemize}
+			\item Request Data Interface
+			\begin{itemize}
+				\item ThirdParty
+			\end{itemize}
+			\item Get Notifications Interface
+			\begin{itemize}
+				\item User Application Controller
+			\end{itemize}
+			\item Services Interface
+			\begin{itemize}
+				\item User Application Service
+			\end{itemize}
+			\item Data Interface
+			\begin{itemize}
+				\item User Application Controller
+			\end{itemize}
+			\item Registration and Login Interface
+			\begin{itemize}
+				\item User Application Controller
+			\end{itemize}
+			\item Add Notifications Interface
+			\begin{itemize}
+				\item Data4Help Controller
+			\end{itemize}
+			\item Data Interface
+			\begin{itemize}
+				\item Data4Help Controller
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{Data4Help User Application}
+		\begin{itemize}
+			\item Data Interface
+			\begin{itemize}
+				\item SmartWearable
+			\end{itemize}
+		\end{itemize}
+		
+		\subsubsection{Data4Help Database}
+		\begin{itemize}
+			\item Database Interface
+			\begin{itemize}
+				\item Data4Help Server Model
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{Third Party Service System}
+		\begin{itemize}
+			\item Service Interface
+			\begin{itemize}
+				\item User Application Service
+			\end{itemize}
+			\item New Data Interface
+			\begin{itemize}
+				\item Data4Help Server Controller
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{Google Maps}
+		\begin{itemize}
+			\item Google Maps Interface \todo{Da togliere?}
+			\begin{itemize}
+				\item User Application Service
+			\end{itemize}
+		\end{itemize}
+
+
+
+
+		\subsubsection{AutomatedSOS Server}
+		\begin{itemize}
+			\item Service Interface
+			\begin{itemize}
+				\item User Application Service \todo{È una classe che non dipende da AutomatedSOS. È giusto forzare l'assegnamento? Stiamo definendo un solo progetto che comprende tutto oppure D4H, T4R AutSOS sono gestiti come tre progetti separati?}
+			\end{itemize}
+			\item New Data Interface
+			\begin{itemize}
+				\item Data4Help Controller\todo{Vedi sopra}
+			\end{itemize}
+			\item Caller Interface
+			\begin{itemize}
+				\item AutomatedSOS Controller
+			\end{itemize}
+			\item Data Interface
+			\begin{itemize}
+				\item DataAnalyzer
+				\item AutomatedSOS Controller
+			\end{itemize}
+			\item AutomatedSOS Commands Interface
+			\begin{itemize}
+				\item AutomatedSOS Controller
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{AutomatedSOS Database}
+		\begin{itemize}
+			\item Database Interface
+			\begin{itemize}
+				\item AutomatedSOS Model
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{Local Emergency Services}
+		\begin{itemize}
+			\item Local Emergency Services Interface
+			\begin{itemize}
+				\item AutomatedSOS Controller
+			\end{itemize}
+		\end{itemize}
+		
+
+
+
+		\subsubsection{Track4Run Server}
+		\begin{itemize}
+			\item Service Interface
+			\begin{itemize}
+				\item User Application Service \todo{È una classe che non dipende da Track4Run. È giusto forzare l'assegnamento? Stiamo definendo un solo progetto che comprende tutto oppure D4H, T4R AutSOS sono gestiti come tre progetti separati?}
+			\end{itemize}
+			\item Spectators Interface
+			\begin{itemize}
+				\item \todo{Esposta esternamente al sito. Da togliere?}
+			\end{itemize}
+			\item Registration and Login Interface
+			\begin{itemize}
+				\item \todo{Esposta esternamente al sito. Da togliere?}
+			\end{itemize}
+			\item Run Management Interface
+			\begin{itemize}
+				\item \todo{Esposta esternamente al sito. Da togliere?}
+			\end{itemize}
+			\item New Data Interface
+			\begin{itemize}
+				\item Track4Run Controller
+			\end{itemize}
+			\item Track4Run Commands Interface
+			\begin{itemize}
+				\item Track4Run Controller
+			\end{itemize}
+			\item Data Interface
+			\begin{itemize}
+				\item Track4Run Controller
+			\end{itemize}
+		\end{itemize}
+
+		\subsubsection{Track4Run Database}
+		\begin{itemize}
+			\item Database Interface
+			\begin{itemize}
+				\item Track4Run Model
+			\end{itemize}
+		\end{itemize}
+
 \end{document}
