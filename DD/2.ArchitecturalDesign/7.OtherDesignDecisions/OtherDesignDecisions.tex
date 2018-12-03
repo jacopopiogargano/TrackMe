@@ -8,7 +8,7 @@
 	\image {13cm} {UML_Diagrams/UMLTrack4Run.jpg} {Track4Run Class Diagram} {Track4RunClassDiagram}
 
 	\subsection{Interfaces Use}
-		
+
 		\subsubsection{Data4Help Server}
 		\begin{itemize}
 			\item Request Data Interface
@@ -37,7 +37,7 @@
 			\end{itemize}
 			\item Data Interface
 			\begin{itemize}
-				\item Data4Help Model
+				\item Data4Help Controller
 			\end{itemize}
 		\end{itemize}
 
@@ -45,7 +45,15 @@
 		\begin{itemize}
 			\item Data Interface
 			\begin{itemize}
-				\item SmartWearable \todo{In teoria è usata dallo Smart Wearable, ma dovrebbe chiamare collectData della classe Model. Metto Model o lascio SmartWearable?}
+				\item SmartWearable
+			\end{itemize}
+		\end{itemize}
+		
+		\subsubsection{Data4Help Database}
+		\begin{itemize}
+			\item Database Interface
+			\begin{itemize}
+				\item Data4Help Server Model
 			\end{itemize}
 		\end{itemize}
 
@@ -57,15 +65,7 @@
 			\end{itemize}
 			\item New Data Interface
 			\begin{itemize}
-				\item Data4Help Server \todo{Model o Controller?}
-			\end{itemize}
-		\end{itemize}
-
-		\subsubsection{Data4Help Database}
-		\begin{itemize}
-			\item Database Interface
-			\begin{itemize}
-				\item Data4Help Server Model
+				\item Data4Help Server Controller
 			\end{itemize}
 		\end{itemize}
 
@@ -97,7 +97,7 @@
 			\item Data Interface
 			\begin{itemize}
 				\item DataAnalyzer
-				\item AutomatedSOS Model
+				\item AutomatedSOS Controller
 			\end{itemize}
 			\item AutomatedSOS Commands Interface
 			\begin{itemize}
@@ -145,7 +145,6 @@
 			\item New Data Interface
 			\begin{itemize}
 				\item Track4Run Controller
-				\item Track4Run Model
 			\end{itemize}
 			\item Track4Run Commands Interface
 			\begin{itemize}
@@ -154,7 +153,6 @@
 			\item Data Interface
 			\begin{itemize}
 				\item Track4Run Controller
-				\item Track4Run Model
 			\end{itemize}
 		\end{itemize}
 
