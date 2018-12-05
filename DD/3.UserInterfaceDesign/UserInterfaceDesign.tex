@@ -1,7 +1,46 @@
 \documentclass[../DD.tex]{subfiles}
 \begin{document}
  \chapter{User Interface Design}
-	All relevant mockups of the \ic{User} interface are included in section 3.1.1 of \hyperref[ref:3]{[3]}.
+	The following mockups have been copied from the RASD and no other mockup is added compared to the ones provided in it but they are here inserted again to show which component is enabling each interface to work properly.
+\twoimages{8.1cm}{Mockups/0_FirstFrame.png}{Data4Help Welcome Page}{Mockups/1_0_Login.png}{Data4Help Login Page}
+\twoimages{8.1cm}{Mockups/1_1_Registration.png}{Data4Help Sign Up Page}{Mockups/2_Menu.png}{Data4Help Menu}
+\twoimages{8.1cm}{Mockups/3_0_MyServices.png}{User Services Page}{Mockups/3_1_DiscoverServices.png}{Services Discovery Page}
+\twoimages{8.1cm}{Mockups/3_2_ServicePageData4Help.png}{Add Service Page}{Mockups/3_3_RevokeConsentData4Help.png}{User Subscribed Service Page}
+\twoimages{8.1cm}{Mockups/3_4_AutomatedSOS.png}{AutomatedSOS Page}{Mockups/5_3_OrganizerRegistrationTrack4Run.png}{Organizer Registration Page}
+\twoimages{8.1cm}{Mockups/5_1_CreateRunTrack4Run.png}{New Run Creation Page}{Mockups/5_4_DiscoverRunsTrack4Run.png}{Runs Discovery Page}
+\twoimages{8.1cm}{Mockups/5_5_WatchRunTrack4Run.png}{Spectators Run Discovery Page}{Mockups/5_6_LiveRunTrack4Run.png}{Watch Real Time Run Page}
+	
+	\begin{itemize}
+		\item Data4Help Welcome Page
+			\begin{itemize}\item{No specific component: it is just a static content embedded in the app code source}\end{itemize}
+		\item Data4Help Login Page
+			\begin{itemize}\item{Data4Help App: Authentication}\item{Data4Help Server: Authentication}\end{itemize}
+		\item Data4Help Sign Up Page
+			\begin{itemize}\item{Data4Help App: Authentication}\item{Data4Help Server: Authentication}\end{itemize}
+		\item Data4Help Menu
+			\begin{itemize}\item{No specific component: it is just a static content embedded in the app code source}\end{itemize}
+		\item User Services Page	
+			\begin{itemize}\item{Data4Help App: Services Manager} \item{Data4Help Server: Services Manager}\end{itemize}	
+		\item Services Discovery Page			
+			\begin{itemize}\item{Data4Help App: Services Manager} \item{Data4Help Server: Services Manager}\end{itemize}	
+		\item Add Service Page
+			\begin{itemize}\item{Data4Help App: Services Manager} \item{Data4Help Server: Services Manager}\end{itemize}
+		\item User Subscribed Service Page
+			\begin{itemize}\item{Data4Help App: Services Manager} \item{Data4Help Server: Services Manager}\end{itemize}
+		\item AutomatedSOS Page
+			\begin{itemize}\item{Data4Help App: Service Controller} \item{AutomatedSOS Server: Service Interface Provider}\end{itemize}
+		\item Organizer Registration Page
+			\begin{itemize}\item{Track4Run Server: Authentication}\end{itemize}
+		\item New Run Creation Page
+			\begin{itemize}\item{Track4Run Organizer Website} \item{Track4Run Server: Run Manager}\end{itemize}
+		\item Runs Discovery Page
+			\begin{itemize}\item{Data4Help App: Service Controller} \item{Track4Run Server: Service Interface Provider}\end{itemize}
+		\item Spectators Run Discovery Page
+			\begin{itemize}\item{Track4Run Spectators Website} \item{Track4Run Server: Run Manager}\end{itemize}
+		\item Watch Real Time Run Page
+			\begin{itemize}\item{Track4Run Spectators Website} \item{Track4Run Server: Run Manager}\end{itemize}
+	\end{itemize}
+
 	\paragraph{Interacting with the User Application}\mbox{}\\
 	\indent The following provides a description on how to move through interfaces when interacting with the User Application so as to give a clear idea of the navigation flows.
 	\begin{itemize}
