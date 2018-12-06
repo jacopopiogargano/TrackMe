@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  5 DEC 2018 20:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6840 64-bit) (preloaded format=pdflatex 2018.10.14)  6 DEC 2018 13:39
 entering extended mode
 **./DD.tex
 (DD.tex
@@ -152,10 +152,6 @@ s
 \f@nch@O@olf=\skip59
 \f@nch@O@orf=\skip60
 )
-("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\tools\indentfirst.
-sty"
-Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
-)
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty"
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \c@float@type=\count103
@@ -288,26 +284,35 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip61
 )
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\parskip\parskip.st
+y"
+Package: parskip 2018-08-24 v2.0a non-zero parskip adjustments
+
+("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\etoolbox\etoolbox.
+sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count114
+))
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
 sty"
-\lst@mode=\count114
+\lst@mode=\count115
 \lst@gtempboxa=\box32
 \lst@token=\toks20
-\lst@length=\count115
+\lst@length=\count116
 \lst@currlwidth=\dimen118
-\lst@column=\count116
-\lst@pos=\count117
+\lst@column=\count117
+\lst@pos=\count118
 \lst@lostspace=\dimen119
 \lst@width=\dimen120
-\lst@newlines=\count118
-\lst@lineno=\count119
+\lst@newlines=\count119
+\lst@lineno=\count120
 \lst@maxwidth=\dimen121
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\lstmisc.s
 ty"
 File: lstmisc.sty 2018/09/02 1.7 (Carsten Heinz)
-\c@lstnumber=\count120
-\lst@skipnumbers=\count121
+\c@lstnumber=\count121
+\lst@skipnumbers=\count122
 \lst@framebox=\box33
 )
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\listings\listings.
@@ -392,34 +397,34 @@ LaTeX Warning: Label `fig:nonfloat' multiply defined.
 )
 \openout1 = `DD.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 93.
-LaTeX Font Info:    ... okay on input line 93.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 95.
+LaTeX Font Info:    ... okay on input line 95.
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf.mk
 ii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count122
+\scratchcounter=\count123
 \scratchdimen=\dimen122
 \scratchbox=\box34
-\nofMPsegments=\count123
-\nofMParguments=\count124
+\nofMPsegments=\count124
+\nofMParguments=\count125
 \everyMPshowfont=\toks21
-\MPscratchCnt=\count125
+\MPscratchCnt=\count126
 \MPscratchDim=\dimen123
-\MPnumerator=\count126
-\makeMPintoPDFobject=\count127
+\MPnumerator=\count127
+\makeMPintoPDFobject=\count128
 \everyMPtoPDFconversion=\toks22
 )
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-
@@ -450,7 +455,7 @@ Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box35
-Package hyperref Info: Link coloring OFF on input line 93.
+Package hyperref Info: Link coloring OFF on input line 95.
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\nameref.s
 ty"
@@ -460,25 +465,25 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 estring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count128
+\c@section@level=\count129
 )
-LaTeX Info: Redefining \ref on input line 93.
-LaTeX Info: Redefining \pageref on input line 93.
-LaTeX Info: Redefining \nameref on input line 93.
+LaTeX Info: Redefining \ref on input line 95.
+LaTeX Info: Redefining \pageref on input line 95.
+LaTeX Info: Redefining \nameref on input line 95.
  (DD.out) (DD.out)
 \@outlinefile=\write4
 \openout4 = `DD.out'.
 
-\c@lstlisting=\count129
+\c@lstlisting=\count130
 <Images/PolitecnicoLogo.png, id=131, 803.0pt x 501.875pt>
 File: Images/PolitecnicoLogo.png Graphic file (type png)
 <use Images/PolitecnicoLogo.png>
-Package pdftex.def Info: Images/PolitecnicoLogo.png  used on input line 99.
+Package pdftex.def Info: Images/PolitecnicoLogo.png  used on input line 101.
 (pdftex.def)             Requested size: 182.08852pt x 113.80533pt.
 <Images/TrackMeLogo.png, id=133, 1121.18875pt x 436.63126pt>
 File: Images/TrackMeLogo.png Graphic file (type png)
 <use Images/TrackMeLogo.png>
-Package pdftex.def Info: Images/TrackMeLogo.png  used on input line 103.
+Package pdftex.def Info: Images/TrackMeLogo.png  used on input line 105.
 (pdftex.def)             Requested size: 344.99873pt x 134.35492pt.
  [1
 
@@ -488,13 +493,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 3.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <5> on input line 3.
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 63.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
 
 ("C:\Users\jacop\AppData\Local\Programs\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 63.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
 
 [1
 
@@ -504,31 +509,31 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
 
  [2] (1.Introduction/Introduction.tex
 Chapter 1.
-(1.Introduction/1.Purpose/Purpose.tex
-Underfull \hbox (badness 10000) in paragraph at lines 7--10
+(1.Introduction/1.Purpose/Purpose.tex) (1.Introduction/2.Scope/Scope.tex
+Underfull \hbox (badness 10000) in paragraph at lines 5--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 11--12
+Underfull \hbox (badness 10000) in paragraph at lines 5--3
 
  []
 
-) (1.Introduction/2.Scope/Scope.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--6
+)
+(1.Introduction/3.DefinitionsAcronymsAbbreviations/DefinitionsAcronymsAbbreviat
+ions.tex
+Underfull \hbox (badness 10000) in paragraph at lines 4--3
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 7--9
+Underfull \hbox (badness 10000) in paragraph at lines 4--3
 
  []
 
 [3
 
-])
-(1.Introduction/3.DefinitionsAcronymsAbbreviations/DefinitionsAcronymsAbbreviat
-ions.tex
+]
 Overfull \hbox (0.3238pt too wide) in paragraph at lines 8--9
 []\OT1/cmr/m/n/10 a com-pany that is will-ing to ac-cess \OT1/cmr/m/it/10 User 
 data \OT1/cmr/m/n/10 stored in TrackMe's
@@ -537,39 +542,45 @@ data \OT1/cmr/m/n/10 stored in TrackMe's
 [4])
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 20.
-
-Overfull \hbox (2.76282pt too wide) in paragraph at lines 34--35
- []\OT1/cmr/bx/n/10 Fourth chap-ter[] \OT1/cmr/m/n/10 In this chap-ter re-quire
--ments de-fined in the RASD are mapped
+ [5]
+Overfull \hbox (0.47276pt too wide) in paragraph at lines 35--36
+\OT1/cmr/m/n/10 Chap-ter 2, al-low the sat-is-fac-tion of each re-quire-ment of
+ sec-tion 3.2.5 of [][3][]. 
  []
 
-[5]) (2.ArchitecturalDesign/ArchitecturalDesign.tex [6]
+
+Overfull \hbox (12.0974pt too wide) in paragraph at lines 41--42
+ []\OT1/cmr/bx/n/10 Chapter 7[] \OT1/cmr/m/n/10 Ref-er-ences of doc-u-ments tha
+t this project was de-vel-oped upon. 
+ []
+
+) (2.ArchitecturalDesign/ArchitecturalDesign.tex [6]
 Chapter 2.
 (2.ArchitecturalDesign/1.Overview/Overview.tex
-<Images/Overviews/OverviewData4Help.jpg, id=219, 974.64125pt x 654.445pt>
+<Images/Overviews/OverviewData4Help.jpg, id=224, 974.64125pt x 654.445pt>
 File: Images/Overviews/OverviewData4Help.jpg Graphic file (type jpg)
 <use Images/Overviews/OverviewData4Help.jpg>
 Package pdftex.def Info: Images/Overviews/OverviewData4Help.jpg  used on input 
 line 6.
 (pdftex.def)             Requested size: 344.99622pt x 231.65555pt.
- [7
-
- <./Images/Overviews/OverviewData4Help.jpg>]
 <Images/Overviews/OverviewAutomatedSOS.jpg, id=225, 974.64125pt x 398.48875pt>
 File: Images/Overviews/OverviewAutomatedSOS.jpg Graphic file (type jpg)
 <use Images/Overviews/OverviewAutomatedSOS.jpg>
 Package pdftex.def Info: Images/Overviews/OverviewAutomatedSOS.jpg  used on inp
-ut line 16.
+ut line 12.
 (pdftex.def)             Requested size: 344.99622pt x 141.05406pt.
-<Images/Overviews/OverviewTrack4Run.jpg, id=226, 974.64125pt x 654.445pt>
+ [7
+
+ <./Images/Overviews/OverviewData4Help.jpg>]
+<Images/Overviews/OverviewTrack4Run.jpg, id=231, 974.64125pt x 654.445pt>
 File: Images/Overviews/OverviewTrack4Run.jpg Graphic file (type jpg)
 <use Images/Overviews/OverviewTrack4Run.jpg>
 Package pdftex.def Info: Images/Overviews/OverviewTrack4Run.jpg  used on input 
-line 23.
+line 15.
 (pdftex.def)             Requested size: 344.99622pt x 231.65555pt.
  [8 <./Images/Overviews/OverviewAutomatedSOS.jpg>])
 (2.ArchitecturalDesign/2.ComponentView/ComponentView.tex
-<Images/Component_Diagrams/ComponentData4HelpView.jpg, id=232, 974.64125pt x 46
+<Images/Component_Diagrams/ComponentData4HelpView.jpg, id=237, 974.64125pt x 46
 9.755pt>
 File: Images/Component_Diagrams/ComponentData4HelpView.jpg Graphic file (type j
 pg)
@@ -578,15 +589,16 @@ Package pdftex.def Info: Images/Component_Diagrams/ComponentData4HelpView.jpg
 used on input line 5.
 (pdftex.def)             Requested size: 344.99622pt x 166.28036pt.
  [9 <./Images/Overviews/OverviewTrack4Run.jpg>]
-<Images/Component_Diagrams/ComponentData4Help.jpg, id=238, 974.64125pt x 626.34
+<Images/Component_Diagrams/ComponentData4Help.jpg, id=243, 974.64125pt x 626.34
 pt>
 File: Images/Component_Diagrams/ComponentData4Help.jpg Graphic file (type jpg)
 <use Images/Component_Diagrams/ComponentData4Help.jpg>
 Package pdftex.def Info: Images/Component_Diagrams/ComponentData4Help.jpg  used
  on input line 10.
 (pdftex.def)             Requested size: 344.99622pt x 221.70714pt.
- [10 <./Images/Component_Diagrams/ComponentData4HelpView.jpg>]
-<Images/Component_Diagrams/ComponentUserAppData4Help.jpg, id=245, 974.64125pt x
+ [10 <./Images/Component_Diagrams/ComponentData4HelpView.jpg>] [11 <./Images/Co
+mponent_Diagrams/ComponentData4Help.jpg>]
+<Images/Component_Diagrams/ComponentUserAppData4Help.jpg, id=255, 974.64125pt x
  558.085pt>
 File: Images/Component_Diagrams/ComponentUserAppData4Help.jpg Graphic file (typ
 e jpg)
@@ -594,8 +606,7 @@ e jpg)
 Package pdftex.def Info: Images/Component_Diagrams/ComponentUserAppData4Help.jp
 g  used on input line 19.
 (pdftex.def)             Requested size: 344.99622pt x 197.54675pt.
- [11 <./Images/Component_Diagrams/ComponentData4Help.jpg>]
-<Images/Component_Diagrams/ComponentAutomatedSOS.jpg, id=251, 974.64125pt x 584
+<Images/Component_Diagrams/ComponentAutomatedSOS.jpg, id=256, 974.64125pt x 584
 .1825pt>
 File: Images/Component_Diagrams/ComponentAutomatedSOS.jpg Graphic file (type jp
 g)
@@ -604,7 +615,7 @@ Package pdftex.def Info: Images/Component_Diagrams/ComponentAutomatedSOS.jpg  u
 sed on input line 26.
 (pdftex.def)             Requested size: 344.99622pt x 206.78455pt.
  [12 <./Images/Component_Diagrams/ComponentUserAppData4Help.jpg>]
-<Images/Component_Diagrams/ComponentTrack4Run.jpg, id=258, 974.64125pt x 656.45
+<Images/Component_Diagrams/ComponentTrack4Run.jpg, id=263, 974.64125pt x 656.45
 25pt>
 File: Images/Component_Diagrams/ComponentTrack4Run.jpg Graphic file (type jpg)
 <use Images/Component_Diagrams/ComponentTrack4Run.jpg>
@@ -614,7 +625,7 @@ Package pdftex.def Info: Images/Component_Diagrams/ComponentTrack4Run.jpg  used
  [13 <./Images/Component_Diagrams/ComponentAutomatedSOS.jpg>])
 (2.ArchitecturalDesign/3.DeploymentView/DeploymentView.tex [14 <./Images/Compon
 ent_Diagrams/ComponentTrack4Run.jpg>]
-<Images/Deployment_Diagrams/DeploymentDiagramData4Help.jpg, id=269, 974.64125pt
+<Images/Deployment_Diagrams/DeploymentDiagramData4Help.jpg, id=274, 974.64125pt
  x 681.54625pt>
 File: Images/Deployment_Diagrams/DeploymentDiagramData4Help.jpg Graphic file (t
 ype jpg)
@@ -622,7 +633,7 @@ ype jpg)
 Package pdftex.def Info: Images/Deployment_Diagrams/DeploymentDiagramData4Help.
 jpg  used on input line 8.
 (pdftex.def)             Requested size: 344.99622pt x 241.24864pt.
-<Images/Deployment_Diagrams/DeploymentDiagramAutomatedSOS.jpg, id=270, 974.6412
+<Images/Deployment_Diagrams/DeploymentDiagramAutomatedSOS.jpg, id=275, 974.6412
 5pt x 681.54625pt>
 File: Images/Deployment_Diagrams/DeploymentDiagramAutomatedSOS.jpg Graphic file
  (type jpg)
@@ -631,7 +642,7 @@ Package pdftex.def Info: Images/Deployment_Diagrams/DeploymentDiagramAutomatedS
 OS.jpg  used on input line 10.
 (pdftex.def)             Requested size: 344.99622pt x 241.24864pt.
  [15 <./Images/Deployment_Diagrams/DeploymentDiagramData4Help.jpg>]
-<Images/Deployment_Diagrams/DeploymentDiagramTrack4Run.jpg, id=276, 974.64125pt
+<Images/Deployment_Diagrams/DeploymentDiagramTrack4Run.jpg, id=281, 974.64125pt
  x 681.54625pt>
 File: Images/Deployment_Diagrams/DeploymentDiagramTrack4Run.jpg Graphic file (t
 ype jpg)
@@ -651,7 +662,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--6
 
 [16 <./Images/Deployment_Diagrams/DeploymentDiagramAutomatedSOS.jpg> <./Images/
 Deployment_Diagrams/DeploymentDiagramTrack4Run.jpg>]
-<Images/Sequence_Diagrams/SequenceDiagramLogin.jpg, id=284, 974.64125pt x 498.8
+<Images/Sequence_Diagrams/SequenceDiagramLogin.jpg, id=289, 974.64125pt x 498.8
 6375pt>
 File: Images/Sequence_Diagrams/SequenceDiagramLogin.jpg Graphic file (type jpg)
 
@@ -659,7 +670,7 @@ File: Images/Sequence_Diagrams/SequenceDiagramLogin.jpg Graphic file (type jpg)
 Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramLogin.jpg  use
 d on input line 7.
 (pdftex.def)             Requested size: 344.99622pt x 176.58406pt.
-<Images/Sequence_Diagrams/SequenceDiagramNotifications.jpg, id=285, 974.64125pt
+<Images/Sequence_Diagrams/SequenceDiagramNotifications.jpg, id=290, 974.64125pt
  x 521.95pt>
 File: Images/Sequence_Diagrams/SequenceDiagramNotifications.jpg Graphic file (t
 ype jpg)
@@ -668,7 +679,7 @@ Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramNotifications.
 jpg  used on input line 10.
 (pdftex.def)             Requested size: 344.99622pt x 184.75595pt.
  [17 <./Images/Sequence_Diagrams/SequenceDiagramLogin.jpg>]
-<Images/Sequence_Diagrams/SequenceDiagramUserDataRequest.jpg, id=291, 974.64125
+<Images/Sequence_Diagrams/SequenceDiagramUserDataRequest.jpg, id=296, 974.64125
 pt x 558.085pt>
 File: Images/Sequence_Diagrams/SequenceDiagramUserDataRequest.jpg Graphic file 
 (type jpg)
@@ -678,7 +689,7 @@ t.jpg  used on input line 13.
 (pdftex.def)             Requested size: 344.99622pt x 197.54675pt.
  [18 <./Images/Sequence_Diagrams/SequenceDiagramNotifications.jpg> <./Images/Se
 quence_Diagrams/SequenceDiagramUserDataRequest.jpg>]
-<Images/Sequence_Diagrams/SequenceDiagramGroupDataRequest.jpg, id=299, 974.6412
+<Images/Sequence_Diagrams/SequenceDiagramGroupDataRequest.jpg, id=304, 974.6412
 5pt x 554.07pt>
 File: Images/Sequence_Diagrams/SequenceDiagramGroupDataRequest.jpg Graphic file
  (type jpg)
@@ -686,7 +697,7 @@ File: Images/Sequence_Diagrams/SequenceDiagramGroupDataRequest.jpg Graphic file
 Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramGroupDataReque
 st.jpg  used on input line 16.
 (pdftex.def)             Requested size: 344.99622pt x 196.12555pt.
-<Images/Sequence_Diagrams/SequenceDiagramAddNewService.jpg, id=300, 974.64125pt
+<Images/Sequence_Diagrams/SequenceDiagramAddNewService.jpg, id=305, 974.64125pt
  x 720.6925pt>
 File: Images/Sequence_Diagrams/SequenceDiagramAddNewService.jpg Graphic file (t
 ype jpg)
@@ -695,7 +706,7 @@ Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramAddNewService.
 jpg  used on input line 19.
 (pdftex.def)             Requested size: 344.99622pt x 255.10535pt.
  [19 <./Images/Sequence_Diagrams/SequenceDiagramGroupDataRequest.jpg>]
-<Images/Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg, id=306, 974.
+<Images/Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg, id=311, 974.
 64125pt x 429.605pt>
 File: Images/Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg Graphic 
 file (type jpg)
@@ -705,7 +716,7 @@ stance.jpg  used on input line 25.
 (pdftex.def)             Requested size: 344.99622pt x 152.06836pt.
 
 [20 <./Images/Sequence_Diagrams/SequenceDiagramAddNewService.jpg>]
-<Images/Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg, id=312, 974.64125pt x
+<Images/Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg, id=317, 974.64125pt x
  519.9425pt>
 File: Images/Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg Graphic file (typ
 e jpg)
@@ -713,7 +724,9 @@ e jpg)
 Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramOrganizeRun.jp
 g  used on input line 30.
 (pdftex.def)             Requested size: 344.99622pt x 184.04535pt.
-<Images/Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg, id=313, 974
+ [21 <./Images/Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg> <./Im
+ages/Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg>]
+<Images/Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg, id=324, 974
 .64125pt x 758.835pt>
 File: Images/Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg Graphic
  file (type jpg)
@@ -721,8 +734,7 @@ File: Images/Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg Graphic
 Package pdftex.def Info: Images/Sequence_Diagrams/SequenceDiagramParticipantEnr
 ollment.jpg  used on input line 33.
 (pdftex.def)             Requested size: 344.99622pt x 268.60674pt.
- [21 <./Images/Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg> <./Im
-ages/Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg>])
+)
 (2.ArchitecturalDesign/5.ComponentInterfaces/ComponentInterfaces.tex [22 <./Ima
 ges/Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg>] [23] [24])
 (2.ArchitecturalDesign/6.SelectedArchitecturalStyles/SelectedArchitecturalStyle
@@ -732,19 +744,19 @@ LaTeX Warning: Hyper reference `sect:2.5' on page 27 undefined on input line 32
 .
 
 [27]) (2.ArchitecturalDesign/7.OtherDesignDecisions/OtherDesignDecisions.tex
-<Images/UML_Diagrams/UMLData4Help.jpg, id=459, 974.64125pt x 593.21625pt>
+<Images/UML_Diagrams/UMLData4Help.jpg, id=463, 974.64125pt x 593.21625pt>
 File: Images/UML_Diagrams/UMLData4Help.jpg Graphic file (type jpg)
 <use Images/UML_Diagrams/UMLData4Help.jpg>
 Package pdftex.def Info: Images/UML_Diagrams/UMLData4Help.jpg  used on input li
 ne 5.
 (pdftex.def)             Requested size: 344.99622pt x 209.98224pt.
-<Images/UML_Diagrams/UMLUserApp.jpg, id=460, 974.64125pt x 454.69875pt>
+<Images/UML_Diagrams/UMLUserApp.jpg, id=464, 974.64125pt x 454.69875pt>
 File: Images/UML_Diagrams/UMLUserApp.jpg Graphic file (type jpg)
 <use Images/UML_Diagrams/UMLUserApp.jpg>
 Package pdftex.def Info: Images/UML_Diagrams/UMLUserApp.jpg  used on input line
  6.
 (pdftex.def)             Requested size: 344.99622pt x 160.95085pt.
-<Images/UML_Diagrams/UMLAutomatedSOS.jpg, id=461, 974.64125pt x 422.57875pt>
+<Images/UML_Diagrams/UMLAutomatedSOS.jpg, id=465, 974.64125pt x 422.57875pt>
 File: Images/UML_Diagrams/UMLAutomatedSOS.jpg Graphic file (type jpg)
 <use Images/UML_Diagrams/UMLAutomatedSOS.jpg>
 Package pdftex.def Info: Images/UML_Diagrams/UMLAutomatedSOS.jpg  used on input
@@ -752,7 +764,7 @@ Package pdftex.def Info: Images/UML_Diagrams/UMLAutomatedSOS.jpg  used on input
 (pdftex.def)             Requested size: 344.99622pt x 149.58125pt.
 
 [28 <./Images/UML_Diagrams/UMLData4Help.jpg>]
-<Images/UML_Diagrams/UMLTrack4Run.jpg, id=467, 974.64125pt x 392.46625pt>
+<Images/UML_Diagrams/UMLTrack4Run.jpg, id=471, 974.64125pt x 392.46625pt>
 File: Images/UML_Diagrams/UMLTrack4Run.jpg Graphic file (type jpg)
 <use Images/UML_Diagrams/UMLTrack4Run.jpg>
 Package pdftex.def Info: Images/UML_Diagrams/UMLTrack4Run.jpg  used on input li
@@ -762,9 +774,103 @@ ne 8.
 SOS.jpg>] [30 <./Images/UML_Diagrams/UMLTrack4Run.jpg>])) (3.UserInterfaceDesig
 n/UserInterfaceDesign.tex [31]
 Chapter 3.
+<Images/Mockups/0_FirstFrame.png, id=492, 431.6125pt x 843.15pt>
+File: Images/Mockups/0_FirstFrame.png Graphic file (type png)
+<use Images/Mockups/0_FirstFrame.png>
+Package pdftex.def Info: Images/Mockups/0_FirstFrame.png  used on input line 5.
+
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/1_0_Login.png, id=493, 431.6125pt x 843.15pt>
+File: Images/Mockups/1_0_Login.png Graphic file (type png)
+<use Images/Mockups/1_0_Login.png>
+Package pdftex.def Info: Images/Mockups/1_0_Login.png  used on input line 5.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/1_1_Registration.png, id=494, 431.6125pt x 843.15pt>
+File: Images/Mockups/1_1_Registration.png Graphic file (type png)
+<use Images/Mockups/1_1_Registration.png>
+Package pdftex.def Info: Images/Mockups/1_1_Registration.png  used on input lin
+e 6.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/2_Menu.png, id=495, 431.6125pt x 843.15pt>
+File: Images/Mockups/2_Menu.png Graphic file (type png)
+<use Images/Mockups/2_Menu.png>
+Package pdftex.def Info: Images/Mockups/2_Menu.png  used on input line 6.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/3_0_MyServices.png, id=496, 431.6125pt x 843.15pt>
+File: Images/Mockups/3_0_MyServices.png Graphic file (type png)
+<use Images/Mockups/3_0_MyServices.png>
+Package pdftex.def Info: Images/Mockups/3_0_MyServices.png  used on input line 
+7.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/3_1_DiscoverServices.png, id=497, 431.6125pt x 843.15pt>
+File: Images/Mockups/3_1_DiscoverServices.png Graphic file (type png)
+<use Images/Mockups/3_1_DiscoverServices.png>
+Package pdftex.def Info: Images/Mockups/3_1_DiscoverServices.png  used on input
+ line 7.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
 [32
 
-]) (4.RequirementsTraceability/RequirementsTraceability.tex [33]
+ <./Images/Mockups/0_FirstFrame.png> <./Images/Mockups/1_0_Login.png>]
+<Images/Mockups/3_2_ServicePageData4Help.png, id=508, 431.6125pt x 843.15pt>
+File: Images/Mockups/3_2_ServicePageData4Help.png Graphic file (type png)
+<use Images/Mockups/3_2_ServicePageData4Help.png>
+Package pdftex.def Info: Images/Mockups/3_2_ServicePageData4Help.png  used on i
+nput line 8.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/3_3_RevokeConsentData4Help.png, id=509, 431.6125pt x 843.15pt>
+File: Images/Mockups/3_3_RevokeConsentData4Help.png Graphic file (type png)
+<use Images/Mockups/3_3_RevokeConsentData4Help.png>
+Package pdftex.def Info: Images/Mockups/3_3_RevokeConsentData4Help.png  used on
+ input line 8.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/3_4_AutomatedSOS.png, id=510, 431.6125pt x 843.15pt>
+File: Images/Mockups/3_4_AutomatedSOS.png Graphic file (type png)
+<use Images/Mockups/3_4_AutomatedSOS.png>
+Package pdftex.def Info: Images/Mockups/3_4_AutomatedSOS.png  used on input lin
+e 9.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png, id=511, 431.6125pt x 84
+3.15pt>
+File: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png Graphic file (type 
+png)
+<use Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png>
+Package pdftex.def Info: Images/Mockups/5_3_OrganizerRegistrationTrack4Run.png 
+ used on input line 9.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+
+[33 <./Images/Mockups/1_1_Registration.png> <./Images/Mockups/2_Menu.png> <./Im
+ages/Mockups/3_0_MyServices.png> <./Images/Mockups/3_1_DiscoverServices.png>]
+<Images/Mockups/5_1_CreateRunTrack4Run.png, id=526, 431.6125pt x 843.15pt>
+File: Images/Mockups/5_1_CreateRunTrack4Run.png Graphic file (type png)
+<use Images/Mockups/5_1_CreateRunTrack4Run.png>
+Package pdftex.def Info: Images/Mockups/5_1_CreateRunTrack4Run.png  used on inp
+ut line 10.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/5_4_DiscoverRunsTrack4Run.png, id=527, 431.6125pt x 843.15pt>
+File: Images/Mockups/5_4_DiscoverRunsTrack4Run.png Graphic file (type png)
+<use Images/Mockups/5_4_DiscoverRunsTrack4Run.png>
+Package pdftex.def Info: Images/Mockups/5_4_DiscoverRunsTrack4Run.png  used on 
+input line 10.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/5_5_WatchRunTrack4Run.png, id=528, 431.6125pt x 843.15pt>
+File: Images/Mockups/5_5_WatchRunTrack4Run.png Graphic file (type png)
+<use Images/Mockups/5_5_WatchRunTrack4Run.png>
+Package pdftex.def Info: Images/Mockups/5_5_WatchRunTrack4Run.png  used on inpu
+t line 11.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+<Images/Mockups/5_6_LiveRunTrack4Run.png, id=529, 431.6125pt x 843.15pt>
+File: Images/Mockups/5_6_LiveRunTrack4Run.png Graphic file (type png)
+<use Images/Mockups/5_6_LiveRunTrack4Run.png>
+Package pdftex.def Info: Images/Mockups/5_6_LiveRunTrack4Run.png  used on input
+ line 11.
+(pdftex.def)             Requested size: 117.97264pt x 230.46748pt.
+
+[34 <./Images/Mockups/3_2_ServicePageData4Help.png> <./Images/Mockups/3_3_Revok
+eConsentData4Help.png> <./Images/Mockups/3_4_AutomatedSOS.png> <./Images/Mockup
+s/5_3_OrganizerRegistrationTrack4Run.png>] [35 <./Images/Mockups/5_1_CreateRunT
+rack4Run.png> <./Images/Mockups/5_4_DiscoverRunsTrack4Run.png> <./Images/Mockup
+s/5_5_WatchRunTrack4Run.png> <./Images/Mockups/5_6_LiveRunTrack4Run.png>]
+[36] [37]) (4.RequirementsTraceability/RequirementsTraceability.tex [38]
 Chapter 4.
 
 Overfull \hbox (2.69507pt too wide) in paragraph at lines 7--8
@@ -772,15 +878,15 @@ Overfull \hbox (2.69507pt too wide) in paragraph at lines 7--8
  to use Data4Help. 
  []
 
-[34
+[39
 
-] [35] [36] [37] [38])
+] [40] [41] [42] [43])
 (5.ImplementationIntegrationTestPlan/ImplementationIntegrationTestPlan.tex
-[39]
+[44]
 Chapter 5.
-[40
+[45
 
-] [41] [42]
+] [46] [47]
 Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
@@ -790,7 +896,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 139--141
 
  []
 
-[43]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 143--145
 
  []
@@ -813,7 +919,7 @@ Overfull \hbox (7.58398pt too wide) in paragraph at lines 158--159
 ta4Help Server:
  []
 
-[44]
+[49]
 Overfull \hbox (1.80507pt too wide) in paragraph at lines 171--172
 []\OT1/cmr/m/n/10 *Integration be-tween Au-to-mat-ed-SOS Server: Data re-ceiver
  and Data4Help 
@@ -831,25 +937,25 @@ Overfull \hbox (0.58383pt too wide) in paragraph at lines 177--178
 ck4Run Server:
  []
 
-[45]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 190--191
 
  []
 
-) [46]
+) [51]
 Chapter 6.
-[47
+[52
 
-] [48] [49]
+] [53] [54]
 Chapter 7.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 197.
-[50
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 200.
+[55
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 197.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 200.
  (DD.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 197.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 197.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 200.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 200.
 Package rerunfilecheck Info: File `DD.out' has not changed.
 (rerunfilecheck)             Checksum: F18A8CE386638868D9565AF0828511D7;2038.
 
@@ -859,31 +965,32 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 197.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 200.
  ) 
 Here is how much of TeX's memory you used:
- 9329 strings out of 492970
- 147180 string characters out of 3126593
- 454333 words of memory out of 3000000
- 12770 multiletter control sequences out of 15000+200000
- 7437 words of font info for 27 fonts, out of 3000000 for 9000
+ 9750 strings out of 492970
+ 154236 string characters out of 3126593
+ 463630 words of memory out of 3000000
+ 13144 multiletter control sequences out of 15000+200000
+ 7736 words of font info for 28 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,16n,45p,1389b,2020s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 37i,16n,55p,1389b,2020s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmbx10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmbx12.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jacop/AppData/Local/Programs/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/jacop/AppData/Loc
 al/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/jacop
-/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/
+/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/
 Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/a
-msfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/ty
-pe1/public/amsfonts/cm/cmti10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on DD.pdf (51 pages, 4708891 bytes).
+r9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2.9/fonts/typ
+e1/public/amsfonts/cm/cmsy9.pfb><C:/Users/jacop/AppData/Local/Programs/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/jacop/AppData/Local/Prog
+rams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
+Output written on DD.pdf (56 pages, 5979245 bytes).
 PDF statistics:
- 676 PDF objects out of 1000 (max. 8388607)
- 248 named destinations out of 1000 (max. 500000)
- 382 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 759 PDF objects out of 1000 (max. 8388607)
+ 274 named destinations out of 1000 (max. 500000)
+ 452 words of extra memory for PDF output out of 10000 (max. 10000000)
 
