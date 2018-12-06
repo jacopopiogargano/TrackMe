@@ -23,7 +23,7 @@
 
 
 	\image {13cm} {Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg} {User In Need Assistance Sequence Diagram} {UserInNeedAssistanceSequenceDiagram}
-	When new \ic{User data} is collected by Data4Help, if the \ic{User} is subscribed to AutomatedSOS, the data will be sent to AutomatedSOS for analysis. In particular, the Data Receiver will receive the data, and will pass it over to the Data Analyzer which compares it against certain thresholds. If the data is identified as \ic{Anomalous data}, then the Data Analyzer notifies the User Monitor that the \ic{User} is in need of assistance. The User Monitor sends a call request to the Local Emergency Services Caller, which calls the Local Emergency Services. This component sends a call confirmation back to the User Monitor and finally the User Monitor stores the \ic{User in need} data in the database.
+	When new \ic{User data} is collected by Data4Help, if the \ic{User} is subscribed to AutomatedSOS, the data will be sent to AutomatedSOS for analysis. In particular, the Data Receiver will receive the data, and will pass it over to the Data Analyzer which compares it against certain thresholds. If the data is identified as \ic{Anomalous data}, then the Data Analyzer notifies the User Monitor that the \ic{User} is in need of assistance. The User Monitor sends a call request to the Local Emergency Services Caller, which calls the Local Emergency Services. This component sends a call confirmation back to the User Monitor, which sends an acknoledgement message back to the Data Analyzer and finally stores the \ic{User in need} data in the database.
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TRACK4RUN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 

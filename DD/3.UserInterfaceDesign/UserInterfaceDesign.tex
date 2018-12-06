@@ -1,7 +1,7 @@
 \documentclass[../DD.tex]{subfiles}
 \begin{document}
  \chapter{User Interface Design}
-	The following mockups have been copied from the RASD and no other mockup is added compared to the ones provided in it but they are here inserted again to show which component is enabling each interface to work properly.
+ \section{User Interface Mockups}
 \twoimages{8.1cm}{Mockups/0_FirstFrame.png}{Data4Help Welcome Page}{Mockups/1_0_Login.png}{Data4Help Login Page}
 \twoimages{8.1cm}{Mockups/1_1_Registration.png}{Data4Help Sign Up Page}{Mockups/2_Menu.png}{Data4Help Menu}
 \twoimages{8.1cm}{Mockups/3_0_MyServices.png}{User Services Page}{Mockups/3_1_DiscoverServices.png}{Services Discovery Page}
@@ -9,16 +9,17 @@
 \twoimages{8.1cm}{Mockups/3_4_AutomatedSOS.png}{AutomatedSOS Page}{Mockups/5_3_OrganizerRegistrationTrack4Run.png}{Organizer Registration Page}
 \twoimages{8.1cm}{Mockups/5_1_CreateRunTrack4Run.png}{New Run Creation Page}{Mockups/5_4_DiscoverRunsTrack4Run.png}{Runs Discovery Page}
 \twoimages{8.1cm}{Mockups/5_5_WatchRunTrack4Run.png}{Spectators Run Discovery Page}{Mockups/5_6_LiveRunTrack4Run.png}{Watch Real Time Run Page}
-	\paragraph{Mapping interface to components} As previously explained, the following list map every interface with the components that enable it to work efficiently.
+	\section{Mapping interfaces to components}
+	The following list maps each interface with the components that allow it to work properly and efficiently.
 	\begin{itemize}
 		\item Data4Help Welcome Page
-			\begin{itemize}\item{No specific component: it is just a static content embedded in the app code source}\end{itemize}
+			\begin{itemize}\item{No specific component: it is just a static content embedded in the application code source}\end{itemize}
 		\item Data4Help Login Page
 			\begin{itemize}\item{Data4Help App: Authentication}\item{Data4Help Server: Authentication}\end{itemize}
 		\item Data4Help Sign Up Page
 			\begin{itemize}\item{Data4Help App: Authentication}\item{Data4Help Server: Authentication}\end{itemize}
 		\item Data4Help Menu
-			\begin{itemize}\item{No specific component: it is just a static content embedded in the app code source}\end{itemize}
+			\begin{itemize}\item{No specific component: it is just a static content embedded in the application code source}\end{itemize}
 		\item User Services Page	
 			\begin{itemize}\item{Data4Help App: Services Manager} \item{Data4Help Server: Services Manager}\end{itemize}	
 		\item Services Discovery Page			
@@ -41,8 +42,8 @@
 			\begin{itemize}\item{Track4Run Spectators Website} \item{Track4Run Server: Run Manager}\end{itemize}
 	\end{itemize}
 
-	\paragraph{Interacting with the User Application}\mbox{}\\
-	\indent The following provides a description on how to move through interfaces when interacting with the User Application so as to give a clear idea of the navigation flows.
+	\section{Interacting with the User Application}
+	The following provides a description on how to move through interfaces when interacting with the User Application so as to give a clear idea of the navigation flows.
 	\begin{itemize}
 		\item \ic{Data4Help Welcome Page} is shown when the User Application is opened.
 		\item \ic{Data4Help Welcome Page} redirects to Data4Help Login Page as soon as the User Application is loaded.
@@ -54,7 +55,7 @@
 				\item \ic{Services Discovery Page} if the \ic{User} taps on Discover.
 				\item \ic{Data4Help Login Page} if the \ic{User} taps on Logout.				
 			\end{itemize}
-			My Account, My Devices, Settings, Terms and Conditions redirect to specific pages that are not listed in \hyperref[ref:3]{[3]} because they are simple and negligible interfaces. 
+			My Account, My Devices, Settings, Terms and Conditions redirect to specific pages that are not listed in \hyperref[ref:3]{[3]}. 
 		\item \ic{User Services Page} redirects to \ic{User Subscribed Service Page} when the \ic{User} taps on the icon of a \ic{Service}.
 			\begin{itemize}
 				\item If the \ic{Service} is AutomatedSOS and the monitoring was deactivated due to a previous alarm since data was detected as \ic{Anomalous}, the interface shown is \ic{AutomatesSOSPage}.
