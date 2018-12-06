@@ -93,6 +93,9 @@
 
 			\item{Data4Help Database}
 			\begin{itemize}\item{No components dependencies}\end{itemize}
+
+			\item{Data4Help Third Parties Website}
+			\begin{itemize}\item{Data4Help Server: Authentication} \item{Data4Help Server: Services Manager}\end{itemize}
 			
 		\end{itemize}
 
@@ -150,7 +153,7 @@
 	\item Data4Help Use app - Full stack app skills
 	\item AutomatesSOS and Track4Run servers - Backend skills
 \end{enumerate}
-As previously written, the interfaces-enabled independece of all the components enable to eventually change this plan according to team size and costs constraints.
+As previously written, the interfaces-enabled independece of all the components enable to eventually change this plan according to team size and costs constraints. \todo{si può decidere di togliere questo paragrafo per esigenze di impaginazione }
 
 	\section{Integration Plan}
 		The following list, divided by product, shows which integrations must be performed. To declare a product completed, all relative integrations must be performed. All services (included AutomatedSOS and Track4Run) depend on Data4Help so in these cases, in addiction to complete all integrations as stated before, another fundamental condition is that Data4Help is completed and fully working [*].\\ \\
@@ -164,6 +167,8 @@ As previously written, the interfaces-enabled independece of all the components 
 			\item{Integration between Data4Help Server: Data manager and Data4Help Database}
 			\item{Integration between Data4Help Server: Data receiver and Data4Help Server: Data manager}
 			\item{Integration between Data4Help Server: Authentication and Data4Help Database}
+			\item{Integration between Data4Help Third Parties Website and Data4Help Server: Authentication}
+			\item{Integration between Data4Help Third Parties Website and Data4Help Server: Services Manager}
 		\end{itemize}
 
 		\paragraph{Data4Help User Application}
@@ -195,12 +200,17 @@ As previously written, the interfaces-enabled independece of all the components 
 			\item{Integration between Track4Run Server: Authentication and Track4Run Database}
 			\item{*Integration between Track4Run Server: Data receiver and Data4Help}
 		\end{itemize}
+	
+	\subsection{Integration Plan Diagram}
+	Two components can be integrated only if they are fully implemented, so the Integration Plan is implementation-dependent. The following diagram represent a four parallel integration processes based on the previous shown Implementation Plan.
 
+	\image {13cm} {IIT_Diagrams/IntegrationPlan.jpg} {Integration Plan} {IntegrationPlan}
+	\newpage
 	\section{Testing Plan}
 		\subsection{Unit Testing}
-		It must be performed during the development of each component and finalized at the end of each of them. Due to this reason, the testing plan completally overlaps the implementation plan:
+		It must be performed during the development of each component and finalized at the end of each of them. Due to this reason, the unit testing plan completally overlaps the implementation plan:
 
-		\image {13cm} {IIT_Diagrams/UnitTesting.jpg} {Dev skills based Testing Plan} {TestingPlan}
+		\image {13cm} {IIT_Diagrams/UnitTesting.jpg} {Unit Testing Plan} {UnitTestingPlan}
 		
 		\paragraph{Recommendations}
 		\begin{itemize}
@@ -209,7 +219,10 @@ As previously written, the interfaces-enabled independece of all the components 
 			\item Tools: In order to monitor effectively the coverage, it is recommended using some tools like SonarQube or JUnit. \todo{verificare quest'ultima parte di sonarqube e junit}.
 		\end{itemize} 
 		
-		\subsection{Integration testing} Must be performed on each case listed in the previous section. To execute integration testing all the components to be integrated must be completed. The testing can be executed in parallel with respect to main implementation: this means that during the integration testing, the implementation of new components can go on.\\
+		\subsection{Integration testing} It must be performed on each case listed in the integration plan section. Testing should be done in parallel with the integration, as a confirmation method of the correctness of the integration. It is however recommended to execute a general and comprehensive test at the end of each integration. \\
+		Due to the fact that integration testing must be executed in parallel with integration, the integration testing plan completally overlaps the integration plan:
+
+		\image {13cm} {IIT_Diagrams/IntegrationTesting.jpg} {Integration Testing Plan} {IntegrationTestingPlan}
 
 \thispagestyle{fancy}
  \end{document}
