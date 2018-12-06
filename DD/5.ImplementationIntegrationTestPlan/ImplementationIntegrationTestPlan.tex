@@ -2,11 +2,11 @@
  \chapter{Implementation, Integration and Test Plan}
 	\todo{Inserire quì una introduzione}
 
-	\section{Components List}
-		The following list includes all the components that must be implemented. The list is product based so components are separated in three parts: \ic{Data4Help}, \ic{AutomatedSOS}, \ic{Track4Run}. 
+	\section{Components to be implemented\label{sect:5.1}}
+		The following list includes all the components that must be implemented. The list takes into account the separation between the three systems to be developed: Data4Help, AutomatedSOS, Track4Run.
 		\paragraph{Data4Help}
 		\begin{itemize}
-			\item{Data4Help App}
+			\item{Data4Help User Application}
 				\begin{itemize}
 					\item{Service controller}
 					\item{Authentication}
@@ -23,8 +23,8 @@
 					\item{Data receiver}
 					\item{Authentication}
 				\end{itemize}
-			\item{Data4help Database}
-			\item{Data4help Third parties Website}
+			\item{Data4Help Database}
+			\item{Data4Help Third Parties Website}
 		\end{itemize}
 		\paragraph{Track4Run}
 		\begin{itemize}
@@ -47,29 +47,29 @@
 					\item{Data analyzer}
 					\item{User monitor}
 					\item{Data receiver}
-					\item{Local emergency services caller}
+					\item{Local Emergency Services caller}
 				\end{itemize}
 			\item{AutomatedSOS Database}
 		\end{itemize}
 
-	\section{Components dependencies}
-		The following list of components reflects the logical or architectural dependencies between the components listed in previous list.
+	\section{Components Dependencies}
+		The following list of components shows the logical and architectural dependencies between the components listed in the previous section.
 		\paragraph{Data4Help}
 		\begin{itemize}
 
-			\item{Data4Help App: Service controller}
+			\item{Data4Help User Application: Service controller}
 			\begin{itemize}\item{No components dependencies}\end{itemize}
 
-			\item{Data4Help App: Authentication}
+			\item{Data4Help User Application: Authentication}
 			\begin{itemize}\item{Data4Help Server: Authentication}\end{itemize}
 
-			\item{Data4Help App: Data sender}
+			\item{Data4Help User Application: Data sender}
 			\begin{itemize}\item{Data4Help Server: Data receiver}\end{itemize}
 
-			\item{Data4Help App: Data collector}
+			\item{Data4Help User Application: Data collector}
 			\begin{itemize}\item{No components dependencies}\end{itemize}
 
-			\item{Data4Help App: Services manager}
+			\item{Data4Help User Application: Services manager}
 			\begin{itemize}\item{Data4Help Server: Notifications manager}\item{Data4Help Server: Services manager}\end{itemize}
 
 			\item{Data4Help Server: Request manager}
@@ -90,13 +90,13 @@
 			\item{Data4Help Server: Authentication}
 			\begin{itemize}\item{Data4Help Database}\end{itemize}
 
-			\item{Data4help Database}
+			\item{Data4Help Database}
 			\begin{itemize}\item{No components dependencies}\end{itemize}
 			
 		\end{itemize}
 
-		\paragraph{AutomatedSOS}
-		It depends entirely on \ic{Data4Help}. The following listed dependencies are relative only to the ones between \ic{AutomatedSOS} components.
+		\paragraph{AutomatedSOS}\mbox{}\\
+		It depends entirely on Data4Help. The following dependencies are only between AutomatedSOS components.
 		\begin{itemize}
 			\item{AutomatedSOS Server: Service interface provider(website)}
 			\begin{itemize}\item{AutomatedSOS Server: User monitor}\end{itemize}
@@ -117,8 +117,8 @@
 			\begin{itemize}\item{No components dependencies}\end{itemize}
 		\end{itemize}
 
-		\paragraph{Track4Run}
-		It depends entirely on \ic{Data4Help}. The following listed dependencies are relative only to the ones between \ic{Track4Run} components.
+		\paragraph{Track4Run}\mbox{}\\
+		It depends entirely on Data4Help. The following dependencies are only between Track4Run components.
 		\begin{itemize}
 			\item{Track4Run Organizers website}
 			\begin{itemize}\item{Track4Run Server: Authentication}\item{Track4Run Server: Run manager}\end{itemize}
@@ -132,11 +132,11 @@
 			\begin{itemize}\item{Track4Run Server: Run manager}\end{itemize}
 			\item{Track4Run Server: Authentication}
 			\begin{itemize}\item{Track4Run Database}\end{itemize}
-			\item{Track4run Database}
+			\item{Track4Run Database}
 			\begin{itemize}\item{No components dependencies}\end{itemize}
 		\end{itemize}
 	\section{Implementation Plan}
-		All the components shown in \todo{Inserisci reference} have well specified interfaces so the implementation of them can proceed in parallel without any particular implementation dependency. Obviously this means that at the end of the implementation will be needed an important effort in integrating all the components.\\ \\
+		All the components shown in section \hyperref[sect:5.1]{5.1} have well specified interfaces so the implementation of them can proceed in parallel without any particular implementation dependency. Obviously this means that at the end of the implementation will be needed an important effort in integrating all the components.\\ \\
 		In short words: the implementation can proceed completally in parallel in developing all the components, only team size or costs constraints may influence in the plan moving some activities before/after others. \\ \\ Due to the fact that we don't know the team size neither eventual cost constraints, no Gantt Chart is included.
 
 	\section{Integration Plan}
@@ -153,12 +153,12 @@
 			\item{Integration between Data4Help Server: Authentication and Data4Help Database}
 		\end{itemize}
 
-		\paragraph{Data4Help App}
+		\paragraph{Data4Help User Application}
 		\begin{itemize}
-			\item{Integration between Data4Help App: Authentication and Data4Help Server: Authentication}
-			\item{Integration between Data4Help App: Data sender and Data4Help Server: Data receiver}
-			\item{Integration between Data4Help App: Services manager and Data4Help Server: Notifications manager}
-			\item{Integration between Data4Help App: Services manager and Data4Help Server: Services manager}
+			\item{Integration between Data4Help User Application: Authentication and Data4Help Server: Authentication}
+			\item{Integration between Data4Help User Application: Data sender and Data4Help Server: Data receiver}
+			\item{Integration between Data4Help User Application: Services manager and Data4Help Server: Notifications manager}
+			\item{Integration between Data4Help User Application: Services manager and Data4Help Server: Services manager}
 		\end{itemize}
 
 		\paragraph{AutomatedSOS}
