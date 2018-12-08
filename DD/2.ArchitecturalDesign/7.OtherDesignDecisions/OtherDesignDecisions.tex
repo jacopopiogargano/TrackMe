@@ -1,14 +1,14 @@
 \documentclass[../../DD.tex]{subfiles}
 \begin{document}
 \section{Other Design Decisions}
-	\subsection{Class Diagrams}
+	\subsection{Class Diagrams\label{sect:2.7.1}}
 	\image {13cm} {UML_Diagrams/UMLData4Help.jpg} {Data4Help Class Diagram} {Data4HelpClassDiagram}
 	\image {13cm} {UML_Diagrams/UMLUserApp.jpg} {User Application Class Diagram} {UserApplicationClassDiagram}
 	\image {13cm} {UML_Diagrams/UMLAutomatedSOS.jpg} {AutomatedSOS Class Diagram} {AutomatedSOSHelpClassDiagram}
 	\image {13cm} {UML_Diagrams/UMLTrack4Run.jpg} {Track4Run Class Diagram} {Track4RunClassDiagram}
 
 	\subsection{Interfaces Use}
-		The following list maps the classes defined in the class diagrams above to the interfaces proposed in this document (section \hyperref[sect:2.5]{2.5}). By doing this, the purpose of each class is implicitly provided.
+		The following list maps the classes defined in the class diagrams above (section \hyperref[sect:2.7.1]{2.7.1} to the interfaces proposed in this document (section \hyperref[sect:2.5]{2.5}). By doing this, the purpose of each class is provided, since all the interfaces that are used by the class are listed.
 		\subsubsection{Data4Help}
 		
 		\begin{itemize}
@@ -20,7 +20,7 @@
 			\end{itemize}
 			\item Data4Help Model
 			\begin{itemize}
-				\item Database Interface
+				\item Data4Help Database Interface
 			\end{itemize}
 			\item ThirdParty
 			\begin{itemize}
@@ -77,7 +77,7 @@
 			\end{itemize}
 			\item Track4Run Model
 			\begin{itemize}
-				\item Database Interface
+				\item Track4Run Database Interface
 			\end{itemize}
 		\end{itemize}
 
