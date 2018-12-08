@@ -98,19 +98,40 @@ public interface t4r_registerAndLoginInterface{
 	boolean signUp(String fullname, Date dateOfBirth, String email, String password);
 }
 
-public interface db_queriesInterface{
-	getUserByUsername(String username);
-	insertUser(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
-	deleteUser(String username);
-	insertData(Data data);
-	getUserData(String username);
-	deleteAllUserData(String username);
-	insertServiceForUserServices(String serviceID, String username);
-	deleteServiceFromUserServices(String serviceID, String username);
-	getAllUserServices(String username);
-	getAllServices();
-	insertNotification(String notification);
+public interface d4h_databaseInterface{
+	User getUserByUsername(String username);
+	User getUserBySsn(String ssn);
+	boolean insertUser(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
+	boolean deleteUser(String username);
+	boolean insertData(UserData userData);
+	UserData getUserData(String username);
+	boolean deleteAllUserData(String username);
+	boolean insertServiceForUserServices(String serviceID, String username);
+	boolean deleteServiceFromUserServices(String serviceID, String username);
+	List<Service> getAllUserServices(String username);
+	List<Service> getAllServices();
+	boolean insertNotification(String notification);
+	List<Notification> getUserNotifications(String username);
 }
+
+public interface asos_databaseInterface{
+	boolean insertUserInNeedData(Data data, String ssn);
+	Data getUserInNeedData(String ssn);
+	boolean insertCall(LocalEmergencyServices les, String ssn);
+	LocalEmergencyServices getLocalEmergencyServicesForUser(String ssn);
+	boolean reactivateMonitoring(String ssn);
+}
+
+public interface t4r_databaseInterface{
+	List<Run> getAllRuns();
+	boolean insertNewRun(Run run);
+	boolean deleteRun(int runID);
+	List<Participant> getAllParticipants(int runID);
+	boolean insertParticipant(Participant participant);
+	Run getRun(int runID);
+	Map<Participant, List<Data>> getParticipantsData(int runID);
+}
+
 \end{lstlisting}
 
 \end{document}
