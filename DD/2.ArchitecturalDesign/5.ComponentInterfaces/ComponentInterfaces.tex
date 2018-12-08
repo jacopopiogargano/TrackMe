@@ -4,9 +4,9 @@
 \begin{document}
 \section{Component Interfaces\label{sect2.5}}
 
-The following is a representation of the component interfaces that are offered by the system to be. The interfaces are both of external and of internal components so as to provide a clearer explanation of the main methods they offer.\\
-The naming convention adopted is of the form "Component\textunderscore InterfaceName", where "Component" is the component it is offered by and "InterfaceName" is the name of the interface. The first interface - "dataInterface" - is used and offered by many components and it is needed to send and receive data. When the component name is "service", it means that the interface must be offered by all the \ic{Third party Services}.\\
-The majority of the following interfaces must include a way to check that the calling component is both authenticated and authorized. For example, d4h\textunderscore servicesInterface, which allows a \ic{User} to retrieve the \ic{Services} to which they are subscribed, must check that the calling component really is who it claims to be. Interfaces that have this need are marked in the following list with a comment "requires auth". From an implementation point of view, a possible solution to this could be always providing the result of a call to the interface encrypted with an RSA algorithm: the encryption is done with a key and the user, in order to read data, must use their private key generated on their smartphone during the sign up process.
+The following is a representation of the component interfaces that are offered by the system to be. The interfaces are both of external and of internal components so as to provide a clearer explanation of all the main methods available.\\\\
+The naming convention adopted is of the form "Component\textunderscore InterfaceName", where "Component" is the component the interface is offered by and "InterfaceName" is the name of the interface. The first interface - "dataInterface" - is used and offered by many components and it is needed to send and receive data. When the component name is "service", it means that the interface must be offered by all the \ic{Third party Services}.\\\\
+The majority of the following interfaces must include a way to check that the calling component is both authenticated and authorized. For example, d4h\textunderscore servicesInterface, which allows a \ic{User} to retrieve the \ic{Services} to which they are subscribed, must check that the calling component really is who it claims to be. Interfaces that have this need are marked in the following list with a comment "requires auth". From an implementation point of view, a possible solution to this could be always providing the result of a call to the interface encrypted with the RSA algorithm: the encryption is done with a key and the user, in order to read data, must use their private key generated on their smartphone during the sign up process. See \ic{A Method for Obtaining Digital Signatures and Public-Key Cryptosystems} for further details (see section \hyperref[sect:1.5]{1.5} for complete reference).
 
 \begin{lstlisting}
 
@@ -21,14 +21,14 @@ public interface service_newDataInterface{
 }
 
 public interface service_serviceInterface{
-	boolean executeCommand(String command);
+	boolean executeCommand(String command);	// requires auth
 	//command varies from Service to Service (e.g. it may be an API call) 
 }
 
 
 //Data4Help Interfaces
 public interface d4h_getNotificationsInterface{
-	List<String> getNotifications(String username);
+	List<String> getNotifications(String username);	// requires auth
 }
 
 public interface d4h_addNotificationsInterface{
@@ -63,8 +63,8 @@ public interface d4h_requestDataInterface{
 
 public interface asos_automatedSOSCommandsInterface{
 	boolean reactivateMonitoring(String username); // requires auth
-	boolean subscribeUser(User user);
-	boolean removeUser(User user);
+	boolean subscribeUser(User user); // requires auth
+	boolean removeUser(User user); // requires auth
 }
 
 public interface asos_callerInterface{
@@ -76,7 +76,7 @@ public interface asos_callerInterface{
 
 public interface t4r_automatedSOSCommandsInterface{
 	boolean enroll(User user, Run run); // requires auth
-	boolean removeUser(User user, Run run);
+	boolean removeUser(User user, Run run); // requires auth
 	List<Run> getAvailableRuns();
 }
 
@@ -86,8 +86,8 @@ public interface t4r_spectatorsInterface{
 }
 
 public interface t4r_runManagementInterface{
-	boolean createRun(String name, Date date, DateTime time, Position start, int maxNumberOfParticipants, Date enrollmentClosureDate);
-	boolean setPath(List<Position> path);
+	boolean createRun(String name, Date date, DateTime time, Position start, int maxNumberOfParticipants, Date enrollmentClosureDate); // requires auth
+	boolean setPath(Run run, List<Position> path); // requires auth
 }
 
 public interface t4r_registerAndLoginInterface{
