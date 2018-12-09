@@ -54,7 +54,7 @@ public interface d4h_servicesInterface{
 }
 
 public interface d4h_requestDataInterface{
-	Data getUserData(UserDataRequest request); // requires auth
+	List<UserData> getUserData(UserDataRequest request); // requires auth
 	List<AnonimousData> getGroupData(GroupDataRequest request); // requires auth
 }
 
