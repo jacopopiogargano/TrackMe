@@ -30,7 +30,7 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 		\item Authentication (User App and Data4Help)
 		\item Login Sequence Diagram
 	\end{itemize}
-	\item[R\subs{7}]Query the database for a \ic{User} by their identifier.
+	\item[R\subs{7}]Query Data4Help Database for a \ic{User} by their identifier.
 	\begin{itemize}
 		\item Authentication (User App and Data4Help)
 	\end{itemize}
@@ -49,12 +49,12 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 	\begin{itemize}
 		\item Data Receiver
 	\end{itemize}
-	\item[R\subs{11}]Store collected \ic{User Data} in a database.
+	\item[R\subs{11}]Store collected \ic{User Data} in Data4Help Database.
 	\begin{itemize}
 		\item Data Receiver
 		\item Data Manager
 	\end{itemize}
-	\item[R\subs{12}]Retrieve specific \ic{User Data} by database querying based on \ic{User} identification.
+	\item[R\subs{12}]Retrieve specific \ic{User data} by querying Data4Help Database.
 	\begin{itemize}
 		\item Data Manager
 		\item User Data Request Sequence Diagram
@@ -72,14 +72,14 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 	\begin{itemize}
 		\item Third Party Request Manager
 	\end{itemize}
-	\item[R\subs{16}]Forward \ic{User Data} access request to the specific \ic{User}.
+	\item[R\subs{16}]Forward \ic{User data} access request to the specific \ic{User}.
 	\begin{itemize}
 		\item Third Party Request Manager
 		\item Notifications Manager
 		\item Services Manager (User App)
 		\item User Data Request Sequence Diagram
 	\end{itemize}
-	\item[R\subs{17}]Receive \ic{User} consent approval or denial.
+	\item[R\subs{17}]Receive \ic{User} consent approval or denial with respect to \ic{Third party} data access requests.
 	\begin{itemize}
 		\item Services Manager (User App and Data4Help)
 		\item Add New Service Sequence Diagram
@@ -105,7 +105,7 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 	\begin{itemize}
 		\item Third Party Request Manager
 	\end{itemize}
-	\item[R\subs{22}]Check how many \ic{Users} requested \ic{Group Data} refers to.
+	\item[R\subs{22}]Check how many \ic{Users} the requested \ic{Group data} refers to.
 	\begin{itemize}
 		\item Third Party Request Manager
 		\item Group Data Request Sequence Diagram
@@ -137,30 +137,30 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 	\begin{itemize}
 		\item Third Party Request Manager
 	\end{itemize}
-	\item[R\subs{29}]Automatically send new data to subscribed authorized \ic{Third parties} as soon as they are produced.
+	\item[R\subs{29}]Automatically send new \ic{User data} to subscribed authorized \ic{Third parties} as soon as they are produced.
 	\begin{itemize}
 		\item Data Receiver
 		\item Data Manager
 		\item Services Manager (Data4Help)
 		\item Third Party Request Manager
 	\end{itemize}
-	\item[R\subs{30}]Allow \ic{Users} to subscribe to \ic{Services}.
+	\item[R\subs{30}]Allow \ic{Users} to add a \ic{Service}.
 	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
 		\item Add New Service Sequence Diagram
 	\end{itemize}
-	\item[R\subs{31}]Allow \ic{Users} to unsubscribe from \ic{Services}.
+	\item[R\subs{31}]Allow \ic{Users} to unsubscribe from a \ic{Service}.
 	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
 	\end{itemize}
-	\item[R\subs{32}]Send a specific \ic{User} all their data stored, if requested by them.
+	\item[R\subs{32}]Send to a specific \ic{User} all their data stored by TrackMe.
 	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
 	\end{itemize}
-	\item[R\subs{33}]Delete a \ic{User} specific data, if requested by them.
+	\item[R\subs{33}]Delete all data of a specific \ic{User}.
 	\begin{itemize}
 		\item Services Manager (Data4Help)
 		\item Data Manager
@@ -224,7 +224,7 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 		\item Run Manager
 		\item Run Organization Sequence Diagram
 	\end{itemize}
-	\item[R\subs{44}]Provide \ic{Users} enrollment for an existing \ic{Run}.
+	\item[R\subs{44}]Allow \ic{Users} to enroll in an existing \ic{Run}.
 	\begin{itemize}
 		\item Run Manager
 		\item Service Interface Provider
@@ -249,16 +249,6 @@ The following is a way to ensure that all requirements defined in section 3.2.5 
 	\item[R\subs{48}]Show a \ic{Run} by displaying the position of \ic{Participants} on a map.
 	\begin{itemize}
 		\item Run Manager
-	\end{itemize}
-	\item[R\subs{49}]Identify a \ic{Run} by its identifier.
-	\begin{itemize}
-		\item Run Manager
-		\item Participants Enrollment Sequence Diagram
-	\end{itemize}
-	\item[R\subs{50}]Query the database for a \ic{Run} given its identifier.
-	\begin{itemize}
-		\item Run Manager
-		\item Participants Enrollment Sequence Diagram
 	\end{itemize}
 \end{itemize}
 

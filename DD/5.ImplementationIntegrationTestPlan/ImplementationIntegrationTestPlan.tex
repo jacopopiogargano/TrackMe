@@ -1,7 +1,7 @@
 \documentclass[../DD.tex]{subfiles}
 \begin{document}
 \chapter{Implementation, Integration and Test Plan}
-In this chapter, an implementation plan is introduced. This is followed by an integration procedure. Finally an analysis on how the system will be tested is provided.
+In this chapter, an implementation plan is introduced. This is followed by an integration strategy. Finally an analysis on how the system will be tested is provided.
 
 \section{Components to be implemented\label{sect:5.1}}
 The following list includes all the components that must be implemented. The list takes into account the separation between the three systems to be developed: Data4Help, AutomatedSOS, Track4Run.
@@ -53,7 +53,7 @@ The following list includes all the components that must be implemented. The lis
 	\item{AutomatedSOS Database}
 \end{itemize}
 
-\section{Components Dependencies}
+\section{Component Dependencies}
 The following list of components shows the logical and architectural dependencies between the components listed in the previous section.
 \paragraph{Data4Help}
 \begin{itemize}
@@ -155,7 +155,7 @@ The diagram shows the implementation of all the modules of Data4Help, AutomatedS
 \end{enumerate}
 As previously mentioned, the interfaces independence of all the components of the system to be allow modifications to this plan according to team size and budget constraints.
 
-\section{Integration Plan\label(sect:5.4)}
+\section{Integration Plan\label{sect:5.4}}
 The following section contains a list, divided by macro-component, showing which integrations must be performed. To declare a macro-component completed, all relative integrations must be performed. All \ic{Services}, including AutomatedSOS and Track4Run, depend on Data4Help. Therefore, in addiction to complete all integrations as stated before, another fundamental condition is that Data4Help is completed and fully working (integrations of this type are marked with an asterisk "*").\\\\
 This is just a proposed order of integration. Other orderings are possible within macro-components. 
 
@@ -220,7 +220,7 @@ Unit testing must be performed during the development of each component and fina
 	\item\textbf{Tools} In order to monitor effectively the coverage, it tools like SonarQube and JUnit will be in use.
 \end{itemize} 
 
-\subsection{Integration Testing} Integration testing will be performed on each case listed in the integration plan section (\hyperref[sect:5.4]{5.4}). Testing should be done in parallel with the integration of components, as a way to test and confirm the correctness of the integration. A general and comprehensive test at the end of each integration will be also performed. \\
+\subsection{Integration Testing} Integration testing will be performed on each case listed in the integration plan section \hyperref[sect:5.4]{5.4}. Testing should be done in parallel with the integration of components, as a way to test and confirm the correctness of the integration. A general and comprehensive test at the end of each integration will be also performed. \\
 Due to the fact that integration testing must be executed in parallel with the integration of components, the integration testing plan completely depends on and follows by the integration plan:
 
 \image {13cm} {IIT_Diagrams/IntegrationTesting.jpg} {Integration Testing Plan} {IntegrationTestingPlan}

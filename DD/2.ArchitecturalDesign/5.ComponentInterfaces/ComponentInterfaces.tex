@@ -40,7 +40,7 @@ public interface d4h_registerAndLoginInterface{
 	boolean isPasswordValid(String password);
 	boolean login(String username, String password);
 	boolean userExists(String username);
-	boolean signUp(String fullname, Date dateOfBirth, boolean gender, String ssn, String email, String password);
+	boolean signUp(String fullname, DateTime dateOfBirth, boolean gender, String ssn, String email, String password);
 	//gender: 1 for Male, 0 for Female
 }
 
@@ -86,7 +86,7 @@ public interface t4r_spectatorsInterface{
 }
 
 public interface t4r_runManagementInterface{
-	boolean createRun(String name, Date date, DateTime time, Position start, int maxNumberOfParticipants, Date enrollmentClosureDate); // requires auth
+	boolean createRun(String name, DateTime date, Position start, int maxNumberOfParticipants, DateTime enrollmentClosureDate); // requires auth
 	boolean setPath(Run run, List<Position> path); // requires auth
 }
 
