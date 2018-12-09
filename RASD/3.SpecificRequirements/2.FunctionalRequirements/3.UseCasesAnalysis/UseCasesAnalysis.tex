@@ -128,7 +128,7 @@ Exceptions &
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{Data4Help collects User Data}\\ \hline
+\textbf{Name} & \textbf{Data4Help collects User data}\\ \hline
 Actors & \ic{User}, Data4Help \\ \hline
 Entry Conditions & \ic{User} successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
 Events Flow & 
@@ -158,7 +158,7 @@ Data4Help discards the message.
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{Third Party requests User Data}\\ \hline
+\textbf{Name} & \textbf{Third Party requests User data}\\ \hline
 Actors & \ic{Third party}, Data4Help, \ic{User} \\ \hline
 Entry Conditions & \ic{Third party} and \ic{User} successfully registered to Data4Help.\\ \hline
 Events Flow & 
@@ -182,7 +182,7 @@ Exceptions &
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{Third Party requests Group Data}\\ \hline
+\textbf{Name} & \textbf{Third Party requests Group data}\\ \hline
 Actors & \ic{Third party}, Data4Help \\ \hline
 Entry Conditions & \ic{Third party} successfully registered to Data4Help.\\ \hline
 Events Flow & 
@@ -207,7 +207,7 @@ Data4Help denies \ic{Group data} access to the \ic{Third party}.
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{Third Party subscribes to New User Data}\\ \hline
+\textbf{Name} & \textbf{Third Party subscribes to New User data}\\ \hline
 Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
 Entry Conditions & \ic{Third party} successfully registered to Data4Help and obtained access to \ic{User data}.\\ \hline
 Events Flow & 
@@ -227,7 +227,7 @@ Exceptions & No Exceptions
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{Third Party subscribes to New Group Data}\\ \hline
+\textbf{Name} & \textbf{Third Party subscribes to New Group data}\\ \hline
 Actors & \ic{Third party}, Data4Help \\ \hline
 Entry Conditions & \ic{Third party} successfully registered to Data4Help and obtained access to \ic{Group data}.\\ \hline
 Events Flow & 
@@ -248,15 +248,15 @@ No Exceptions
 \begin{center}
 \begin{longtable}{| p{.35\linewidth} | p{.65\linewidth} |}
 \hline
-\textbf{Name} & \textbf{User subscribes to a Service}\\ \hline
+\textbf{Name} & \textbf{User adds a Service}\\ \hline
 Actors & \ic{Third party}, \ic{User}, Data4Help \\ \hline
 Entry Conditions & \ic{User} is successfully registered to Data4Help and installed Data4Help application on their smartphone.\\ \hline
 Events Flow & 
 \begin{enumerate}
     \item \ic{User} navigates to "Discover" page.
-    \item \ic{User} chooses which \ic{Service} they would like to subscribe to.
-    \item \ic{User} taps on "Add" button.
+    \item \ic{User} chooses which \ic{Service} they would like add.
     \item \ic{User} gives consent to sharing their data with the specific \ic{Third party}.
+    \item \ic{User} taps on "Add" button.
 \end{enumerate}
 \\ \hline
 Exit Condition & Data4Help registers the new \ic{Service} for the \ic{User}.\\ \hline
@@ -304,7 +304,7 @@ Actors & \ic{User}, Data4Help, AutomatedSOS, Local emergency services \\ \hline
 Entry Conditions & \ic{User} is subscribed to AutomatedSOS and installed Data4Help application on their smartphone.\\ \hline
 Events Flow & 
 \begin{enumerate}
-    \item Data4Help sends \ic{User Data} to AutomatedSOS as soon as it is produced.
+    \item Data4Help sends \ic{User data} to AutomatedSOS as soon as it is produced.
     \item AutomatedSOS identifies {User data} as \ic{anomalous data}.
     \item \ic{User} is identified as \ic{User in need}.
     \item AutomatedSOS calls local emergency services requesting an ambulance.
