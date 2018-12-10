@@ -203,9 +203,11 @@ This is just a proposed order of integration. Other orderings are possible withi
 \end{itemize}
 
 \subsection{Integration Plan Diagram}
-Two components can be integrated only if they are fully implemented, so the integration plan is implementation-dependent. The following diagram represent four parallel integration processes based on the implementation plan introduced in the previous section.
+Two components can be integrated only if they are fully implemented, so the integration plan is implementation-dependent.\\ \\ For example, AutomatedSOS Server: Data Receiver is integrated with Data4Help Server at the end of all integrations concerning \ic{AutomatedSOS}.\ic{Data4Help} is a very long activity and due to this, the integration wouldn't be performable except during the global ending of the implementation processes. For this reason it's inserted as the last one: in this way no other integration is delayed.\\ \\
+The following diagram represent four parallel integration processes based on the implementation plan introduced in the previous section.
 
 \image {13cm} {IIT_Diagrams/IntegrationPlan.jpg} {Integration Plan} {IntegrationPlan}
+
 \newpage
 \section{Testing Plan}
 \subsection{Unit Testing}
