@@ -10,7 +10,7 @@
 \contentsline {section}{\numberline {1.5}Reference Documents}{5}{section.1.5}
 \contentsline {section}{\numberline {1.6}Document Structure}{5}{section.1.6}
 \contentsline {paragraph}{Chapter 1}{5}{section*.3}
-\contentsline {paragraph}{Chapter 2}{5}{section*.4}
+\contentsline {paragraph}{Chapter 2}{6}{section*.4}
 \contentsline {paragraph}{Chapter 3}{6}{section*.5}
 \contentsline {paragraph}{Chapter 4}{6}{section*.6}
 \contentsline {paragraph}{Chapter 5}{6}{section*.7}
@@ -19,50 +19,55 @@
 \contentsline {chapter}{\numberline {2}Architectural Design}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview }{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Component View}{10}{section.2.2}
-\contentsline {section}{\numberline {2.3}Deployment View}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Deployment View}{15}{section.2.3}
 \contentsline {section}{\numberline {2.4}Runtime View}{17}{section.2.4}
-\contentsline {section}{\numberline {2.5}Component Interfaces}{23}{section.2.5}
-\contentsline {section}{\numberline {2.6}Selected Architectural Styles}{25}{section.2.6}
-\contentsline {paragraph}{Three Tier Architecture}{25}{section*.29}
-\contentsline {paragraph}{Communication between Components}{26}{section*.30}
-\contentsline {paragraph}{Track4Run Users}{26}{section*.31}
-\contentsline {paragraph}{Data Interface}{27}{section*.32}
-\contentsline {paragraph}{Notifications}{27}{section*.33}
-\contentsline {paragraph}{Third Party Services Interfaces}{27}{section*.34}
-\contentsline {section}{\numberline {2.7}Other Design Decisions}{28}{section.2.7}
-\contentsline {subsection}{\numberline {2.7.1}Class Diagrams}{28}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Interfaces Use}{30}{subsection.2.7.2}
-\contentsline {subsubsection}{Data4Help}{30}{section*.39}
-\contentsline {subsubsection}{User Application}{30}{section*.40}
-\contentsline {subsubsection}{AutomatedSOS}{31}{section*.41}
-\contentsline {subsubsection}{Track4Run}{31}{section*.42}
-\contentsline {chapter}{\numberline {3}User Interface Design}{32}{chapter.3}
-\contentsline {paragraph}{Mapping interface to components}{36}{section*.50}
-\contentsline {paragraph}{Interacting with the User Application}{37}{section*.51}
-\contentsline {chapter}{\numberline {4}Requirements Traceability}{39}{chapter.4}
-\contentsline {paragraph}{Data4Help}{39}{section*.52}
-\contentsline {paragraph}{AutomatedSOS}{43}{section*.53}
-\contentsline {paragraph}{Track4Run}{43}{section*.54}
-\contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{45}{chapter.5}
-\contentsline {section}{\numberline {5.1}Components List}{45}{section.5.1}
-\contentsline {paragraph}{Data4Help}{45}{section*.55}
-\contentsline {paragraph}{Track4Run}{46}{section*.56}
-\contentsline {paragraph}{AutomatedSOS}{46}{section*.57}
-\contentsline {section}{\numberline {5.2}Components dependencies}{46}{section.5.2}
-\contentsline {paragraph}{Data4Help}{46}{section*.58}
-\contentsline {paragraph}{AutomatedSOS}{47}{section*.59}
-\contentsline {paragraph}{Track4Run}{48}{section*.60}
-\contentsline {section}{\numberline {5.3}Implementation Plan}{48}{section.5.3}
-\contentsline {section}{\numberline {5.4}Integration Plan}{49}{section.5.4}
-\contentsline {paragraph}{Data4Help Server}{49}{section*.61}
-\contentsline {paragraph}{Data4Help App}{49}{section*.62}
-\contentsline {paragraph}{AutomatedSOS}{50}{section*.63}
-\contentsline {paragraph}{Track4Run}{50}{section*.64}
-\contentsline {section}{\numberline {5.5}Testing Plan}{51}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Unit Testing}{51}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Integration testing}{51}{subsection.5.5.2}
-\contentsline {chapter}{\numberline {6}Effort Spent}{52}{chapter.6}
-\contentsline {paragraph}{Gargano Jacopo Pio}{52}{section*.65}
-\contentsline {paragraph}{Giannetti Cristian}{52}{section*.66}
-\contentsline {paragraph}{Haag Federico}{53}{section*.67}
-\contentsline {chapter}{\numberline {7}References}{55}{chapter.7}
+\contentsline {section}{\numberline {2.5}Component Interfaces}{24}{section.2.5}
+\contentsline {section}{\numberline {2.6}Selected Architectural Styles}{28}{section.2.6}
+\contentsline {paragraph}{Three Tier Architecture}{28}{section*.29}
+\contentsline {paragraph}{Communication between Components}{28}{section*.30}
+\contentsline {paragraph}{Track4Run Users}{29}{section*.31}
+\contentsline {paragraph}{Data Interface}{29}{section*.32}
+\contentsline {paragraph}{Notifications}{29}{section*.33}
+\contentsline {paragraph}{Third Party Services Interfaces}{30}{section*.34}
+\contentsline {paragraph}{Database Interface Design}{30}{section*.35}
+\contentsline {section}{\numberline {2.7}Other Design Decisions}{31}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Class Diagrams}{31}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Interfaces Use}{33}{subsection.2.7.2}
+\contentsline {subsubsection}{Data4Help}{33}{section*.40}
+\contentsline {subsubsection}{User Application}{33}{section*.41}
+\contentsline {subsubsection}{AutomatedSOS}{33}{section*.42}
+\contentsline {subsubsection}{Track4Run}{34}{section*.43}
+\contentsline {chapter}{\numberline {3}User Interface Design}{35}{chapter.3}
+\contentsline {section}{\numberline {3.1}User Interface Mockups}{35}{section.3.1}
+\contentsline {section}{\numberline {3.2}Mapping User Interfaces to Components}{39}{section.3.2}
+\contentsline {section}{\numberline {3.3}User Application Interaction}{40}{section.3.3}
+\contentsline {chapter}{\numberline {4}Requirements Traceability}{42}{chapter.4}
+\contentsline {paragraph}{Data4Help}{42}{section*.51}
+\contentsline {paragraph}{AutomatedSOS}{46}{section*.52}
+\contentsline {paragraph}{Track4Run}{46}{section*.53}
+\contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{48}{chapter.5}
+\contentsline {section}{\numberline {5.1}Components to be implemented}{48}{section.5.1}
+\contentsline {paragraph}{Data4Help}{48}{section*.54}
+\contentsline {paragraph}{AutomatedSOS}{49}{section*.55}
+\contentsline {paragraph}{Track4Run}{49}{section*.56}
+\contentsline {section}{\numberline {5.2}Component Dependencies}{50}{section.5.2}
+\contentsline {paragraph}{Data4Help}{50}{section*.57}
+\contentsline {paragraph}{AutomatedSOS}{51}{section*.58}
+\contentsline {paragraph}{Track4Run}{51}{section*.59}
+\contentsline {section}{\numberline {5.3}Implementation Plan}{52}{section.5.3}
+\contentsline {section}{\numberline {5.4}Integration Plan}{53}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Integrations}{53}{subsection.5.4.1}
+\contentsline {paragraph}{Data4Help Server}{53}{section*.61}
+\contentsline {paragraph}{Data4Help User Application}{54}{section*.62}
+\contentsline {paragraph}{AutomatedSOS}{54}{section*.63}
+\contentsline {paragraph}{Track4Run}{54}{section*.64}
+\contentsline {subsection}{\numberline {5.4.2}Integration Plan Diagram}{55}{subsection.5.4.2}
+\contentsline {section}{\numberline {5.5}Testing Plan}{56}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Unit Testing}{56}{subsection.5.5.1}
+\contentsline {paragraph}{Methodologies}{56}{section*.67}
+\contentsline {subsection}{\numberline {5.5.2}Integration Testing}{57}{subsection.5.5.2}
+\contentsline {chapter}{\numberline {6}Effort Spent}{58}{chapter.6}
+\contentsline {paragraph}{Gargano Jacopo Pio}{58}{section*.69}
+\contentsline {paragraph}{Giannetti Cristian}{59}{section*.70}
+\contentsline {paragraph}{Haag Federico}{59}{section*.71}
+\contentsline {chapter}{\numberline {7}References}{61}{chapter.7}

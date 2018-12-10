@@ -2,7 +2,7 @@
 
 
 \begin{document}
-\section{Component Interfaces\label{sect2.5}}
+\section{Component Interfaces\label{sect:2.5}}
 
 The following is a representation of the component interfaces that are offered by the system to be. The interfaces are both of external and of internal components so as to provide a clearer explanation of all the main methods available.\\\\
 The naming convention adopted is of the form "Component\textunderscore InterfaceName", where "Component" is the component the interface is offered by and "InterfaceName" is the name of the interface. The first interface - "dataInterface" - is used and offered by many components and it is needed to send and receive data. When the component name is "service", it means that the interface must be offered by all the \ic{Third party Services}.\\\\
@@ -10,7 +10,7 @@ The majority of the following interfaces must include a way to check that the ca
 
 \begin{lstlisting}
 
-//Generic Interfaces
+//Interfaces
 
 public interface dataInterface{
 	boolean receiveData(Data data);  // requires auth
@@ -26,7 +26,11 @@ public interface service_serviceInterface{
 }
 
 
+
+
+
 //Data4Help Interfaces
+
 public interface d4h_getNotificationsInterface{
 	List<String> getNotifications(String username);	// requires auth
 }
@@ -41,7 +45,7 @@ public interface d4h_registerAndLoginInterface{
 	boolean login(String username, String password);
 	boolean userExists(String username);
 	boolean signUp(String fullname, DateTime dateOfBirth, boolean gender, String ssn, String email, String password);
-	//gender: 1 for Male, 0 for Female
+		//gender: 1 for Male, 0 for Female
 }
 
 public interface d4h_servicesInterface{
@@ -49,13 +53,15 @@ public interface d4h_servicesInterface{
 	List<Service> getAllServices();
 	List<Service> getUserServices(String username);  // requires auth
 	Service getServiceByID(int serviceID);
-	boolean addServiceToUserServices(int serviceID, String username);  // requires auth
+	boolean addServiceToUserServices(int serviceID, String username);
+		// requires auth
 	boolean deleteServiceFromUserServices(int serviceID, String username);  // requires auth
 }
 
 public interface d4h_requestDataInterface{
 	List<UserData> getUserData(UserDataRequest request); // requires auth
-	List<AnonimousData> getGroupData(GroupDataRequest request); // requires auth
+	List<AnonimousData> getGroupData(GroupDataRequest request);
+		// requires auth
 }
 
 
@@ -71,7 +77,6 @@ public interface asos_callerInterface{
 	boolean call(String username, Data userData);
 }
 
-
 //Track4Run Interfaces
 
 public interface t4r_automatedSOSCommandsInterface{
@@ -86,7 +91,8 @@ public interface t4r_spectatorsInterface{
 }
 
 public interface t4r_runManagementInterface{
-	boolean createRun(String name, DateTime date, Position start, int maxNumberOfParticipants, DateTime enrollmentClosureDate); // requires auth
+	boolean createRun(String name, DateTime date, Position start, int maxNumberOfParticipants, DateTime enrollmentClosureDate);
+		// requires auth
 	boolean setPath(Run run, List<Position> path); // requires auth
 }
 
@@ -97,6 +103,9 @@ public interface t4r_registerAndLoginInterface{
 	boolean organizerExists(String username);
 	boolean signUp(String fullname, Date dateOfBirth, String email, String password);
 }
+
+
+//Database Interfaces
 
 public interface d4h_databaseInterface{
 	User getUserByUsername(String username);
@@ -113,7 +122,6 @@ public interface d4h_databaseInterface{
 	boolean insertNotification(String notification);
 	List<Notification> getUserNotifications(String username);
 }
-
 public interface asos_databaseInterface{
 	boolean insertUserInNeedData(Data data, String ssn);
 	Data getUserInNeedData(String ssn);
@@ -133,5 +141,5 @@ public interface t4r_databaseInterface{
 }
 
 \end{lstlisting}
-
+\newpage
 \end{document}

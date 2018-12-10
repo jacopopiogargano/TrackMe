@@ -24,7 +24,7 @@
 
 	\image {13cm} {Sequence_Diagrams/SequenceDiagramUserInNeedAssistance.jpg} {User In Need Assistance Sequence Diagram} {UserInNeedAssistanceSequenceDiagram}
 	When new \ic{User data} is collected by Data4Help, if the \ic{User} is subscribed to AutomatedSOS, the data will be sent to AutomatedSOS for analysis. In particular, the Data Receiver will receive the data and pass it over to the Data Analyzer which compares it against certain thresholds. If the data is identified as \ic{Anomalous data}, then the Data Analyzer notifies the User Monitor that the \ic{User} is in need of assistance. The User Monitor sends a call request to the Local Emergency Services Caller, which calls the Local Emergency Services, and sends the User Monitor a confirmation that the procedure of assisting the \ic{User in need} has begun. The User Monitor finally sends an acknowledgement message back to the Data Analyzer and finally stores the \ic{User in need} data in the database.
-	
+	\newpage
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% TRACK4RUN %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 	\image {13cm} {Sequence_Diagrams/SequenceDiagramOrganizeRun.jpg} {Run Organization Sequence Diagram} {RunOrganizationSequenceDiagram}
@@ -32,5 +32,6 @@
 
 	\image {13cm} {Sequence_Diagrams/SequenceDiagramParticipantEnrollment.jpg} {Participant Enrollment Sequence Diagram} {ParticipantEnrollmentSequenceDiagram}
 	In this diagram the \ic{Participant} enrollment process is shown in detail. A \ic{User} who wants to enroll in a \ic{Run} first needs to have all the available \ic{Runs}. This is done by querying the Service Interface Provider through the Service Interface. The Service Interface Provider forwards the User Application requests to the Run Manager, which queries the database. It returns the list of available \ic{Runs} to the User Application. Assuming that the list is not empty, the \ic{User} will express their selection and the Data4Help components will return the \ic{Run} details. The \ic{User} may then select to enroll in the selected \ic{Run}. The Run Manager is in charge of checking if the \ic{User} can enroll or not - the latter may happen because the enrollment is closed. If the \ic{User} can enroll in the \ic{Run}, the Run Manager saves the \ic{User} enrollment in the database and sends a confirmation to the User Application. Otherwise, an enrollment denial is sent back.
+	\newpage
 
 \end{document}
