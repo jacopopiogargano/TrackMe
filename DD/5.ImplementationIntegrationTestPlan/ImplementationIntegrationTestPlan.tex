@@ -27,6 +27,18 @@ The following list includes all the components that must be implemented. The lis
 	\item{Data4Help Database}
 	\item{Data4Help Third Parties Website}
 \end{itemize}
+\paragraph{AutomatedSOS}
+\begin{itemize}
+	\item{AutomatedSOS Server}
+	\begin{itemize}
+		\item{Service Interface Provider (website)}
+		\item{Data Analyzer}
+		\item{User Monitor}
+		\item{Data Receiver}
+		\item{Local Emergency Services Caller}
+	\end{itemize}
+	\item{AutomatedSOS Database}
+\end{itemize}
 \paragraph{Track4Run}
 \begin{itemize}
 	\item{Track4Run Server}
@@ -40,19 +52,7 @@ The following list includes all the components that must be implemented. The lis
 	\item{Track4Run Spectators Website}
 	\item{Track4Run Database}
 \end{itemize}
-\paragraph{AutomatedSOS}
-\begin{itemize}
-	\item{AutomatedSOS Server}
-	\begin{itemize}
-		\item{Service Interface Provider (website)}
-		\item{Data Analyzer}
-		\item{User Monitor}
-		\item{Data Receiver}
-		\item{Local Emergency Services Caller}
-	\end{itemize}
-	\item{AutomatedSOS Database}
-\end{itemize}
-
+\newpage
 \section{Component Dependencies}
 The following list of components shows the logical and architectural dependencies between the components listed in the previous section.
 \paragraph{Data4Help}
@@ -201,17 +201,18 @@ This is just a proposed order of integration. Other orderings are possible withi
 	\item{Track4Run Server: Authentication \textbf{and} Track4Run Database}
 	\item{* Track4Run Server: Data Receiver \textbf{and} Data4Help Server}
 \end{itemize}
-
+\newpage
 \subsection{Integration Plan Diagram}
-Two components can be integrated only if they are fully implemented, so the integration plan is implementation-dependent.\\ \\ For example, AutomatedSOS Server: Data Receiver is integrated with Data4Help Server at the end of all integrations concerning \ic{AutomatedSOS}.\ic{Data4Help} is a very long activity and due to this, the integration wouldn't be performable except during the global ending of the implementation processes. For this reason it's inserted as the last one: in this way no other integration is delayed.\\ \\
-The following diagram represent four parallel integration processes based on the implementation plan introduced in the previous section.
+Two components can be integrated only if they are fully implemented, so the integration plan is implementation-dependent.\\ \\
+For example, AutomatedSOS Server: Data Receiver is integrated with Data4Help Server at the end of all integrations concerning AutomatedSOS. Implementing Data4Help completely takes a long time and because of this, the integration will not be performed until the the end of the implementation processes. For this reason it is inserted as the last one in each integration process. By doing so, all other integrations can be performed and none will be delayed.\\\\
+The following diagram represents four parallel integration processes based on the implementation plan introduced in the previous section.
 
 \image {13cm} {IIT_Diagrams/IntegrationPlan.jpg} {Integration Plan} {IntegrationPlan}
 
 \newpage
 \section{Testing Plan}
 \subsection{Unit Testing}
-Unit testing must be performed during the development of each component and finalized at component completion time. Due to this reason, the unit testing plan completely depends on and follows by the implementation plan:
+Unit testing must be performed during the development of each component and finalized at component completion time. For this reason, the unit testing plan completely depends on and follows by the implementation plan.
 
 \image {13cm} {IIT_Diagrams/UnitTesting.jpg} {Unit Testing Plan} {UnitTestingPlan}
 
@@ -221,9 +222,9 @@ Unit testing must be performed during the development of each component and fina
 	\item\textbf{Coverage} The test coverage will be of 100\% for methods and classes and of 90\% for all the lines of code.
 	\item\textbf{Tools} In order to monitor effectively the coverage, it tools like SonarQube and JUnit will be in use.
 \end{itemize} 
-
-\subsection{Integration Testing} Integration testing will be performed on each case listed in the integration plan section \hyperref[sect:5.4]{5.4}. Testing should be done in parallel with the integration of components, as a way to test and confirm the correctness of the integration. A general and comprehensive test at the end of each integration will be also performed. \\
-Due to the fact that integration testing must be executed in parallel with the integration of components, the integration testing plan completely depends on and follows by the integration plan:
+\newpage
+\subsection{Integration Testing} Integration testing will be performed on each case listed in the integration plan section \hyperref[sect:5.4]{5.4}. Testing will be undertaken in parallel with the integration of components, as a way to test and confirm the correctness of the integration. A general and comprehensive test at the end of each integration will be also performed. \\
+Since integration testing must be executed in parallel with the integration of components, the integration testing plan completely depends on and follows by the integration plan.
 
 \image {13cm} {IIT_Diagrams/IntegrationTesting.jpg} {Integration Testing Plan} {IntegrationTestingPlan}
 
