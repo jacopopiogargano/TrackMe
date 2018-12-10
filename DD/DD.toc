@@ -46,7 +46,7 @@
 \contentsline {paragraph}{AutomatedSOS}{46}{section*.52}
 \contentsline {paragraph}{Track4Run}{46}{section*.53}
 \contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{48}{chapter.5}
-\contentsline {section}{\numberline {5.1}Components to be implemented}{48}{section.5.1}
+\contentsline {section}{\numberline {5.1}Components to be Implemented}{48}{section.5.1}
 \contentsline {paragraph}{Data4Help}{48}{section*.54}
 \contentsline {paragraph}{AutomatedSOS}{49}{section*.55}
 \contentsline {paragraph}{Track4Run}{49}{section*.56}
