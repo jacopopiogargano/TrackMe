@@ -7,15 +7,16 @@
 \contentsline {subsection}{\numberline {1.3.2}Acronyms}{5}{subsection.1.3.2}
 \contentsline {subsection}{\numberline {1.3.3}Abbreviations}{5}{subsection.1.3.3}
 \contentsline {section}{\numberline {1.4}Revision History}{5}{section.1.4}
+\contentsline {paragraph}{Major Changes}{5}{section*.3}
 \contentsline {section}{\numberline {1.5}Reference Documents}{5}{section.1.5}
-\contentsline {section}{\numberline {1.6}Document Structure}{5}{section.1.6}
-\contentsline {paragraph}{Chapter 1}{5}{section*.3}
-\contentsline {paragraph}{Chapter 2}{6}{section*.4}
-\contentsline {paragraph}{Chapter 3}{6}{section*.5}
-\contentsline {paragraph}{Chapter 4}{6}{section*.6}
-\contentsline {paragraph}{Chapter 5}{6}{section*.7}
-\contentsline {paragraph}{Chapter 6}{6}{section*.8}
-\contentsline {paragraph}{Chapter 7}{6}{section*.9}
+\contentsline {section}{\numberline {1.6}Document Structure}{6}{section.1.6}
+\contentsline {paragraph}{Chapter 1}{6}{section*.4}
+\contentsline {paragraph}{Chapter 2}{6}{section*.5}
+\contentsline {paragraph}{Chapter 3}{6}{section*.6}
+\contentsline {paragraph}{Chapter 4}{6}{section*.7}
+\contentsline {paragraph}{Chapter 5}{6}{section*.8}
+\contentsline {paragraph}{Chapter 6}{6}{section*.9}
+\contentsline {paragraph}{Chapter 7}{6}{section*.10}
 \contentsline {chapter}{\numberline {2}Architectural Design}{7}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview }{7}{section.2.1}
 \contentsline {section}{\numberline {2.2}Component View}{10}{section.2.2}
@@ -23,51 +24,51 @@
 \contentsline {section}{\numberline {2.4}Runtime View}{17}{section.2.4}
 \contentsline {section}{\numberline {2.5}Component Interfaces}{24}{section.2.5}
 \contentsline {section}{\numberline {2.6}Selected Architectural Styles}{28}{section.2.6}
-\contentsline {paragraph}{Three Tier Architecture}{28}{section*.29}
-\contentsline {paragraph}{Communication between Components}{28}{section*.30}
-\contentsline {paragraph}{Track4Run Users}{29}{section*.31}
-\contentsline {paragraph}{Data Interface}{29}{section*.32}
-\contentsline {paragraph}{Notifications}{29}{section*.33}
-\contentsline {paragraph}{Third Party Services Interfaces}{30}{section*.34}
-\contentsline {paragraph}{Database Interface Design}{30}{section*.35}
+\contentsline {paragraph}{Three Tier Architecture}{28}{section*.30}
+\contentsline {paragraph}{Communication between Components}{28}{section*.31}
+\contentsline {paragraph}{Track4Run Users}{29}{section*.32}
+\contentsline {paragraph}{Data Interface}{29}{section*.33}
+\contentsline {paragraph}{Notifications}{29}{section*.34}
+\contentsline {paragraph}{Third Party Services Interfaces}{30}{section*.35}
+\contentsline {paragraph}{Database Interface Design}{30}{section*.36}
 \contentsline {section}{\numberline {2.7}Other Design Decisions}{31}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Class Diagrams}{31}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Interfaces Use}{33}{subsection.2.7.2}
-\contentsline {subsubsection}{Data4Help}{33}{section*.40}
-\contentsline {subsubsection}{User Application}{33}{section*.41}
-\contentsline {subsubsection}{AutomatedSOS}{33}{section*.42}
-\contentsline {subsubsection}{Track4Run}{34}{section*.43}
+\contentsline {subsubsection}{Data4Help}{33}{section*.41}
+\contentsline {subsubsection}{User Application}{33}{section*.42}
+\contentsline {subsubsection}{AutomatedSOS}{33}{section*.43}
+\contentsline {subsubsection}{Track4Run}{34}{section*.44}
 \contentsline {chapter}{\numberline {3}User Interface Design}{35}{chapter.3}
 \contentsline {section}{\numberline {3.1}User Interface Mockups}{35}{section.3.1}
 \contentsline {section}{\numberline {3.2}Mapping User Interfaces to Components}{39}{section.3.2}
 \contentsline {section}{\numberline {3.3}User Application Interaction}{40}{section.3.3}
 \contentsline {chapter}{\numberline {4}Requirements Traceability}{42}{chapter.4}
-\contentsline {paragraph}{Data4Help}{42}{section*.51}
-\contentsline {paragraph}{AutomatedSOS}{46}{section*.52}
-\contentsline {paragraph}{Track4Run}{46}{section*.53}
+\contentsline {paragraph}{Data4Help}{42}{section*.52}
+\contentsline {paragraph}{AutomatedSOS}{46}{section*.53}
+\contentsline {paragraph}{Track4Run}{46}{section*.54}
 \contentsline {chapter}{\numberline {5}Implementation, Integration and Test Plan}{48}{chapter.5}
 \contentsline {section}{\numberline {5.1}Components to be Implemented}{48}{section.5.1}
-\contentsline {paragraph}{Data4Help}{48}{section*.54}
-\contentsline {paragraph}{AutomatedSOS}{49}{section*.55}
-\contentsline {paragraph}{Track4Run}{49}{section*.56}
+\contentsline {paragraph}{Data4Help}{48}{section*.55}
+\contentsline {paragraph}{AutomatedSOS}{49}{section*.56}
+\contentsline {paragraph}{Track4Run}{49}{section*.57}
 \contentsline {section}{\numberline {5.2}Component Dependencies}{50}{section.5.2}
-\contentsline {paragraph}{Data4Help}{50}{section*.57}
-\contentsline {paragraph}{AutomatedSOS}{51}{section*.58}
-\contentsline {paragraph}{Track4Run}{51}{section*.59}
+\contentsline {paragraph}{Data4Help}{50}{section*.58}
+\contentsline {paragraph}{AutomatedSOS}{51}{section*.59}
+\contentsline {paragraph}{Track4Run}{51}{section*.60}
 \contentsline {section}{\numberline {5.3}Implementation Plan}{52}{section.5.3}
 \contentsline {section}{\numberline {5.4}Integration Plan}{53}{section.5.4}
 \contentsline {subsection}{\numberline {5.4.1}Integrations}{53}{subsection.5.4.1}
-\contentsline {paragraph}{Data4Help Server}{53}{section*.61}
-\contentsline {paragraph}{Data4Help User Application}{54}{section*.62}
-\contentsline {paragraph}{AutomatedSOS}{54}{section*.63}
-\contentsline {paragraph}{Track4Run}{54}{section*.64}
+\contentsline {paragraph}{Data4Help Server}{53}{section*.62}
+\contentsline {paragraph}{Data4Help User Application}{54}{section*.63}
+\contentsline {paragraph}{AutomatedSOS}{54}{section*.64}
+\contentsline {paragraph}{Track4Run}{54}{section*.65}
 \contentsline {subsection}{\numberline {5.4.2}Integration Plan Diagram}{55}{subsection.5.4.2}
 \contentsline {section}{\numberline {5.5}Testing Plan}{56}{section.5.5}
 \contentsline {subsection}{\numberline {5.5.1}Unit Testing}{56}{subsection.5.5.1}
-\contentsline {paragraph}{Methodologies}{56}{section*.67}
+\contentsline {paragraph}{Methodologies}{56}{section*.68}
 \contentsline {subsection}{\numberline {5.5.2}Integration Testing}{57}{subsection.5.5.2}
 \contentsline {chapter}{\numberline {6}Effort Spent}{58}{chapter.6}
-\contentsline {paragraph}{Gargano Jacopo Pio}{58}{section*.69}
-\contentsline {paragraph}{Giannetti Cristian}{59}{section*.70}
-\contentsline {paragraph}{Haag Federico}{59}{section*.71}
+\contentsline {paragraph}{Gargano Jacopo Pio}{58}{section*.70}
+\contentsline {paragraph}{Giannetti Cristian}{59}{section*.71}
+\contentsline {paragraph}{Haag Federico}{59}{section*.72}
 \contentsline {chapter}{\numberline {7}References}{61}{chapter.7}
